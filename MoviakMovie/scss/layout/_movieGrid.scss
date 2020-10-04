@@ -1,0 +1,111 @@
+.movie-grid {
+    background-image: url(./../../images/bgs1.jpg);
+    background-size: cover;
+    padding: 25px 0;
+
+    .movie-grid__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        .movie-grid__item {
+            cursor: pointer;
+            position: relative;
+
+            img {
+                max-width: 100%;
+                display: block;
+            }
+
+            a.overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+
+                width: 100%;
+                height: 100%;
+                background-color: #fe7b005b;
+                opacity: 0;
+
+                transition: all 0.5s;
+
+                i {
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+
+                    transform: translate(-50%, -50%);
+                    width: 60px;
+                    height: 60px;
+                    background-color: rgba(255, 255, 255, 0.5);
+
+                    color: $color-0;
+                    text-align: center;
+                    line-height: 60px;
+                    border-radius: 50%;
+                }
+            }
+
+            &:hover {
+                a.overlay {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .movie-grid__text {
+        h6 {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline;
+
+            color: #fe7900;
+            background: -webkit-linear-gradient(left, #bb511e 32%, #f1bc00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: .8;
+        }
+
+        .big-reason{
+            margin-top: 10px;
+
+            .reason-item{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: $color-2;
+
+                font-size: 13px;
+                padding: 20px 0;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .reason-item:first-child{
+                font-size: 15px;
+                color: $color-4;
+                border: none;
+            }
+
+            i{
+                display: block;
+                border: 2px solid $color-2;
+                width: 44px;
+                height: 44px;
+
+                font-size: 22px;
+                line-height: 38px;
+                text-align: center;
+                border-radius: 50%;
+            }
+
+            span{
+                display: block;
+                width: 83%;
+            }
+        }
+    }
+}
