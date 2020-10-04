@@ -1,0 +1,147 @@
+footer {
+    background-image: url(./../../images/backgrounds/bg-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -40px;
+
+    position: relative;
+    z-index: 10;
+    padding-top: 50px;
+
+    .widget {
+        color: #fff;
+        letter-spacing: 1px;
+
+        .widget__title {
+            font-size: 1.675em;
+            color: $color-2;
+            text-transform: uppercase;
+        }
+
+        ul {
+            li {
+                padding: 6px 0;
+                font-size: 0.875em;
+            }
+        }
+
+        a {
+            transition: all 0.5s;
+
+            &:hover {
+                color: $color-1;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+
+            .btn-contact {
+                display: inline-flex;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 1em 2em;
+
+                border-radius: 5px;
+                margin-bottom: 1.375em;
+                font-size: 0.875em;
+
+                i {
+                    margin-right: 0.375em;
+                }
+            }
+        }
+    }
+
+    .footer__bottom {
+        text-align: center;
+        line-height: 1.3;
+
+        .moit-img{
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: $color-2;
+            margin: 0;
+
+            a {
+                color: $color-1;
+                display: inline-block;
+                padding: 0 8px;
+                border-right: 1px solid $color-2;
+            }
+
+            a:last-child {
+                border-right: none;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 991px) {
+    footer {
+        font-size: 0.875em;
+
+        .widget{
+            .widget__title {
+                font-size: 1.875em;
+                margin-bottom: 12px;
+                margin-top: 18px;
+            }
+        }
+        
+
+        .footer__bottom {
+            img.hot-line-img {
+                width: 400px;
+            }
+
+            img.moit-img {
+                width: 130px;
+                margin: 20px 0;
+            }
+
+            p {
+                line-height: 1.6;
+            }
+        }
+    }
+
+    #contact {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    footer {
+        background-position: center;
+        margin-top: -80px;
+        padding-top: 70px;
+        font-size: 0.675em;
+
+        .widget ul {
+            li {
+                font-size: 1em;
+            }
+        }
+
+        .footer__bottom {
+            img.hot-line-img {
+                width: 280px;
+            }
+
+            img.moit-img {
+                width: 130px;
+                margin: 20px 0;
+            }
+
+            p {
+                line-height: 1.8;
+            }
+        }
+    }
+}

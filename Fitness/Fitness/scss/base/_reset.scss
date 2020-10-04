@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+button,
+button:focus {
+    outline: none;
+    border: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.fitness-btn{
+    background-color: $color-0;
+    color: $color-1;
+    border: 3px solid $color-0;
+    padding: 8px 35px;
+
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    // border-radius: 50%;
+}

@@ -1,0 +1,124 @@
+.slide{
+    position: relative;
+    min-height: 500px;
+
+    video{
+        width: 100%;
+    }
+
+    .slide__text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        color: #fff;
+        font-size: $fs-0;
+        text-align: center;
+        z-index: 1;
+
+        img{
+            width: 550px;
+        }
+
+        h1{
+            font-size: 5.5em;
+            margin-top: .345em;
+            margin-bottom: .345em;
+        }
+
+        button{
+            font-size: 1.675em;
+        }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .slide{
+        background-image: url(./../../images/res-bg.jpg);
+        &::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,.7);
+        }
+
+        video{
+            display: none;
+        }
+
+        .slide__text{
+            font-size: $fs-0;
+            min-width: 80%;
+            top: 60%;
+    
+            img{
+                width: 360px;
+            }
+    
+            h1{
+                font-size: 4em;
+                margin-top: .345em;
+                margin-bottom: .345em;
+            }
+    
+            button{
+                font-size: 1.675em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .slide{
+
+        .slide__text{
+            font-size: $fs-0;
+            min-width: 90%;
+            top: 60%;
+    
+            img{
+                width: 300px;
+            }
+    
+            h1{
+                font-size: 3.2em;
+                margin-top: .345em;
+                margin-bottom: .345em;
+            }
+    
+            button{
+                font-size: 1.275em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px){
+    .slide{
+        .slide__text{
+            font-size: $fs-0;
+            min-width: 100%;
+            top: 60%;
+    
+            img{
+                width: 250px;
+            }
+    
+            h1{
+                font-size: 2.6em;
+                margin-top: .345em;
+                margin-bottom: .345em;
+            }
+    
+            button{
+                font-size: 1.275em;
+            }
+        }
+    }
+}

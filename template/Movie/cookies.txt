@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+demo.amytheme.com	TRUE	/	FALSE	1999999999	PHPSESSID	584ad7022e8b4f054673f60bf2f79bd9
+

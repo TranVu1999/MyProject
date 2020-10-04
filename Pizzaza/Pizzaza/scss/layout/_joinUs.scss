@@ -1,0 +1,142 @@
+$fw: inherit;
+
+.join-us {
+    background: url(./../../images/backgrounds/background-wine.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 40px 0 60px;
+    text-align: center;
+
+    .small-title {
+        color: #fff;
+    }
+
+    .join-us__box{
+        display: flex;
+        cursor: pointer;
+
+        .text-box {
+            display: block;
+            padding: 35px 25px 35px;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        &:hover .text-box{
+            border-color: $color-0;
+        }
+
+        .view-more{
+            background-color: $color-0;
+            display: flex;
+            align-items: center;
+            @include text(1em, 700, #fff);
+            opacity: 0;
+
+            &:hover a{
+                text-decoration: underline;
+            }
+        }
+
+        &:hover .view-more{
+            opacity: 1;
+        }
+    }
+
+    .joinUs-carousel{
+
+        .owl-dots{
+            @extend %styleDotsCarousel;
+        }
+
+        .text-box{
+            padding: 0;
+            .text-box__desc{
+                @include text(1em, $fw, #fff);
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 991px){
+    .join-us {
+        font-size: .75em;
+
+        .small-title{
+            font-size: 1.875em;
+        }
+
+        .tick-title{
+            font-size: 2.375em;
+            margin-bottom: 6px;
+
+            &::after{
+                margin-top: -.3em;
+                transform: scale(.8);
+            }
+        }
+
+        .joinUs-carousel__box{
+            margin-top: 25px;
+            padding: 0 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .join-us {
+        font-size: .75em;
+
+        .small-title{
+            font-size: 1.875em;
+        }
+
+        .tick-title{
+            font-size: 2.375em;
+            margin-bottom: 6px;
+
+            &::after{
+                margin-top: -.3em;
+                transform: scale(.8);
+            }
+        }
+
+        .join-us__box{
+            .view-more{
+                display: none;
+            }
+        }
+
+        .joinUs-carousel__box{
+            padding: 0 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 499px){
+    .join-us {
+        .small-title{
+            font-size: 1.675em;
+        }
+
+        .tick-title{
+            font-size: 1.75em;
+
+            &::after{
+                margin-top: 0em;
+            }
+        }
+
+        .joinUs-carousel{
+            
+            .text-box{
+                
+                .text-box__desc{
+                   font-size: 1em;
+                }
+            }
+        }
+    }
+}

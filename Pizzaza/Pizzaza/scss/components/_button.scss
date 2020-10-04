@@ -1,0 +1,17 @@
+.res-btn{
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: #fff;
+    background-color: $color-0;
+
+    cursor: pointer;
+    transition: all .5s;
+    border: 2px solid transparent;
+    letter-spacing: 2px;
+
+    &:hover{
+        background-color: #fff;
+        color: $color-0;
+        border-color: $color-0;
+    }
+}

@@ -1,0 +1,14 @@
+%styleDotsCarousel{
+    .owl-dot{
+        span{
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    .owl-dot.active {
+        span{
+            background-color: $color-0;
+        }
+    }
+}

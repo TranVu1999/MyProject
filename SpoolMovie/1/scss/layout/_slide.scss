@@ -1,0 +1,123 @@
+.slide {
+    height: 600px;
+    background-color: $color-0;
+    position: relative;
+
+    .slide__content {
+        height: 100%;
+        position: relative;
+    }
+
+    .slide__video {
+        position: absolute;
+        top: 55%;
+        left: 0;
+        transform: translateY(-50%);
+
+        video {
+            width: 100%;
+            height: 445px;
+            object-fit: cover;
+        }
+
+        .video-control {
+            position: absolute;
+            left: 0;
+            bottom: 15%;
+            color: $color-3;
+
+            display: flex;
+            font-size: 1.675em;
+            padding: 20px 25px;
+
+            i {
+                cursor: pointer;
+            }
+
+            .control-volume {
+                margin-right: 16px;
+            }
+        }
+
+        .video__info{
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .video-brand {
+            position: relative;
+            padding-left: 50px;
+            flex-grow: 1;
+
+            p {
+                color: $color-4;
+                font-size: 12px;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-family: "IBM Plex Sans Condensed";
+                margin: 0;
+            }
+
+            .number {
+                font-size: 80px;
+                font-weight: 600;
+                line-height: 1em;
+                color: $color-3;
+
+                opacity: 0.1;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+
+            h6 {
+                line-height: 1em;
+                font-size: 30px;
+                font-weight: bold;
+                margin: 0;
+                color: $color-3;
+            }
+        }
+
+        .video-navigation{
+            flex-grow: 2;
+            color: $color-3;
+            text-transform: uppercase;
+            font-size: 12px;
+
+            font-weight: 600;
+
+            a{
+                display: inline-block;
+                flex-basis: auto;
+                padding: 5px 8px;
+                position: relative;
+
+                *{
+                    z-index: 1;
+                }
+
+                &::before{
+                    content: '';
+                    display: block;
+                    width: calc(50% + 14px);
+                    height: 100%;
+
+                    background-color: $color-2;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    z-index: -1;
+                    transition: all .5s;
+                }
+
+                &:hover::before{
+                    width: calc(100% + 28px);
+                }
+            }
+        }
+    }
+}

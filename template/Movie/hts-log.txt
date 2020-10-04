@@ -1,0 +1,114 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 29 Sep 2020 21:59:01 at http://demo.amytheme.com/movie/demo/multi-cinema/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://demo.amytheme.com/movie/demo/multi-cinema/ -O1 "C:\Users\VU TRAN\Desktop\Movie" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:03:10	Error: 	"Method Not Allowed" (405) at link demo.amytheme.com/movie/demo/multi-cinema/xmlrpc.php (from demo.amytheme.com/movie/demo/multi-cinema/)
+22:08:27	Warning: 	File not parsed, looks like binary: demo.amytheme.com/movie/demo/multi-cinema/wp-content/plugins/revslider/public/assets/css/openhand.cur
+22:08:27	Warning: 	File not parsed, looks like binary: demo.amytheme.com/movie/demo/multi-cinema/wp-content/plugins/revslider/public/assets/css/closedhand.cur
+22:08:27	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/images/frontend/ajax-loader.gif (from demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/vendor/slick-theme.css?ver=5.3.4)
+22:08:27	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/fonts/slick/slick.eot (from demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/vendor/slick-theme.css?ver=5.3.4)
+22:08:27	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/fonts/slick/slick.eot? (from demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/vendor/slick-theme.css?ver=5.3.4)
+22:08:27	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/fonts/slick/slick.woff (from demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/vendor/slick-theme.css?ver=5.3.4)
+22:08:27	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/fonts/slick/slick.ttf (from demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/vendor/slick-theme.css?ver=5.3.4)
+22:08:27	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/fonts/slick/slick.svg (from demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/vendor/slick-theme.css?ver=5.3.4)
+22:08:27	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/vendor/mCSB_buttons.png (from demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/vendor/jquery.mCustomScrollbar.css?ver=1.0.0)
+22:08:28	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/images/frontend/bg_latestnew.jpg (from demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/style.css?ver=1.0.0)
+22:08:28	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/images/icons/dot-white.png (from demo.amytheme.com/movie/demo/multi-cinema/wp-content/themes/amy-movie/css/style.css?ver=1.0.0)
+22:08:28	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=190
+22:08:28	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=190 to http://demo.amytheme.com/movie/demo/multi-cinema/now-playing/
+22:08:35	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=191
+22:08:35	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=191 to http://demo.amytheme.com/movie/demo/multi-cinema/comming-soon/
+22:08:36	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/hello-of-high-water/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/hello-of-high-water/)
+22:08:36	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=87
+22:08:36	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=87 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/hello-of-high-water/
+22:08:41	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/ice-age-collision-course/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/ice-age-collision-course/)
+22:08:41	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=88
+22:08:41	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=88 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/ice-age-collision-course/
+22:08:43	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/jumanji-welcome-to-the-jungle/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/jumanji-welcome-to-the-jungle/)
+22:08:43	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=98
+22:08:43	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=98 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/jumanji-welcome-to-the-jungle/
+22:08:47	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/kubo-and-the-two-strings/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/kubo-and-the-two-strings/)
+22:08:47	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=96
+22:08:47	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=96 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/kubo-and-the-two-strings/
+22:08:47	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=82
+22:08:47	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=82 to http://demo.amytheme.com/movie/demo/multi-cinema/cinema/gv-max/
+22:08:47	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=199
+22:08:47	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=199 to http://demo.amytheme.com/movie/demo/multi-cinema/daily-layout-list/
+22:08:47	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=202
+22:08:47	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=202 to http://demo.amytheme.com/movie/demo/multi-cinema/daily-showtime-ajax/
+22:08:47	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=200
+22:08:47	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=200 to http://demo.amytheme.com/movie/demo/multi-cinema/weekly-showtime-table/
+22:08:47	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=201
+22:08:47	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=201 to http://demo.amytheme.com/movie/demo/multi-cinema/weekly-showtime-ajax/
+22:08:47	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=115
+22:08:47	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=115 to http://demo.amytheme.com/movie/demo/multi-cinema/top-rated/
+22:08:49	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/game-night/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/game-night/)
+22:08:49	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=102
+22:08:49	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=102 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/game-night/
+22:08:49	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/peter-rabbit/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/peter-rabbit/)
+22:08:50	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=101
+22:08:50	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=101 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/peter-rabbit/
+22:08:50	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/supersonic/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/supersonic/)
+22:08:50	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=100
+22:08:50	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=100 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/supersonic/
+22:08:50	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/death-wish/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/death-wish/)
+22:08:50	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=99
+22:08:50	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=99 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/death-wish/
+22:08:50	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/the-hurricane-heist/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/the-hurricane-heist/)
+22:08:50	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=97
+22:08:50	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=97 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/the-hurricane-heist/
+22:08:50	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/norma-royal-opera/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/norma-royal-opera/)
+22:08:50	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=91
+22:08:50	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=91 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/norma-royal-opera/
+22:09:01	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/bad-moms/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/bad-moms/)
+22:09:01	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=95
+22:09:01	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=95 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/bad-moms/
+22:09:01	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/swiss-army-man/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/swiss-army-man/)
+22:09:01	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=90
+22:09:01	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=90 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/swiss-army-man/
+22:09:02	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/brotherhood/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/brotherhood/)
+22:09:02	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=83
+22:09:02	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=83 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/brotherhood/
+22:09:02	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/the-girl-with-all-the-gifts/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/the-girl-with-all-the-gifts/)
+22:09:02	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=93
+22:09:02	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=93 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/the-girl-with-all-the-gifts/
+22:09:02	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/the-sleeping-beauty-australia/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/the-sleeping-beauty-australia/)
+22:09:02	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=94
+22:09:02	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=94 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/the-sleeping-beauty-australia/
+22:09:02	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/dont-breathe/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/dont-breathe/)
+22:09:02	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=92
+22:09:02	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=92 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/dont-breathe/
+22:09:02	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/star-trek-beyond/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/star-trek-beyond/)
+22:09:02	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=89
+22:09:02	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=89 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/star-trek-beyond/
+22:09:02	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=110
+22:09:02	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=110 to http://demo.amytheme.com/movie/demo/multi-cinema/another-jurassic-park-star-joins-thor-ragnarok/
+22:09:02	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/home-3/wp-content/uploads/2016/12/img_56-300x200.jpg (from demo.amytheme.com/movie/demo/multi-cinema/another-jurassic-park-star-joins-thor-ragnarok/)
+22:09:02	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=111
+22:09:02	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=111 to http://demo.amytheme.com/movie/demo/multi-cinema/5-movies-to-watch-this-week-29-sep-2016/
+22:09:02	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=112
+22:09:02	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=112 to http://demo.amytheme.com/movie/demo/multi-cinema/doctor-strange-assembles-with-the-avengers/
+22:09:05	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=105
+22:09:05	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=105 to http://demo.amytheme.com/movie/demo/multi-cinema/six-book-to-film-adaptations-to-get-excited-about-this-autumn/
+22:09:05	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=104
+22:09:05	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=104 to http://demo.amytheme.com/movie/demo/multi-cinema/the-beatles-eight-days-a-week-the-touring/
+22:09:05	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=80
+22:09:05	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=80 to http://demo.amytheme.com/movie/demo/multi-cinema/cinema/gv-vivocity/
+22:09:05	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=79
+22:09:05	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=79 to http://demo.amytheme.com/movie/demo/multi-cinema/cinema/gv-plaza/
+22:09:05	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=77
+22:09:05	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=77 to http://demo.amytheme.com/movie/demo/multi-cinema/cinema/gv-vatond-ketty/
+22:09:05	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=78
+22:09:05	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=78 to http://demo.amytheme.com/movie/demo/multi-cinema/cinema/gv-tampines/
+22:09:05	Error: 	"Not Found" (404) at link demo.amytheme.com/movie/demo/multi-cinema/amy_movie/a-date-for-mad-mary/feed/ (from demo.amytheme.com/movie/demo/multi-cinema/amy_movie/a-date-for-mad-mary/)
+22:09:05	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=86
+22:09:05	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=86 to http://demo.amytheme.com/movie/demo/multi-cinema/amy_movie/a-date-for-mad-mary/
+22:09:06	Warning: 	Moved Permanently for demo.amytheme.com/movie/demo/multi-cinema/?p=103
+22:09:06	Warning: 	File has moved from demo.amytheme.com/movie/demo/multi-cinema/?p=103 to http://demo.amytheme.com/movie/demo/multi-cinema/win-a-wizarding-world-holiday-with-fantastic/
+
+HTTrack Website Copier/3.49-2 mirror complete in 10 minutes 5 seconds : 515 links scanned, 449 files written (14756357 bytes overall) [15841737 bytes received at 26184 bytes/sec], 4.3 requests per connection
+(29 errors, 74 warnings, 0 messages)

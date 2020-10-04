@@ -1,0 +1,301 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 25px 0;
+
+    color: white;
+    font-size: 1rem;
+
+    .language {
+        font-size: 0.675em;
+        text-transform: uppercase;
+    }
+
+    a.active,
+    a:hover {
+        color: $color-1;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+
+        img {
+            max-width: 350px;
+            min-width: 100%;
+        }
+    }
+
+    .logo-responsive {
+        display: none;
+    }
+
+    .view-cart-box {
+        text-align: right;
+
+        .view-cart-btn {
+            background-color: $color-1;
+            letter-spacing: 4px;
+            @include text(1.375em, 700, $color-3);
+
+            &:hover {
+                background-color: #fff;
+                border-color: $color-1;
+            }
+        }
+    }
+
+    .hamburger-box {
+        display: none;
+    }
+
+    #navigation {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s;
+        margin-top: 16px;
+
+        .close-navigation {
+            display: none;
+        }
+
+        .control {
+            display: none;
+        }
+
+        .button-box {
+            display: none;
+        }
+
+        ul {
+            display: table;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            table-layout: fixed;
+            border-top: 1px solid #fff;
+
+            li {
+                display: table-cell;
+                height: 100%;
+                text-align: center;
+                vertical-align: middle;
+                border-right: 1px solid #fff;
+                border-bottom: 3px solid transparent;
+                padding: 15px 0;
+                text-transform: uppercase;
+            }
+
+            li:last-child {
+                border-right: none;
+            }
+        }
+    }
+
+    #navigation.show-menu {
+        max-height: 100px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        .container {
+            max-width: 100%;
+        }
+
+        .header--text__box {
+            display: none;
+        }
+
+        .view-cart-box {
+            display: none;
+        }
+
+        .logo-box {
+            display: none;
+        }
+
+        .logo-responsive {
+            display: block;
+            text-align: right;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .hamburger-box {
+            display: block;
+
+            .hamburger-btn {
+                display: inline-block;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .circle {
+                width: 50px;
+                height: 50px;
+                position: relative;
+
+                .line {
+                    position: absolute;
+                    left: 0;
+                    height: 6px;
+                    width: 100%;
+                    background-color: #fff;
+                    border-radius: 8px;
+
+                    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.25s;
+                }
+
+                .top {
+                    top: 18%;
+                }
+
+                .middle {
+                    top: 48%;
+                }
+
+                .bottom {
+                    top: 78%;
+                }
+            }
+
+            .icon.close .top {
+                transform: rotate(45deg);
+                top: 48%;
+            }
+
+            .icon.close .middle,
+            .icon.close .bottom {
+                transform: rotate(-45deg);
+                top: 48%;
+            }
+        }
+
+        #navigation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            max-height: 100vh;
+            height: 100vh;
+
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            transform: translateX(-100%);
+            transition: all 0.5s cubic-bezier(0.26, -0.35, 0.56, 1.35);
+            margin: 0;
+
+            .navigation-box {
+                padding: 40px 25px 25px 25px;
+                position: relative;
+                max-width: 300px;
+                height: 100%;
+                background-color: #000;
+                overflow-y: scroll;
+            }
+
+            .close-navigation {
+                display: block;
+                color: #fff;
+                background-color: transparent;
+                position: absolute;
+                top: 8px;
+                right: 15px;
+
+                font-size: 24px;
+                cursor: pointer;
+                transition: all 0.5s cubic-bezier(0.26, -0.35, 0.56, 1.35);
+
+                &:hover {
+                    transform: scale(1.25);
+                }
+            }
+
+            .control {
+                display: block;
+                border-bottom: 1px solid #dedede;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                display: block;
+                border: none;
+
+                li {
+                    display: block;
+                    padding: 8px 0;
+                    border: none;
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 3px;
+                        background-color: $color-0;
+                        transition: all 0.5s;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        a {
+                            color: $color-1;
+                        }
+                    }
+                }
+            }
+
+            .button-box {
+                display: block;
+                border-top: 1px solid #dedede;
+                margin-top: 20px;
+                padding-top: 20px;
+
+                .view-cart-box {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+
+        #navigation.show {
+            transform: translateX(0);
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sm-none{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 499px){
+    header {
+        .sm-none{
+            display: none;
+        }
+
+        .hamburger-box {
+            .circle {
+                width: 30px;
+                height: 30px;
+
+                .line {
+                    height: 4px;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,61 @@
+$fw: 400;
+
+.services {
+    background-image: url(./../../images/backgrounds/background-menu-icon.png);
+    background-position: top left;
+    background-size: cover;
+    min-height: 300px;
+    
+    .services-text{
+        text-align: center;
+        
+        p.small-title{
+            font-size: 1.775em;
+            font-weight: 600;
+        }
+
+        p{
+            @include text(1em, 400, $color-3);
+        }
+    }
+
+    .services-img{
+        overflow: hidden;
+
+        img{
+            max-width: 100%;
+            transition: all .5s;
+        }
+
+        &:hover{
+            img{
+                transform: scale(1.15);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .services{
+        font-size: 15px;
+
+        .services-text{
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .services{
+        .container{
+            max-width: 100%;
+        }
+
+        .services-text{
+            p.small-title{
+                font-size: 1.15em;
+            }
+        }
+        
+    }
+}
