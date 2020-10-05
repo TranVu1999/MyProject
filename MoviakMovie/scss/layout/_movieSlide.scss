@@ -1,0 +1,191 @@
+.movie-slide {
+    height: 570px;
+    padding-top: 90px;
+    padding-bottom: 300px;
+    background-image: url(./../../images/bgs1defa.jpg);
+
+    background-size: cover;
+}
+
+.movie-slide__text {
+    text-align: right;
+    color: $color-4;
+    line-height: 1;
+    margin-top: 100px;
+
+    h1.title {
+        font-weight: bold;
+        font-size: 50px;
+        text-align: left;
+        margin-bottom: 5px;
+
+        strong {
+            color: $color-0;
+        }
+    }
+
+    p.subtitle {
+        font-weight: bold;
+        font-size: 22px;
+        font-style: italic;
+        margin-right: 50px;
+
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    p.text {
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #c2c2c2;
+        margin-right: 60px;
+    }
+
+    p.wr-button {
+        text-align: center;
+
+        a {
+            display: inline-block;
+            text-align: center;
+            line-height: 1.5;
+            font-weight: bold;
+
+            font-size: 14px;
+            color: $color-4;
+            padding: 10px 30px 9px;
+            background: linear-gradient(to right, #bb511e, #f1bc00);
+
+            text-transform: uppercase;
+            border-radius: 50px;
+
+            &:hover {
+                background: linear-gradient(to left, #bb511e, #f1bc00);
+            }
+        }
+    }
+}
+
+.movie-slide__slide{
+
+    [type="radio"] {
+        display: none;
+    }
+    
+    #slider {
+        height: 35vw;
+        position: relative;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+    }
+    
+    #slider label {
+        margin: auto;
+        width: 30%;
+        height: 364px;
+        border-radius: 4px;
+    
+        position: absolute;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+        transition: transform 0.4s ease;
+    
+        -webkit-box-reflect: below -100px linear-gradient(transparent, transparent, #0006);
+        background-size: cover;
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0, .3);
+            color: #fff;
+
+            opacity: 0;
+            transition: all .5s;
+
+            a{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+
+                background-color: $color-0;
+                line-height: 40px;
+                text-align: center;
+                transition: all .5s;
+
+                font-size: 14px;
+
+                &:hover{
+                    color: $color-0;
+                    background-color: $color-4;
+                }
+            }
+        }
+    }
+    
+    #s1:checked ~ #slide4,
+    #s2:checked ~ #slide5,
+    #s3:checked ~ #slide1,
+    #s4:checked ~ #slide2,
+    #s5:checked ~ #slide3 {
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+        transform: translate3d(-200%, 0, -400px);
+    }
+    
+    #s1:checked ~ #slide5,
+    #s2:checked ~ #slide1,
+    #s3:checked ~ #slide2,
+    #s4:checked ~ #slide3,
+    #s5:checked ~ #slide4 {
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        transform: translate3d(-100%, 0, -200px);
+    }
+    
+    #s1:checked ~ #slide1,
+    #s2:checked ~ #slide2,
+    #s3:checked ~ #slide3,
+    #s4:checked ~ #slide4,
+    #s5:checked ~ #slide5 {
+        box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+        transform: translate3d(0, 0, 0);
+    }
+    
+    #s1:checked ~ #slide2,
+    #s2:checked ~ #slide3,
+    #s3:checked ~ #slide4,
+    #s4:checked ~ #slide5,
+    #s5:checked ~ #slide1 {
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        transform: translate3d(100%, 0, -200px);
+    }
+    
+    #s1:checked ~ #slide3,
+    #s2:checked ~ #slide4,
+    #s3:checked ~ #slide5,
+    #s4:checked ~ #slide1,
+    #s5:checked ~ #slide2 {
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+        transform: translate3d(200%, 0, -400px);
+    }
+
+    #s1:checked ~ #slide1,
+    #s2:checked ~ #slide2,
+    #s3:checked ~ #slide3,
+    #s4:checked ~ #slide4,
+    #s5:checked ~ #slide5{
+        &:hover{
+            .overlay{
+                opacity: 1;
+            }
+        }
+    }
+}
+

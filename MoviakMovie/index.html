@@ -21,6 +21,8 @@
     <!-- Bootrap4 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/main.css">
@@ -65,6 +67,83 @@
     <!-- END HEADER -->
 
     <!-- START SLIDE -->
+    <section class="movie-slide">
+        <div class="container">
+            <div class="row movie-slide__content">
+                <div class="col-lg-5 movie-slide__text">
+                    <h1 class="title">WHAT'S ON <strong>TODAY</strong> </h1>
+                    <p class="subtitle">at Moviezone Cinema &amp; Theatres!</p>
+                    <p class="text">All reserved seating - Choose your exact seat!</p>
+                    <p class="wr-button">
+                        <a href="#">Discover Now!</a>
+                    </p>
+                </div>
+                <div class="col-lg-7 movie-slide__slide">
+                    <section id="slider">
+                        <input type="radio" name="slider" id="s1">
+                        <input type="radio" name="slider" id="s2">
+                        <input type="radio" name="slider" id="s3" checked>
+                        <input type="radio" name="slider" id="s4">
+                        <input type="radio" name="slider" id="s5">
+                        <label for="s1" id="slide1" style="background-image: url(./images/mv10.jpg);">
+                            <div class="overlay">
+                                <a href="#" class="popup-movie mr-3">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <a href="#" class="link-movie">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </label>
+
+                        <label for="s2" id="slide2" style="background-image: url(./images/mv11.jpg);">
+                            <div class="overlay">
+                                <a href="#" class="popup-movie mr-3">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <a href="#" class="link-movie">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </label>
+
+                        <label for="s3" id="slide3" style="background-image: url(./images/mv12.jpg);">
+                            <div class="overlay">
+                                <a href="#" class="popup-movie mr-3">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <a href="#" class="link-movie">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </label>
+
+                        <label for="s4" id="slide4" style="background-image: url(./images/mv13.jpg);">
+                            <div class="overlay">
+                                <a href="#" class="popup-movie mr-3">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <a href="#" class="link-movie">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </label>
+
+                        <label for="s5" id="slide5" style="background-image: url(./images/mv14.jpg);">
+                            <div class="overlay">
+                                <a href="#" class="popup-movie mr-3">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <a href="#" class="link-movie">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </label>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- END SLIDE -->
 
     <!-- START TOP MOVIE -->
@@ -130,7 +209,24 @@
     </section>
     <!-- END MOVIE GRID -->
 
+
     <!-- START MOVIE TAB -->
+    <section class="movie-tab">
+        <div class="container">
+            <div class="movie-tab__tab">
+                <label class="active">Now Playing</label>
+                <label>Comming Soon</label>
+                <label>Opening this week</label>
+            </div>
+            <div class="movie-tab__content">
+                <div class="tab-box">
+                    <div class="item">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- END MOVIE TAB -->
 
     <!-- START EVENT & BLOG -->
@@ -152,11 +248,33 @@
                             <a href="#">Another Jurassic Park star joins Thor: Ragnarok</a>
                         </div>
                     </div>
+                    <div class="event_vs_blog__comment">
+                        <div class="left">
+                            <span class="news">News</span>
+                            <i class="fas fa-comments"></i>
+                            1
+                        </div>
+                        <div class="right">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto
+                        </div>
+                    </div>
 
                 </div>
 
                 <div class="col-lg-4 event_vs_blog__item">
-                    <img src="./images/image_7-1-360x430.jpg" alt="event vs blog">
+                    <div class="event_vs_blog__thumb">
+                        <img src="./images/image_7-1-360x430.jpg" alt="event vs blog">
+                        <div class="event_vs_blog__info">
+                            <span class="news">news</span>
+                            <a href="#">5 movies to watch this week (29 Sep 2016)</a>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
 
                 <div class="col-lg-4 event_vs_blog__item">
@@ -174,7 +292,9 @@
                             3
                         </div>
                         <div class="right">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto
                         </div>
                     </div>
                 </div>
@@ -280,6 +400,7 @@
     <!-- BS4 JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 
 </body>
 

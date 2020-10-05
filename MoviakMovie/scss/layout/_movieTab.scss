@@ -1,0 +1,38 @@
+.movie-tab{
+    background-color: $color-1;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.movie-tab__tab{
+    font-size: 30px;
+    font-weight: bold;
+    color: $color-6;
+
+    label{
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover{
+            color: $color-0;
+        }
+
+        &::after{
+            content: '/';
+            font-size: 28px;
+            margin-left: 12px;
+            font-weight: 400;
+            color: $color-6;
+        }
+    }
+
+    label:last-child{
+        &::after{
+            content: '';
+        }
+    }
+
+    label.active{
+        color: $color-0;
+    }
+}
