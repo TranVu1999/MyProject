@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviak.com</title>
+
+    <!-- Logo -->
+    <link rel="icon" type="image/png" href="./images/logo.png">
+
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- Bootrap4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Carousel -->
+
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body id="client-page">
+
+    <!-- START HEADER -->
+    <header>
+        <div class="header__search">
+            <div class="container header__search--box">
+                <div class="header--left">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__center">
+                    <div class="header__search--box">
+                        <input type="text" placeholder="Movie search...">
+                        <button class="btn-search"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="header--right">
+                    <div id="hamburger" class="open">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header__content">
+                <div class="header--left">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="header__nav">
+                    <ul>
+                        <li>
+                            <a href="#">Lịch chiếu</a>
+                        </li>
+                        <li>
+                            <a href="#">Cụm rạp</a>
+                        </li>
+                        <li>
+                            <a href="#">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="#">Ứng dụng</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header--right">
+                    <button class="btn-search toggle-search"><i class="fas fa-search"></i></button>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- START SLIDE -->
+    <section class="movie-banner">
+        <input type="radio" id="movieBanner1" name="choose-item" checked>
+        <input type="radio" id="movieBanner2" name="choose-item">
+        <input type="radio" id="movieBanner3" name="choose-item">
+
+        <div class="movie-banner__slide">
+            <div class="movie-banner__item" style="background-image: url(./../../images/banner5.jpg);">
+            </div>
+            <div class="movie-banner__item" style="background-image: url(./../../images/banner6.png);">
+            </div>
+            <div class="movie-banner__item" style="background-image: url(./../../images/banner7.jpg);">
+            </div>
+        </div>
+        <div class="movie-banner__nav">
+            <div class="nav-item"> <label for="movieBanner1">1</label></div>
+            <div class="nav-item"> <label for="movieBanner2">2</label></div>
+            <div class="nav-item"> <label for="movieBanner3">3</label></div>
+        </div>
+    </section>
+    <!-- END SLIDE -->
+   
+
+    <!-- START EVENT & BLOG -->
+    <section class="event_vs_blog">
+        <div class="section__title">
+            <div class="seperator"></div>
+            <div class="title-box">
+                <h3>Event & blog Cinemas</h3>
+                <p>This is a great space to write long text about your company.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 event_vs_blog__item">
+                    <div class="event_vs_blog__thumb">
+                        <img src="./images/image_11-360x240.jpg" alt="event vs blog">
+                        <div class="event_vs_blog__info">
+                            <span> <span class="num">02</span>APR</span>
+                            <a href="#">Another Jurassic Park star joins Thor: Ragnarok</a>
+                        </div>
+                    </div>
+                    <div class="event_vs_blog__comment">
+                        <div class="left">
+                            <span class="news">News</span>
+                            <i class="fas fa-comments"></i>
+                            1
+                        </div>
+                        <div class="right">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 event_vs_blog__item">
+                    <div class="event_vs_blog__thumb">
+                        <img src="./images/image_7-1-360x430.jpg" alt="event vs blog">
+                        <div class="event_vs_blog__info">
+                            <span class="news">news</span>
+                            <a href="#">5 movies to watch this week (29 Sep 2016)</a>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="col-lg-4 event_vs_blog__item">
+                    <div class="event_vs_blog__thumb">
+                        <img src="./images/image_3-1-360x240.jpg" alt="event vs blog">
+                        <div class="event_vs_blog__info">
+                            <span> <span class="num">02</span>APR</span>
+                            <a href="#">Doctor Strange assembles with the Avengers</a>
+                        </div>
+                    </div>
+                    <div class="event_vs_blog__comment">
+                        <div class="left">
+                            <span class="news">News</span>
+                            <i class="fas fa-comments"></i>
+                            3
+                        </div>
+                        <div class="right">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END EVENT & BLOG -->
+
+    <!-- START FOOTER -->
+    <footer>
+        <div class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 widget">
+                        <a href="#" class="footer-logo">
+                            <img src="./images/img_65.png" alt="logo">
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat</p>
+
+                        <div class="social-contact">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 widget">
+                        <h6 class="widget__title">Custom Services</h6>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Movie</a>
+                            </li>
+                            <li>
+                                <a href="#">Top rated</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 widget">
+                        <h6 class="widget__title">Recent Posts</h6>
+                        <ul>
+                            <li>
+                                <a href="#">Doctor Strange assembles with the Avengers <br> April 2, 2019</a>
+                            </li>
+
+                            <li>
+                                <a href="#">5 movies to watch this week (29 Sep 2016) <br>
+                                    April 2, 2019</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 widget">
+                        <h6 class="widget__title">Contact Us</h6>
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fas fa-location-arrow"></i> 9067 Zurich, Switzerland 87</a>
+                            </li>
+
+                            <li>
+                                <a href="#"><i class="far fa-envelope"></i> abc@gmail.com</a>
+
+                            </li>
+
+                            <li>
+                                <a href="#"><i class="fas fa-phone-alt"></i> <span
+                                        class="highlight">01-234-5678</span></a>
+                            </li>
+                        </ul>
+
+                        <div class="form-contact">
+                            <input type="text" placeholder="Your email address">
+                            <button></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer__bottom">
+                <p>©copyright 2016 Movie</p>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movie</a></li>
+                    <li><a href="#">Top rated</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- END FOOTER -->
+
+    <div id="movie-info__popup">
+        <div class="popup__content">
+            <div class="popup__text">
+                <div id="arow" class="arow-left"></div>
+                <div class="popup__text--top">
+                    <h3>Kubo And The Two Strings</h3>
+                    <p class="rate">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+
+                        <span class="number-vote">(45 Votes)</span>
+                    </p>
+
+                    <div class="d-flex-box">
+                        <span class="limit-age">PG</span>
+                        <p class="movie-time">
+                            <i class="far fa-clock"></i>
+                            02 hours 40 minutes
+                        </p>
+                    </div>
+
+                    <p class="movie-desc">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, Totenham, ...
+                    </p>
+
+                    <p class="movie-table-desc">
+                        <span>Language: </span>English
+                    </p>
+                    <p class="movie-table-desc">
+                        <span>Release Date: </span>July 15, 2017
+                    </p>
+                    <p class="movie-table-desc">
+                        <span>Genre: </span>Magic, Romantic
+                    </p>
+                    <p class="movie-table-desc">
+                        <span>Actor: </span>Alexander Cattly, Greta Garbo
+                    </p>
+
+                    <p class="movie-table-desc">
+                        <span>Director: </span>Grace Belly
+                    </p>
+                </div>
+
+
+                <div class="movie-icon">
+                    <a href="#"><i class="fas fa-play"></i> Detail</a>
+                    <a href="#"><i class="fas fa-info"></i> Detail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- BS4 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/helpers.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- Main Setup -->
+    <script>
+        $(document).ready(function () {
+            // carousel
+            $(".owl-carousel").owlCarousel({
+                margin: 10,
+                loop: true,
+                autoWidth: true,
+                center: true
+            });
+           
+            $('.toggle-search, #hamburger').click(function () {
+                let input_box = $('.header__search');
+                input_box.toggleClass('open');
+            });
+
+        });
+    </script>
+    <script src="./js/carousel.js"></script>
+</body>
+
+</html>

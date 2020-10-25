@@ -67,13 +67,13 @@
             background: -webkit-linear-gradient(left, #bb511e 32%, #f1bc00 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            line-height: .8;
+            line-height: 0.8;
         }
 
-        .big-reason{
+        .big-reason {
             margin-top: 10px;
 
-            .reason-item{
+            .reason-item {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -84,13 +84,13 @@
                 border-top: 1px solid rgba(255, 255, 255, 0.1);
             }
 
-            .reason-item:first-child{
+            .reason-item:first-child {
                 font-size: 15px;
                 color: $color-4;
                 border: none;
             }
 
-            i{
+            i {
                 display: block;
                 border: 2px solid $color-2;
                 width: 44px;
@@ -102,9 +102,147 @@
                 border-radius: 50%;
             }
 
-            span{
+            span {
                 display: block;
                 width: 83%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .movie-grid {
+        .movie-grid__text {
+            .big-reason {
+                margin-top: 0;
+
+                .reason-item {
+                    font-size: 13px;
+                    padding: 15px 0;
+                }
+
+                .reason-item:first-child {
+                    font-size: 15px;
+                    color: $color-4;
+                    border: none;
+                }
+
+                i {
+                    width: 36px;
+                    height: 36px;
+                    font-size: 18px;
+                    line-height: 34px;
+                }
+
+                img{
+                    width: 36px;
+                    height: 36px;
+                }
+
+                span {
+                    display: block;
+                    width: 83%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .movie-grid {
+        .movie-grid__text {
+            margin-top: 50px;
+
+            .big-reason {
+                margin-top: 0;
+                .reason-item {
+                    font-size: 17px;
+                    padding: 20px 0;
+                }
+
+                .reason-item:first-child {
+                    font-size: 20px;
+                    color: $color-4;
+                    border: none;
+                }
+
+                i {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 22px;
+                    line-height: 50px;
+                }
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+
+                span {
+                    display: block;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .movie-grid {
+        .movie-grid__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .movie-grid__text {
+            margin-top: 50px;
+
+            .big-reason {
+                margin-top: 0;
+                
+                span {
+                    display: block;
+                    width: 88%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .movie-grid {
+
+        .movie-grid__text {
+            
+            .big-reason {
+                
+                span {
+                    width: 83%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .movie-grid {
+        .movie-grid__grid {
+            gap: 12px;
+        }
+        .movie-grid__text {
+            
+            
+            .big-reason {
+                .reason-item {
+                    font-size: 14px;
+                }
+
+                .reason-item:first-child {
+                    font-size: 17px;
+                }
+                
+                span {
+                    width: 78%;
+                }
             }
         }
     }

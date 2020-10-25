@@ -2,20 +2,30 @@
 @import "./helpers/variables";
 
 // 2. Vendor
+@import "./vendor/owl.carousel.min.scss";
+@import "./vendor/owl.theme.default.min.scss";
 
 // 3. Base
 @import "./base/reset";
+@import "./base/title";
 
 // 4. Component
 
 // 5. Layout
 @import "./layout/header";
 @import "./layout/movieSlide";
+@import "./layout/movieBanner";
+@import "./layout/movieBannerSingle";
+
+@import "./layout/topMovie";
+@import "./layout/detailInfo";
+
 @import "./layout/movieGrid";
 @import "./layout/movieTab";
 @import "./layout/eventBlog";
 @import "./layout/footer";
 @import "./layout/moviePopup";
+
 
 // 6. Page
 

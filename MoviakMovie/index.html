@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <!-- Carousel -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/main.css">
@@ -32,35 +32,66 @@
 
     <!-- START HEADER -->
     <header>
+        <div class="header__search">
+            <div class="container header__search--box">
+                <div class="header--left">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__center">
+                    <div class="header__search--box">
+                        <input type="text" placeholder="Movie search...">
+                        <button class="btn-search"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="header--right">
+                    <div id="hamburger" class="open">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <div class="header__content">
-                <div class="header__logo">
-                    <a href="#">
-                        <img src="./images/logo.png" alt="logo">
-                    </a>
+                <div class="header--left">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./images/logo.png" alt="logo">
+                        </a>
+                    </div>
                 </div>
+
                 <nav class="header__nav">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#">Lịch chiếu</a>
                         </li>
                         <li>
-                            <a href="#">Movie</a>
+                            <a href="#">Cụm rạp</a>
                         </li>
                         <li>
-                            <a href="#">Single Movie</a>
+                            <a href="#">Tin tức</a>
                         </li>
                         <li>
-                            <a href="#">Single Cinema</a>
-                        </li>
-                        <li>
-                            <a href="#">ShowTime</a>
-                        </li>
-                        <li>
-                            <a href="#">Top Rate</a>
+                            <a href="#">Ứng dụng</a>
                         </li>
                     </ul>
                 </nav>
+
+                <div class="header--right">
+                    <button class="btn-search toggle-search"><i class="fas fa-search"></i></button>
+                </div>
+
+
             </div>
         </div>
     </header>
@@ -147,6 +178,16 @@
     <!-- END SLIDE -->
 
     <!-- START TOP MOVIE -->
+    <section class="top-movie">
+        <div class="section__title">
+            <div class="seperator"></div>
+            <div class="title-box">
+                <h3>Hot sale in <span class="highlight">theatres</span></h3>
+                <p>at Moviak Cinema & Theatre</p>
+            </div>
+        </div>
+
+    </section>
     <!-- END TOP MOVIE -->
 
     <!-- START MOVIE GRID -->
@@ -302,7 +343,7 @@
 
     <!-- START EVENT & BLOG -->
     <section class="event_vs_blog">
-        <div class="event_vs_blog__title">
+        <div class="section__title">
             <div class="seperator"></div>
             <div class="title-box">
                 <h3>Event & blog Cinemas</h3>
@@ -379,7 +420,7 @@
         <div class="footer__top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 widget">
+                    <div class="col-md-6 col-lg-3 widget">
                         <a href="#" class="footer-logo">
                             <img src="./images/img_65.png" alt="logo">
                         </a>
@@ -393,7 +434,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 widget">
+                    <div class="col-md-6 col-lg-3 widget">
                         <h6 class="widget__title">Custom Services</h6>
                         <ul>
                             <li>
@@ -408,7 +449,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 widget">
+                    <div class="col-md-6 col-lg-3 widget">
                         <h6 class="widget__title">Recent Posts</h6>
                         <ul>
                             <li>
@@ -422,7 +463,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 widget">
+                    <div class="col-md-6 col-lg-3 widget">
                         <h6 class="widget__title">Contact Us</h6>
                         <ul>
                             <li>
@@ -528,9 +569,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+    <!-- carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+
     <!-- MAIN JS -->
     <script src="./js/helpers.js"></script>
     <script src="./js/main.js"></script>
+    <!-- Main Setup -->
+    <script>
+        $(document).ready(function () {
+            // carousel
+            $(".owl-carousel").owlCarousel({
+                margin: 10,
+                loop: true,
+                autoWidth: true,
+                center: true
+            });
+
+            // $('#hamburger').click(function () {
+            //     $(this).toggleClass('open');
+            // });
+
+            $('.toggle-search, #hamburger').click(function () {
+                let input_box = $('.header__search');
+                input_box.toggleClass('open');
+            });
+
+        });
+    </script>
+    <script src="./js/carousel.js"></script>
 </body>
 
 </html>

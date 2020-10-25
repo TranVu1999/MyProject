@@ -24,6 +24,7 @@ footer{
     }
 
     .social-contact{
+        margin-top: 15px;
         a{
             display: inline-block;
             width: 42px;
@@ -40,6 +41,10 @@ footer{
                 color: $color-4;
             }
         }
+    }
+
+    .widget{
+        margin-bottom: 30px;
     }
 
     .widget__title{
@@ -65,6 +70,7 @@ footer{
     }
 
     .form-contact{
+        margin-top: 10px;
         background-color: rgba(255, 255, 255, .3);
         display: flex;
         justify-content: space-between;

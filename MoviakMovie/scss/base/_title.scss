@@ -1,0 +1,44 @@
+.section__title {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+
+    .seperator {
+        background-image: url(./../../images/seperator-bg-2.png);
+        background-repeat: repeat-x center;
+        height: 8px;
+        position: absolute;
+
+        width: 100%;
+        top: 40%;
+        left: 0;
+        transform: translateY(-50%);
+
+        z-index: 0;
+    }
+
+    .title-box {
+        position: relative;
+        z-index: 1;
+    }
+
+    h3 {
+        font-size: 35px;
+        font-weight: 700;
+        color: $color-5;
+        margin: 0;
+
+        display: inline-block;
+        background-color: $color-4;
+        padding: 0 20px;
+    }
+
+    p {
+        font-size: 13px;
+        color: #333;
+    }
+
+    .highlight{
+        color: $color-0;
+    }
+}

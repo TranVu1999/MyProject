@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="http://s3.envato.com/" />
+
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Tenguu Cinema - Movie theatre HTML Template Preview - ThemeForest</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+
+
+    <link rel="stylesheet" media="all"
+        href="https://public-assets.envato-static.com/assets/market/pages/preview/index-004d35cdd5d555cdd3e956d1b916825642de06529f0fe91fd9f390813761d2fc.css" />
+
+    <script
+        src="https://public-assets.envato-static.com/assets/market/pages/full_screen_preview/index-2c12fc39369c8fd74437929c25ec33414443e9d60bf92046695d572209de3cfa.js"
+        nonce="FEXNC6kwrjxBRxCNYt9J+Q=="></script>
+
+    <script nonce="FEXNC6kwrjxBRxCNYt9J+Q==">
+        //<![CDATA[
+        //function to fix height of iframe!
+        var calcHeight = function () {
+            var headerDimensions = $('.preview__header').height();
+            $('.full-screen-preview__frame').height($(window).height() - headerDimensions);
+        }
+
+        $(document).ready(function () {
+            calcHeight();
+        });
+
+        $(window).resize(function () {
+            calcHeight();
+        }).load(function () {
+            calcHeight();
+        });
+    </script>
+
+</head>
+
+<body class="full-screen-preview">
+    <div class="preview__header" data-view="ctaHeader">
+        <div class="preview__envato-logo">
+            <a href="https://themeforest.net/item/tenguu-cinema-movie-theatre-html-template/19443190">Envato Market</a>
+        </div>
+
+        <div class="preview__actions">
+            <div class="preview__action--buy">
+                <a class="e-btn--3d -color-primary"
+                    href="https://themeforest.net/item/tenguu-cinema-movie-theatre-html-template/19443190">Buy now</a>
+            </div>
+
+            <div class="preview__action--close">
+                <a href="http://template.themeton.com/tenguu-html">
+                    <i class="e-icon -icon-cancel"></i><span>Remove Frame</span>
+                </a> </div>
+        </div>
+    </div>
+    <iframe class="full-screen-preview__frame" src="http://template.themeton.com/tenguu-html" name="preview-frame"
+        frameborder="0" noresize="noresize" data-view="fullScreenPreview" allow="geolocation 'self'; autoplay 'self'">
+    </iframe>
+
+</body>
+
+</html>
