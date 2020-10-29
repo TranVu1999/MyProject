@@ -1,12 +1,16 @@
-.detail-info__content {
+.entry-info {
+    margin-top: -310px;
+}
+
+.entry-info__content {
     display: flex;
-    .detail-info--left {
-    }
-    .detail-info--right {
+    
+    .entry-info--right {
         margin-left: 80px;
         flex-grow: 1;
 
         .info-box {
+            padding: 15px 30px 30px;
             color: $color-4;
             background: linear-gradient(
                 to right,
@@ -15,5 +19,120 @@
                 rgba(0, 0, 0, 0.01) 100%
             );
         }
+
+        h3.title {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .entry-pg {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            margin-bottom: 30px;
+
+            .pg {
+                background-color: $color-0;
+                color: white;
+                font-weight: bold;
+                padding: 4px 8px;
+
+                text-transform: uppercase;
+                margin-right: 18px;
+            }
+
+            .duration{
+                font-size: 13px;
+                color: $color-0;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 6px;
+
+            label {
+                font-weight: bold;
+                width: 90px;
+                margin: 0;
+            }
+            span {
+                color: $color-2;
+            }
+        }
+    }
+}
+
+.entry-action{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+
+    padding-left: 30px;
+}
+
+.entry-rate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    i{
+        color: $color-8;
+    }
+
+    .entry-rate__votes{
+        font-size: 13px;
+        color: $color-7 ;
+    }
+
+    .entry-rate__avg{
+        margin-left: 25px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+
+        background-color: $color-8;
+        line-height: 45px;
+        text-align: center;
+        color: $color-4;
+
+        font-weight: bold;
+    }
+}
+
+.entry-share{
+    color: $color-1;
+    font-weight: bold;
+
+    .icon{
+        color: $color-7;
+        font-size: 13px;
+        margin-right: 4px;
+        margin-left: 4px;
+
+        transition:  all .5s;
+
+        &:hover{
+            color: $color-8;
+        }
+    }
+}
+
+.entry-content{
+    color: $color-7;
+    line-height: 1.5;
+    padding-left: 30px;
+
+    h3.info-name{
+        color: $color-0;
+        font-weight: bold;
+        font-size: 32px;
+    }
+    p{
+        margin-bottom: 10px;
+        font-size: 13px!important;
+        text-align: justify;
     }
 }
