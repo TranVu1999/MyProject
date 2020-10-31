@@ -1,0 +1,127 @@
+.today-film {
+    background-color: $color-1;
+    padding-top: 40px;
+
+    &>div{
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .today-film__content {
+        background: -webkit-radial-gradient(center, 50% 70%, transparent, black);
+        min-height: 500px;
+        padding-top: 20px;
+    }  
+
+    .movie-item{
+        display: flex;
+        align-items: center;
+        position: relative;
+        border-top: 1px dotted $color-7;
+
+        background-color: rgba(0,0,0,.5);
+        cursor: pointer;
+
+        .item-thumb {
+            width: 66px;
+            height: 83px;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    
+        .item-num {
+            padding: 10px 15px;
+            font-size: 16px;
+            text-align: center;
+            color: $color-4;
+        }
+
+        .item-name {
+            font-size: 13px;
+            .movie-name {
+                font-size: 16px;
+                font-weight: 700;
+                color: #999999;
+                margin: 0 0 2px 0;
+                text-transform: capitalize;
+            }
+        }
+
+        .item-score {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: $color-0;
+    
+            color: $color-5;
+            font-size: 15px;
+            text-align: center;
+            line-height: 36px;
+
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            right: 15px;
+
+            transform: translateY(-50%);
+        }
+    }
+
+    .movie-item:last-child{
+        border-bottom: 1px dotted $color-7;
+    }
+
+    .movie-item.active{
+        background-color: $color-41;
+    }
+
+    .movie-play{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 460px;
+        color: $color-4;
+
+        .movie-popup{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: right;
+            line-height: .7;
+
+            .movie-popup__left{
+                padding: 20px 25px 20px 0;
+                margin-right: 25px;
+                border-right: 2px solid $color-0;
+            }
+
+            span{
+                font-size: 16px;
+            }
+
+            button{
+                width: 80px;
+                height: 80px;
+                font-size: 32px;
+                color: $color-6;
+
+                border-radius: 50%;
+                cursor: pointer;
+                transition: all .5s;
+
+                &:hover{
+                    background-color: $color-0;
+                }
+            }
+        }
+    }
+}
