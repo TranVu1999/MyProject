@@ -1,0 +1,51 @@
+.footer {
+    margin-top: 50px;
+}
+
+.footer__top {
+    .back-to-top {
+        text-transform: uppercase;
+        color: #fff;
+        background-color: $color-0;
+        font-size: 1.8rem;
+
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+
+        padding: $p-1 0;
+        display: block;
+        transition: background-color .4s;
+
+        &:hover{
+            background-color: #cb3000;
+        }
+
+        &::before {
+            content: "";
+
+            display: inline-block;
+            background: url(./../../images/icon-image.png) no-repeat -372px -27px;
+            width: 11px;
+            height: 15px;
+
+            margin-right: $m-4;
+        }
+
+        &::after {
+            content: "";
+
+            display: inline-block;
+            background: url(./../../images/icon-image.png) no-repeat -372px -27px;
+            width: 11px;
+            height: 15px;
+
+            margin-left: $m-4;
+            transform: rotate(180deg);
+        }
+    }
+
+    .footer__cart{
+        
+    }
+}

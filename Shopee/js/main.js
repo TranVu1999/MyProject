@@ -10,3 +10,19 @@ $('.owl-carousel.main-slide__carousel').owlCarousel({
     autoplayHoverPause: true,
     slideBy: 1
 })
+
+$('.owl-carousel.brand__carousel').owlCarousel({
+    margin: 10,
+    nav: true,
+    dots: false,
+    items: 6,
+    slideBy: 1
+})
+
+$('.owl-carousel.post__carousel').owlCarousel({
+    margin: 10,
+    nav: true,
+    dots: false,
+    items: 4,
+    slideBy: 1
+})

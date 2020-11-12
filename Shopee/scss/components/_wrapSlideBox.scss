@@ -1,0 +1,16 @@
+.wrap-slide-box{
+    .owl-nav{
+        button{
+            position: absolute;
+            top: -50px;
+        }
+
+        button.owl-prev{
+            right: 40px;
+        }
+
+        button.owl-next{
+            right: 0;
+        }
+    }
+}

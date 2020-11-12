@@ -2,11 +2,23 @@
     position: relative;
 
     .owl-nav {
-        display: none!important;
+        display: none !important;
         button {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
+            width: 40px;
+            height: 50px;
+
+            background-color: $seccond-bg-color !important;
+
+            &:hover {
+                background-color: $color-0 !important;
+            }
+
+            &::before {
+                font-size: 2.2rem;
+            }
         }
 
         button.owl-prev {
@@ -17,32 +29,31 @@
         }
     }
 
-    &:hover{
-        .owl-nav{
-            display: block!important;
+    &:hover {
+        .owl-nav {
+            display: block !important;
         }
     }
 
-    .owl-dots{
+    .owl-dots {
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
 
-        .owl-dot{
-            span{
-                background-color: #666!important;
+        .owl-dot {
+            span {
+                background-color: #666 !important;
             }
 
-            &:hover span{
-                background-color: $color-0!important;
+            &:hover span {
+                background-color: $color-0 !important;
             }
         }
-        .owl-dot.active{
-            span{
-                background-color: $color-0!important;
+        .owl-dot.active {
+            span {
+                background-color: $color-0 !important;
             }
         }
     }
-
 }

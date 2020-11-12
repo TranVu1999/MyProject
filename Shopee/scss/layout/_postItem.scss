@@ -1,0 +1,111 @@
+.post__item {
+    color: $color-2;
+    line-height: 1.5;
+    .post__item--thumb {
+        position: relative;
+
+        &:hover{
+            opacity: .8;
+        }
+
+        .post__item--time {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: $color-0;
+
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            padding-top: $p-1;
+
+            font-size: 1.4rem;
+            text-align: center;
+            z-index: 1;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+
+                width: 100%;
+                height: 50px;
+                display: block;
+
+                background-color: $color-0;
+                clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+                transform: rotate(-90deg) translateX(-15px);
+                z-index: -1;
+            }
+
+            .date {
+                font-size: 1.7rem;
+                display: block;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .post__item--title {
+        color: $color-1;
+        font-size: 1.7rem;
+        display: block;
+        max-width: 95%;
+
+        font-weight: 400;
+        line-height: 1.2;
+        margin: $m-2 0 $m-1;
+        transition: color .5s;
+
+        &:hover{
+            color: $color-0;
+        }
+    }
+
+    .post__item--sub {
+        display: block;
+        display: -webkit-box;
+        max-width: 95%;
+        font-size: 1.5rem;
+        
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .post__item--link{
+        font-size: 1.8rem;
+        display: inline-block;
+        color: $color-0;
+        position: relative;
+
+        padding: $p-0 $p-2 0;
+
+        &::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            background-color: $color-0;
+            z-index: -1;
+
+            transition: height .3s;
+        }
+
+        &:hover::after{
+            height: 100%;
+        }
+
+        &:hover{
+            color: #fff;
+        }
+
+        
+    }
+}
