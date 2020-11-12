@@ -26,3 +26,11 @@ $('.owl-carousel.post__carousel').owlCarousel({
     items: 4,
     slideBy: 1
 })
+
+$('.owl-carousel.product__carousel').owlCarousel({
+    margin: 10,
+    nav: true,
+    dots: false,
+    items: 4,
+    slideBy: 1
+})

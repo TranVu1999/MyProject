@@ -11,7 +11,9 @@
 
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -204,7 +206,7 @@
             <!-- END MAIN SLIDE -->
 
             <!-- START BANNER -->
-            <div class="container banner">
+            <div class="banner">
                 <div class="row">
                     <div class="col-lg-6">
                         <a href="#" class="d-block banner__box">
@@ -220,197 +222,228 @@
             </div>
             <!-- END BANNER -->
 
-            <!-- START PRODUCT SLIDER -->
-            <!-- END PRODUCT SLIDER -->
-
             <!-- START BRAND SLIDER -->
             <div class="brand-slider">
-                <div class="container">
-                    <div class="wrap-slide-box">
-                        <div class="title-box">
-                            <h3 class="sub-title">Feature Brand</h3>
-                            <div class="line-title"></div>
+                <div class="wrap-slide-box">
+                    <div class="title-box">
+                        <h3 class="sub-title">Feature Brand</h3>
+                        <div class="line-title"></div>
+                    </div>
+                    <div class="owl-carousel owl-theme brand__carousel">
+                        <div class="item">
+                            <a href="#" class="item__img">
+                                <img src="./images/brand1.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="owl-carousel owl-theme brand__carousel">
-                            <div class="item">
-                                <a href="#" class="item__img">
-                                    <img src="./images/brand1.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="item__img">
-                                    <img src="./images/brand2.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="item__img">
-                                    <img src="./images/brand3.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="item__img">
-                                    <img src="./images/brand4.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="item__img">
-                                    <img src="./images/brand5.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="item__img">
-                                    <img src="./images/brand6.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="item__img">
-                                    <img src="./images/brand7.jpg" alt="">
-                                </a>
-                            </div>
+                        <div class="item">
+                            <a href="#" class="item__img">
+                                <img src="./images/brand2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="item__img">
+                                <img src="./images/brand3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="item__img">
+                                <img src="./images/brand4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="item__img">
+                                <img src="./images/brand5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="item__img">
+                                <img src="./images/brand6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="item__img">
+                                <img src="./images/brand7.jpg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- END BRAND SLIDER -->
 
+            <!-- START PRODUCT SLIDER -->
+            <div class="product-slider">
+                <div class="wrap-slide-box">
+                    <div class="title-box">
+                        <h3 class="sub-title">New Arrivals</h3>
+                        <div class="line-title"></div>
+                    </div>
+                    <div class="owl-carousel owl-theme product__carousel">
+                        <div class="item">
+                            <div class="product-item">
+                                <div class="product-item__thumb">
+                                    <div class="product-item__overlay"></div>
+                                    <img src="./images/pro1.png" alt="">
+                                    <ul class="product-item__action">
+                                        <li><button title="Add to cart"><i class="fas fa-shopping-cart"></i></button>
+                                        </li>
+                                        <li><button title="Add to cart"><i class="fas fa-heart"></i></button></li>
+                                        <li><button title="Add to cart"><i class="fas fa-retweet"></i></button></li>
+                                        <li><button title="Add to cart"><i class="far fa-eye"></i></button></li>
+                                    </ul>
+                                </div>
+                                <div class="ellipsis-text product-item__title">
+                                    <a href="#">Fuhlen Mouse for Gamer Mutil Size And Color </a>
+                                </div>
+
+                                <div class="product-item__price">$450.00</div>
+                                <div class="product-item__rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END PRODUCT SLIDER -->
+
             <!-- START GRID BANNER -->
             <div class="grid-banner">
-                <div class="container">
-                    <div class="grid-banner__content">
-                        <a href="#" class="d-block banner__box grid-item-1">
-                            <img src="./images/banner6.jpg" alt="">
-                        </a>
-                        <a href="#" class="d-block banner__box">
-                            <img src="./images/banner7.jpg" alt="">
-                        </a>
-                        <a href="#" class="d-block banner__box">
-                            <img src="./images/banner8.jpg" alt="">
-                        </a>
-                        <a href="#" class="d-block banner__box grid-item-1 grid-last-item">
-                            <img src="./images/banner9.jpg" alt="">
-                        </a>
-                    </div>
+                <div class="grid-banner__content">
+                    <a href="#" class="d-block banner__box grid-item-1">
+                        <img src="./images/banner6.jpg" alt="">
+                    </a>
+                    <a href="#" class="d-block banner__box">
+                        <img src="./images/banner7.jpg" alt="">
+                    </a>
+                    <a href="#" class="d-block banner__box">
+                        <img src="./images/banner8.jpg" alt="">
+                    </a>
+                    <a href="#" class="d-block banner__box grid-item-1 grid-last-item">
+                        <img src="./images/banner9.jpg" alt="">
+                    </a>
                 </div>
             </div>
             <!-- END GRID BANNER -->
 
             <!-- START LATEST POST -->
             <div class="latest-post-slider">
-                <div class="container">
-                    <div class="wrap-slide-box">
-                        <div class="title-box">
-                            <h3 class="sub-title">Latest Blog</h3>
-                            <div class="line-title"></div>
+                <div class="wrap-slide-box">
+                    <div class="title-box">
+                        <h3 class="sub-title">Latest Blog</h3>
+                        <div class="line-title"></div>
+                    </div>
+                    <div class="owl-carousel owl-theme post__carousel">
+                        <div class="item">
+                            <div href="#" class="post__item">
+                                <a href="#">
+                                    <div class="post__item--thumb">
+                                        <img src="./images/post1.jpg" alt="">
+                                        <div class="post__item--time">
+                                            <span class="date">19</span>
+                                            <span class="month">Jun</span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="ellipsis-text post__item--title">Moving from Ticket System to
+                                    Forum</a>
+
+                                <p class="ellipsis-text post__item--sub">Tips and tricks on what you can do with
+                                    your new Fire TV Cube. Happy streaming! </p>
+                                <div class="text-right">
+                                    <a href="#" class="post__item--link">Read More</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="owl-carousel owl-theme post__carousel">
-                            <div class="item">
-                                <div href="#" class="post__item">
-                                    <a href="#">
-                                        <div class="post__item--thumb">
-                                            <img src="./images/post1.jpg" alt="">
-                                            <div class="post__item--time">
-                                                <span class="date">19</span>
-                                                <span class="month">Jun</span>
-                                            </div>
+                        <div class="item">
+                            <div href="#" class="post__item">
+                                <a href="#">
+                                    <div class="post__item--thumb">
+                                        <img src="./images/post2.jpg" alt="">
+                                        <div class="post__item--time">
+                                            <span class="date">19</span>
+                                            <span class="month">Jun</span>
                                         </div>
-                                    </a>
-
-                                    <a href="#" class="ellipsis-text post__item--title">Moving from Ticket System to
-                                        Forum</a>
-
-                                    <p class="ellipsis-text post__item--sub">Tips and tricks on what you can do with
-                                        your new Fire TV Cube. Happy streaming! </p>
-                                    <div class="text-right">
-                                        <a href="#" class="post__item--link">Read More</a>
                                     </div>
+                                </a>
+
+                                <a href="#" class="ellipsis-text post__item--title">Moving from Ticket System to
+                                    Forum</a>
+
+                                <p class="ellipsis-text post__item--sub">Tips and tricks on what you can do with
+                                    your new Fire TV Cube. Happy streaming! </p>
+                                <div class="text-right">
+                                    <a href="#" class="post__item--link">Read More</a>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div href="#" class="post__item">
-                                    <a href="#">
-                                        <div class="post__item--thumb">
-                                            <img src="./images/post2.jpg" alt="">
-                                            <div class="post__item--time">
-                                                <span class="date">19</span>
-                                                <span class="month">Jun</span>
-                                            </div>
+                        </div>
+                        <div class="item">
+                            <div href="#" class="post__item">
+                                <a href="#">
+                                    <div class="post__item--thumb">
+                                        <img src="./images/post3.jpg" alt="">
+                                        <div class="post__item--time">
+                                            <span class="date">19</span>
+                                            <span class="month">Jun</span>
                                         </div>
-                                    </a>
-
-                                    <a href="#" class="ellipsis-text post__item--title">Moving from Ticket System to
-                                        Forum</a>
-
-                                    <p class="ellipsis-text post__item--sub">Tips and tricks on what you can do with
-                                        your new Fire TV Cube. Happy streaming! </p>
-                                    <div class="text-right">
-                                        <a href="#" class="post__item--link">Read More</a>
                                     </div>
+                                </a>
+
+                                <a href="#" class="ellipsis-text post__item--title">Moving from Ticket System to
+                                    Forum</a>
+
+                                <p class="ellipsis-text post__item--sub">Tips and tricks on what you can do with
+                                    your new Fire TV Cube. Happy streaming! </p>
+                                <div class="text-right">
+                                    <a href="#" class="post__item--link">Read More</a>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div href="#" class="post__item">
-                                    <a href="#">
-                                        <div class="post__item--thumb">
-                                            <img src="./images/post3.jpg" alt="">
-                                            <div class="post__item--time">
-                                                <span class="date">19</span>
-                                                <span class="month">Jun</span>
-                                            </div>
+                        </div>
+                        <div class="item">
+                            <div href="#" class="post__item">
+                                <a href="#">
+                                    <div class="post__item--thumb">
+                                        <img src="./images/post4.jpg" alt="">
+                                        <div class="post__item--time">
+                                            <span class="date">19</span>
+                                            <span class="month">Jun</span>
                                         </div>
-                                    </a>
-
-                                    <a href="#" class="ellipsis-text post__item--title">Moving from Ticket System to
-                                        Forum</a>
-
-                                    <p class="ellipsis-text post__item--sub">Tips and tricks on what you can do with
-                                        your new Fire TV Cube. Happy streaming! </p>
-                                    <div class="text-right">
-                                        <a href="#" class="post__item--link">Read More</a>
                                     </div>
+                                </a>
+
+                                <a href="#" class="ellipsis-text post__item--title">Moving from Ticket System to
+                                    Forum</a>
+
+                                <p class="ellipsis-text post__item--sub">Tips and tricks on what you can do with
+                                    your new Fire TV Cube. Happy streaming! </p>
+                                <div class="text-right">
+                                    <a href="#" class="post__item--link">Read More</a>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div href="#" class="post__item">
-                                    <a href="#">
-                                        <div class="post__item--thumb">
-                                            <img src="./images/post4.jpg" alt="">
-                                            <div class="post__item--time">
-                                                <span class="date">19</span>
-                                                <span class="month">Jun</span>
-                                            </div>
+                        </div>
+                        <div class="item">
+                            <div href="#" class="post__item">
+                                <a href="#">
+                                    <div class="post__item--thumb">
+                                        <img src="./images/post5.jpg" alt="">
+                                        <div class="post__item--time">
+                                            <span class="date">19</span>
+                                            <span class="month">Jun</span>
                                         </div>
-                                    </a>
-
-                                    <a href="#" class="ellipsis-text post__item--title">Moving from Ticket System to
-                                        Forum</a>
-
-                                    <p class="ellipsis-text post__item--sub">Tips and tricks on what you can do with
-                                        your new Fire TV Cube. Happy streaming! </p>
-                                    <div class="text-right">
-                                        <a href="#" class="post__item--link">Read More</a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div href="#" class="post__item">
-                                    <a href="#">
-                                        <div class="post__item--thumb">
-                                            <img src="./images/post5.jpg" alt="">
-                                            <div class="post__item--time">
-                                                <span class="date">19</span>
-                                                <span class="month">Jun</span>
-                                            </div>
-                                        </div>
-                                    </a>
+                                </a>
 
-                                    <a href="#" class="ellipsis-text post__item--title">Moving from Ticket System to
-                                        Forum</a>
+                                <a href="#" class="ellipsis-text post__item--title">Moving from Ticket System to
+                                    Forum</a>
 
-                                    <p class="ellipsis-text post__item--sub">Tips and tricks on what you can do with
-                                        your new Fire TV Cube. Happy streaming! </p>
-                                    <div class="text-right">
-                                        <a href="#" class="post__item--link">Read More</a>
-                                    </div>
+                                <p class="ellipsis-text post__item--sub">Tips and tricks on what you can do with
+                                    your new Fire TV Cube. Happy streaming! </p>
+                                <div class="text-right">
+                                    <a href="#" class="post__item--link">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -425,8 +458,7 @@
         <!-- START PRODUCT SLIDER -->
         <!-- END PRODUCT SLIDER -->
 
-        <!-- START PRODUCT SLIDER -->
-        <!-- END PRODUCT SLIDER -->
+
 
 
         <!-- END PAGE MAIN -->
@@ -435,11 +467,175 @@
         <footer class="footer">
             <div class="footer__top">
                 <a href="#" class="back-to-top">Back To Top</a>
-
-                <div class="container footer__cart"></div>
+                <div class="container footer__cart--grid">
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-1.png" alt="">
+                        <span>Automotive & Industrial</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-2.png" alt="">
+                        <span>Beauty & Health</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-3.png" alt="">
+                        <span>Books & Audible</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-4.png" alt="">
+                        <span>Clothing, Shoes & Jewelry</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-5.png" alt="">
+                        <span>Cellphones & Wearables</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-6.png" alt="">
+                        <span>Electonics & Computers</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-7.png" alt="">
+                        <span>Food & Grocery</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-8.png" alt="">
+                        <span>Handmade</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-9.png" alt="">
+                        <span>Home Services</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-10.png" alt="">
+                        <span>Home, Garden & Tools</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-11.png" alt="">
+                        <span>Office & Stationery</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-12.png" alt="">
+                        <span>Pet Supplies</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-13.png" alt="">
+                        <span>Sport & Outdoors</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-14.png" alt="">
+                        <span>Toys, Kids & Baby</span>
+                    </a>
+                    <a href="#" class="footer__cart--item">
+                        <img src="./images/cat-15.png" alt="">
+                        <span>Devices Storage</span>
+                    </a>
+                </div>
             </div>
-            <div class="footer__middle"></div>
-            <div class="footer__bottom"></div>
+            <div class="footer__middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="footer__block">
+                                <h4 class="block-title">Customer Service</h4>
+                                <ul class="menu">
+                                    <li><a href="#">International Help</a></li>
+                                    <li><a href="#">Contact Customer Care</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="#">Primary Policy</a></li>
+                                    <li><a href="#">Shipping Infomation</a></li>
+                                    <li><a href="#">Promotion Terms</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="footer__block">
+                                <h4 class="block-title">Let us help you</h4>
+                                <ul class="menu">
+                                    <li><a href="#">Your Account</a></li>
+                                    <li><a href="#">Your Orders</a></li>
+                                    <li><a href="#">Shipping Rate & Policies</a></li>
+                                    <li><a href="#">Amazon Prime</a></li>
+                                    <li><a href="#">Return & Replacements</a></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="footer__block">
+                                <h4 class="block-title">Company Infomation</h4>
+                                <ul class="menu">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Sell on Metro</a></li>
+                                    <li><a href="#">Press & News</a></li>
+                                    <li><a href="#">Competitions</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="footer__block">
+                                <h4 class="block-title">Our Shop</h4>
+                                <ul class="menu">
+                                    <li><a href="#">Daily Deals</a></li>
+                                    <li><a href="#">App Only Deals</a></li>
+                                    <li><a href="#">Our Hottest Products</a></li>
+                                    <li><a href="#">Gift Vouchers</a></li>
+                                    <li><a href="#">Trending Product</a></li>
+                                    <li><a href="#">Hot Flash Sale</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer__block">
+                                <h4 class="block-title">NEWSLETTER SUBSCRIBE</h4>
+                                <p>Enter your email address for our mailing list to keep yourself update</p>
+                                <form class="footer__form">
+                                    <input type="text" placeholder="Your email address">
+                                    <button>Subscribe</button>
+                                </form>
+
+                                <h4 class="block-title">DOWNLOAD OUR APPS</h4>
+                                <div class="footer__app">
+                                    <a href="#" class="app--google-play"><img src="./images/google-play.png" alt=""></a>
+                                    <a href="#" class="app--store"><img src="./images/app-store.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="quick-tag">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Garden, Pool &amp; Patio</a></li>
+                            <li><a href="#">Camping &amp; Outdoor</a></li>
+                            <li><a href="#">Office &amp; Stationery</a></li>
+                            <li><a href="#">Luggage &amp; Travel</a></li>
+                            <li><a href="#">Health &amp; Beauty</a></li>
+                            <li><a href="#">PetsSport</a></li>
+                            <li><a href="#">Home &amp; Kitchen</a></li>
+                            <li><a href="#">Baby &amp; Toddler</a></li>
+                            <li><a href="#">Computers / Cameras</a></li>
+                            <li><a href="#">TV, Audio &amp; Video</a></li>
+                            <li><a href="#">Cellular &amp; GPS</a></li>
+                            <li><a href="#">Movies &amp; TV</a></li>
+                            <li><a href="#">Gaming</a></li>
+                            <li><a href="#">Books</a></li>
+                            <li><a href="#">Music</a></li>
+                            <li><a href="#">Toys</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Vouchers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container d-flex-between">
+                    <div class="footer__banking">
+                        <img src="./images/payment-footer.png" alt="">
+                    </div>
+                    <span class="footer__copyright">SM Shopee © 2018 Magento. All rights reserved.</span>
+                </div>
+            </div>
         </footer>
         <!-- END FOOTER -->
 

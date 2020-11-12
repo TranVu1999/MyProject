@@ -1,8 +1,14 @@
 .footer {
     margin-top: 50px;
+    a{
+        &:hover{
+            color: $color-0;
+        }
+    }
 }
 
 .footer__top {
+    border-bottom: 2px solid #e5e5e5;
     .back-to-top {
         text-transform: uppercase;
         color: #fff;
@@ -13,11 +19,11 @@
         font-weight: bold;
         letter-spacing: 2px;
 
-        padding: $p-1 0;
+        padding: $p-2 0;
         display: block;
-        transition: background-color .4s;
+        transition: background-color 0.4s;
 
-        &:hover{
+        &:hover {
             background-color: #cb3000;
         }
 
@@ -45,7 +51,106 @@
         }
     }
 
-    .footer__cart{
+    .footer__cart--grid {
+        padding: 50px 0 30px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(5, 1fr);
+
+        .footer__cart--item {
+            display: block;
+            border: 1px solid #e5e5e5;
+            line-height: 50px;
+            font-size: 1.4rem;
+
+            transition: all 0.4s;
+
+            &:hover {
+                border-color: $color-0;
+                color: $color-0;
+            }
+        }
+    }
+}
+
+.footer__middle {
+    padding: 40px 0;
+    .footer__block {
+        font-size: 1.5rem;
+        .block-title {
+            text-transform: uppercase;
+            color: #222;
+            font-size: 1.7rem;
+            margin-bottom: $m-3;
+
+            font-weight: bold;
+        }
+
+        .menu {
+            text-transform: capitalize;
+            li {
+                margin-bottom: $m-2;
+            }
+        }
+
+        .footer__form {
+            width: 100%;
+            margin-bottom: 30px;
+            input {
+                border: 1px solid #e5e5e5;
+                padding: $p-2 $p-3;
+                width: calc(100% - 120px);
+
+                &:focus {
+                    border-color: $color-0;
+                }
+            }
+            button {
+                background-color: $color-0;
+                padding: $p-2 $p-3;
+                min-width: 100px;
+                margin-left: -5px;
+
+                border: 1px solid $color-0;
+            }
+        }
+
+        .footer__app {
+            display: flex;
+
+            .app--google-play {
+                margin-right: $m-1;
+            }
+            .app--store {
+                margin-left: $m-1;
+            }
+        }
+    }
+
+    .quick-tag {
+        font-size: 1.4rem;
+        margin-top: 40px;
+        padding-top: 30px;
+        border-top: 2px solid #e5e5e5;
         
+        li {
+            display: inline-block;
+            margin-bottom: $m-0;
+
+            &::after {
+                content: "/";
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+.footer__bottom{
+    background-color: $seccond-bg-color;
+    padding: $p-4 0;
+
+    .footer__copyright{
+        color: #999;
+        font-size: 1.6rem;
     }
 }
