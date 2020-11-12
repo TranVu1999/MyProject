@@ -1,0 +1,23 @@
+// 1. Helper
+@import "./helpers/variables";
+
+// 2. Vendor
+// @import "./vendor/owl.carousel.min.scss";
+// @import "./vendor/owl.theme.default.min.scss";
+// 3. Base
+@import "./base/reset";
+
+
+// 4. Component
+@import "./components/title";
+@import "./components/navSlide";
+
+// 5. Layout
+@import "./layout/header";
+@import "./layout/mainSlide";
+@import "./layout/banner";
+@import "./layout/gridBanner";
+
+// 6. Page
+
+// 7. Theme

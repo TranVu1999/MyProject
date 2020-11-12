@@ -1,0 +1,48 @@
+.main-slide__carousel {
+    position: relative;
+
+    .owl-nav {
+        display: none!important;
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        button.owl-prev {
+            left: 15px;
+        }
+        button.owl-next {
+            right: 15px;
+        }
+    }
+
+    &:hover{
+        .owl-nav{
+            display: block!important;
+        }
+    }
+
+    .owl-dots{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .owl-dot{
+            span{
+                background-color: #666!important;
+            }
+
+            &:hover span{
+                background-color: $color-0!important;
+            }
+        }
+        .owl-dot.active{
+            span{
+                background-color: $color-0!important;
+            }
+        }
+    }
+
+}

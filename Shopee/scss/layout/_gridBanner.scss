@@ -1,0 +1,14 @@
+.grid-banner__content{
+    display: grid;
+    grid-template-columns: 2fr 2.5fr 2fr;
+    grid-template-rows: 224px 224px;
+    gap: 20px;
+
+    .grid-item-1{
+        grid-row: 1/ span 2;
+    }
+
+    .grid-last-item{
+        grid-column-start: 3;
+    }
+}
