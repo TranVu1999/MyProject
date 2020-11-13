@@ -28,9 +28,35 @@ $('.owl-carousel.post__carousel').owlCarousel({
 })
 
 $('.owl-carousel.product__carousel').owlCarousel({
-    margin: 10,
+    margin: 20,
     nav: true,
     dots: false,
     items: 4,
     slideBy: 1
 })
+
+$('.owl-carousel.product-small__carousel').owlCarousel({
+    margin: 20,
+    nav: true,
+    dots: false,
+    items: 3,
+    slideBy: 1
+})
+
+$('.owl-carousel.product-large__carousel').owlCarousel({
+    margin: 20,
+    nav: true,
+    dots: false,
+    items: 3,
+    slideBy: 1
+});
+
+$(".owl-carousel.product-vertical__carousel").owlCarousel({
+    margin: 20,
+    nav: true,
+    dots: false,
+    items: 1,
+    slideBy: 1
+});
+
+

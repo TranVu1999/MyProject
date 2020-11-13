@@ -1,0 +1,56 @@
+.vertical-carousel{
+    overflow: hidden;
+    position: relative;
+    .item{
+        margin: 25px 0;
+    }
+
+    .item.active{
+        .item__box{
+            border-color: $color-0;
+        }
+    }
+
+    .item__box{
+        cursor: pointer;
+        border: 1px solid $boder-color-0;
+        width: 98px;
+        height: 98px;
+
+        transition: border-color .4s;
+
+        &:hover{
+            border-color: $color-0;
+        }
+    }
+
+    button[class|="nav"]{
+        display: none;
+        position: absolute;
+        left: calc(98px / 2);
+        transform: translateX(-50%);
+
+        width: 42px;
+        height: 42px;
+        background-color: #aeaeae;
+        transition: background-color .4s;
+
+        &:hover{
+            background-color: $color-0;
+        }
+    }
+
+    &:hover{
+        button[class|="nav"]{
+            display: block;
+        }
+    }
+
+    button.nav-prev{
+        top: 25px;
+    }
+
+    button.nav-next{
+        bottom: 25px;
+    }
+}
