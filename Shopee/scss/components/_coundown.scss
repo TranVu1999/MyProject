@@ -1,0 +1,18 @@
+.countdown{
+    display: flex;
+    background-color: $color-0;
+    color: #fff;
+    font-size: 1.4rem;
+
+    padding: $p-1 $p-4;
+
+    &>div::after{
+        content: ':';
+        margin: 0 $m-2;
+    }
+
+    &>div:last-of-type::after{
+        content: '';
+        margin: 0 0 0 $m-2;
+    }
+}

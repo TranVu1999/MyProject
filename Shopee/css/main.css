@@ -87,6 +87,8 @@ button {
   text-transform: capitalize;
   font-weight: 600;
   margin-right: 20px;
+  margin-bottom: 0;
+  line-height: 0;
 }
 
 .title-box .line-title {
@@ -99,7 +101,7 @@ button {
 }
 
 .title-box .line-title::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 75px;
   height: 3px;
@@ -109,6 +111,22 @@ button {
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.title-box.feature-title .sub-title {
+  margin-right: 8px;
+}
+
+.title-box.feature-title .sub-title::after {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0 4px;
+  background: url(./../../images/thunder.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .owl-nav button {
@@ -207,6 +225,26 @@ button {
 
 .vertical-carousel button.nav-next {
   bottom: 25px;
+}
+
+.countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fe3c00;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 8px 20px;
+}
+
+.countdown > div::after {
+  content: ':';
+  margin: 0 12px;
+}
+
+.countdown > div:last-of-type::after {
+  content: '';
+  margin: 0 0 0 12px;
 }
 
 .header {

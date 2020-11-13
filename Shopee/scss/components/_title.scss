@@ -10,6 +10,8 @@
         font-weight: 600;
 
         margin-right: $m-4;
+        margin-bottom: 0;
+        line-height: 0;
     }
 
     .line-title {
@@ -18,8 +20,8 @@
         background-color: #eee;
         position: relative;
 
-        &::before{
-            content: '';
+        &::before {
+            content: "";
             display: inline-block;
             width: 75px;
             height: 3px;
@@ -32,6 +34,22 @@
             transform: translateY(-50%);
         }
     }
+}
 
-    
+.title-box.feature-title {
+    .sub-title {
+        margin-right: $m-1;
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin: 0 $m-0;
+
+            background: url(./../../images/thunder.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
 }
