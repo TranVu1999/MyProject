@@ -1,0 +1,59 @@
+.detail-product {
+    .row-content {
+        display: flex;
+    }
+
+    .col-main {
+        flex-grow: 1;
+    }
+
+    .col-sidebar {
+        width: 250px;
+    }
+
+    .sidebar--title {
+        padding: $p-1 $p-1 $p-1 $p-3;
+        background-color: $seccond-bg-color;
+        h2 {
+            margin: 0;
+            position: relative;
+            color: #fff;
+            font-size: 1.6rem;
+
+            text-transform: uppercase;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            padding-left: 25px;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 21px;
+                height: 21px;
+
+                background: url(./../../images/icon-image.png) no-repeat -325px -69px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .sidebar--content{
+        border: 1px solid $boder-color-1;
+        padding: $p-4;
+    }
+
+    .banner{
+        width: 100%;
+        a{
+            display: block;
+            margin-bottom: $m-4;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+}

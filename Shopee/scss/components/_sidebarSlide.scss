@@ -1,0 +1,44 @@
+.sidebar-carousel {
+    .item{
+        margin-bottom: $m-3;
+    }
+    .sidebar-product {
+        display: flex;
+    }
+
+    .product-thumb {
+        border: 1px solid $boder-color-1;
+        margin-right: $p-2;
+        width: 70px;
+        height: 70px;
+
+        display: block;
+
+        &:hover {
+            border-color: $color-0;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .product-content {
+        width: calc(100% - 80px);
+
+        h2 {
+            font-size: 1.4rem;
+            line-height: 1.2;
+
+            &:hover {
+                color: $color-0;
+            }
+        }
+
+        p {
+            color: $color-0;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+    }
+}

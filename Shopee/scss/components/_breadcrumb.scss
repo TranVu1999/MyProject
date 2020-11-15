@@ -1,0 +1,31 @@
+.bread-crumb {
+    padding: $p-1 0;
+    font-size: 1.4rem;
+
+    i {
+        font-size: 1.8rem;
+        margin-right: $m-0;
+    }
+
+    li {
+        display: inline-block;
+
+        &::after {
+            content: "/";
+            margin: 0 $m-1;
+        }
+    
+        &:last-of-type::after {
+            content: "";
+        }
+
+        a {
+            transition: color 0.4s;
+
+            &:hover {
+                color: $color-0;
+            }
+        }
+    }
+    
+}

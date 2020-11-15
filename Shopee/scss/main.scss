@@ -14,12 +14,15 @@
 @import "./components/wrapSlideBox";
 @import "./components/verticalCarousel";
 @import "./components/coundown";
+@import "./components/breadcrumb";
+@import "./components/sidebarSlide";
 
 // 5. Layout
 @import "./layout/header";
 @import "./layout/mainSlide";
 @import "./layout/banner";
 
+@import "./layout/rowContent";
 @import "./layout/productItem";
 
 @import "./layout/brandSlide";
