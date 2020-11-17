@@ -1,0 +1,27 @@
+.pagination {
+    ul {
+        margin: 0 auto;
+        li {
+            display: inline-block;
+            margin: 0 $m-1;
+            cursor: pointer;
+            transition: all .4s;
+
+            @include define_btnIcon(28px, 1.6rem);
+            min-width: 44px;
+            border: 1px solid $color-0;
+            border-radius: 25px;
+            color: $color-0;
+
+            &:hover{
+                color: #fff;
+                background-color: $color-0;
+            }
+
+            &.prev, &.next{
+                width: 60px;
+            }
+        }
+        
+    }
+}

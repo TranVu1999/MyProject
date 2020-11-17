@@ -1,5 +1,6 @@
 // 1. Helper
 @import "./helpers/variables";
+@import "./helpers/mixin";
 
 // 2. Vendor
 // @import "./vendor/owl.carousel.min.scss";
@@ -16,6 +17,8 @@
 @import "./components/coundown";
 @import "./components/breadcrumb";
 @import "./components/sidebarSlide";
+@import "./components/pagination";
+@import "./components/rangePrice";
 
 // 5. Layout
 @import "./layout/header";

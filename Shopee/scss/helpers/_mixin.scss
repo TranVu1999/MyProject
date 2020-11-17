@@ -1,1 +1,7 @@
-
+@mixin define_btnIcon ($sizeBtn, $fontSize) {
+    width: $sizeBtn;
+    height: $sizeBtn;
+    font-size: $fontSize;
+    line-height: $sizeBtn;
+    text-align: center;
+}

@@ -72,15 +72,12 @@
         }
 
         button {
-            width: 36px;
-            height: 36px;
             background-color: #fff;
             color: $color-0;
-
             text-align: center;
-            line-height: 36px;
-            font-size: 1.8rem;
             border: 1px solid #fe3b0077;
+
+            @include define_btnIcon (36px, 1.8rem);
 
             &:hover {
                 background-color: $color-0;
