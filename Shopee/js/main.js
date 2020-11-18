@@ -58,3 +58,11 @@ $(".owl-carousel.product-vertical__carousel").owlCarousel({
     items: 1,
     slideBy: 1
 });
+
+$(".owl-carousel.best-sell__carousel").owlCarousel({
+    margin: 20,
+    nav: true,
+    dots: false,
+    items: 1,
+    slideBy: 1
+});
