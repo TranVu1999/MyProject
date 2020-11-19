@@ -505,12 +505,34 @@ span[class^="icon"]::after {
 }
 
 .sidebar-carousel .product-item .product-item__desc .product-item__title {
-  word-wrap: break-word;
   margin: 0;
+}
+
+.sidebar-carousel .product-item .product-item__desc .product-item__title a {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: break-spaces;
 }
 
 .sidebar-carousel .product-item .product-item__desc .product-item__price {
   font-size: 1.3rem;
+}
+
+.sidebar-carousel .owl-nav {
+  position: absolute;
+  top: -50px;
+  right: -10px;
+  margin: 0;
+}
+
+.sidebar-carousel .owl-nav button {
+  background-color: transparent !important;
+  width: auto;
 }
 
 .header {
@@ -940,6 +962,79 @@ span[class^="icon"]::after {
 .row-content .widget .banner-advertisement {
   display: block;
   margin-bottom: 20px;
+}
+
+.row-content .widget .lst-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row-content .widget .lst-check .check-item {
+  border: 1px solid #ccc;
+  margin: 0 4px 8px;
+}
+
+.row-content .widget .lst-check .check-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.row-content .widget .lst-check div[class~="color"] {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+.row-content .widget .lst-check div[class~="color"]:hover {
+  border-color: #fe3c00;
+}
+
+.row-content .widget .lst-check div[class~="color"].red::after {
+  background-color: red;
+}
+
+.row-content .widget .lst-check div[class~="color"].yellow::after {
+  background-color: yellow;
+}
+
+.row-content .widget .lst-check div[class~="color"].pink::after {
+  background-color: pink;
+}
+
+.row-content .widget .lst-check div[class~="color"].black::after {
+  background-color: black;
+}
+
+.row-content .widget .lst-check div[class~="color"].grey::after {
+  background-color: grey;
+}
+
+.row-content .widget .lst-check div[class~="color"].white::after {
+  background-color: white;
+}
+
+.row-content .widget .lst-check div[class~="color"].brown::after {
+  background-color: brown;
+}
+
+.row-content .widget .lst-check div[class~="color"].blue::after {
+  background-color: blue;
+}
+
+.row-content .widget .lst-check div[class~="color"].green::after {
+  background-color: green;
 }
 
 .row-content .col-main {

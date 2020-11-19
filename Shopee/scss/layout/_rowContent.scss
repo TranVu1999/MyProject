@@ -14,9 +14,9 @@
         width: 250px;
     }
 
-    .widget{
+    .widget {
         margin-bottom: 30px;
-        .widget__title{
+        .widget__title {
             font-size: 1.8rem;
             text-transform: uppercase;
             font-weight: bold;
@@ -28,31 +28,90 @@
             line-height: 1;
         }
 
-        .widget__content{
+        .widget__content {
             border: 1px solid $boder-color-1;
             padding: $p-2 $p-3;
             font-size: 1.4rem;
 
-            .sub-categories{
+            .sub-categories {
                 padding-bottom: $p-0;
                 margin-bottom: $m-1;
                 border-bottom: 1px solid $boder-color-1;
                 cursor: pointer;
-                
-                &:hover{
+
+                &:hover {
                     color: $color-0;
                     border-color: $color-0;
                 }
-            }  
+            }
         }
 
-        .banner-advertisement{
+        .banner-advertisement {
             display: block;
             margin-bottom: $m-4;
         }
+
+        .lst-check {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .check-item {
+                border: 1px solid $boder-color-1;
+                margin: 0 $m-0 $m-1;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            div[class~="color"] {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+
+                padding: 3px;
+                cursor: pointer;
+                position: relative;
+
+                &:hover{
+                    border-color: $color-0;
+                }
+
+                &.red::after {
+                    background-color: red;
+                }
+                &.yellow::after {
+                    background-color: yellow;
+                }
+                &.pink::after {
+                    background-color: pink;
+                }
+                &.black::after {
+                    background-color: black;
+                }
+                &.grey::after {
+                    background-color: grey;
+                }
+                &.white::after {
+                    background-color: white;
+                }
+                &.brown::after {
+                    background-color: brown;
+                }
+                &.blue::after {
+                    background-color: blue;
+                }
+                &.green::after {
+                    background-color: green;
+                }
+            }
+        }
     }
-
-
 
     // START STYLE COL-MAIN
     .col-main {
@@ -162,7 +221,7 @@
 
                 padding: 0 $m-4;
 
-                button{
+                button {
                     min-width: 120px;
                     box-sizing: content-box;
                     display: block;
@@ -170,12 +229,12 @@
 
                     padding: 0 $p-3;
 
-                    &:nth-child(2){
+                    &:nth-child(2) {
                         margin: $m-2 0;
                     }
 
-                    &:hover{
-                        border-color: $color-0
+                    &:hover {
+                        border-color: $color-0;
                     }
                 }
             }
