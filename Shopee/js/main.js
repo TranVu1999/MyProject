@@ -66,3 +66,6 @@ $(".owl-carousel.best-sell__carousel").owlCarousel({
     items: 1,
     slideBy: 1
 });
+
+
+// Config popup

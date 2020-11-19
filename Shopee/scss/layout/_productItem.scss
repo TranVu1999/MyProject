@@ -55,6 +55,18 @@
             top: 50%;
             opacity: 1;
         }
+
+        .product-item__span{
+            background-color: #0b79bf;
+            color: #fff;
+            padding: $p-0 $p-2;
+            letter-spacing: 1px;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-weight: normal;
+        }
     }
 
     .product-item__action {

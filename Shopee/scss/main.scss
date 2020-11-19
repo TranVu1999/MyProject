@@ -16,10 +16,11 @@
 @import "./components/verticalCarousel";
 @import "./components/coundown";
 @import "./components/breadcrumb";
-// @import "./components/sidebarSlide";
 @import "./components/pagination";
 @import "./components/rangePrice";
 @import "./components/sidebarSlide";
+@import "./components/popup";
+@import "./components/button";
 
 
 // 5. Layout
@@ -33,7 +34,10 @@
 @import "./layout/brandSlide";
 @import "./layout/gridBanner";
 @import "./layout/postItem";
+
 @import "./layout/footer";
+
+@import "./layout/mainWrap";
 
 // 6. Page
 

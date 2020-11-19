@@ -1,0 +1,116 @@
+.popup{
+    display: none;
+}
+
+.welcome {
+    .popup {
+        position: fixed;
+
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1000;
+
+        .popup__content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 70px 40px;
+            box-sizing: border-box;
+
+            .close-popup {
+                display: block;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+
+                background: url(./../../images/close-btn.png) no-repeat center;
+                background-size: cover;
+                position: absolute;
+                top: -14px;
+
+                right: -14px;
+            }
+
+            .popup__title {
+                font-size: 3.2rem;
+                text-transform: uppercase;
+                color: $color-1;
+                font-weight: 600;
+
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 1.3rem;
+                max-width: 50%;
+                line-height: 1.8;
+            }
+
+            .socials-lst {
+                margin-top: 25px;
+                .social-icon {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+
+                    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+                    border: 1px solid $boder-color-1;
+                    transition: all 0.5s;
+                    line-height: 30px;
+                    text-align: center;
+
+                    font-size: 1.4rem;
+                    margin-right: $m-1;
+
+                    &:hover {
+                        background-color: $color-0;
+                        color: #fff;
+                        border-color: $color-0;
+                    }
+                }
+            }
+        }
+        .welcome-popup__content {
+            background: url(./../../images//bg-newsletter.jpg) no-repeat bottom right;
+            width: 800px;
+
+            form {
+                max-width: 50%;
+
+                input[type="text"] {
+                    width: calc(100% - 120px);
+                    font-size: 1.6rem;
+                    padding: 0 $p-4;
+                }
+
+                button {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+
+                label {
+                    margin: 0;
+                    margin-left: $m-1;
+                    cursor: pointer;
+                }
+
+                div:nth-child(2) {
+                    justify-content: flex-start;
+                }
+            }
+
+            .input-shadow {
+                box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
