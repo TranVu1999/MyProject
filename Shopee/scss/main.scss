@@ -3,10 +3,10 @@
 @import "./helpers/mixin";
 
 // 2. Vendor
-// @import "./vendor/owl.carousel.min.scss";
-// @import "./vendor/owl.theme.default.min.scss";
+
 // 3. Base
 @import "./base/reset";
+@import "./base/global";
 
 
 // 4. Component
@@ -34,6 +34,10 @@
 @import "./layout/brandSlide";
 @import "./layout/gridBanner";
 @import "./layout/postItem";
+
+@import "./layout/userInfo";
+
+@import "./layout/formRegister";
 
 @import "./layout/footer";
 

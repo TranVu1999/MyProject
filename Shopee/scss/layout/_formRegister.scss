@@ -1,0 +1,142 @@
+.register {
+    padding: 90px 0;
+    background-color: #ee4d2d;
+
+    .register__content {
+        max-width: 1040px;
+        margin: 0 auto;
+        background: url(./../../images/bg-form.png) no-repeat center;
+        background-size: cover;
+
+        text-align: right;
+    }
+
+    .register__form {
+        background-color: #fff;
+        display: inline-block;
+        text-align: left;
+        border-radius: 5px;
+
+        max-width: 450px;
+        padding: 30px;
+
+        .form-title {
+            color: $color-1;
+            font-size: 2.6rem;
+            margin-bottom: 34px;
+        }
+
+        form {
+            .form-group {
+                input {
+                    width: 100%;
+                    border: 1px solid $boder-color-1;
+                    padding: $p-2 $p-2;
+                    font-size: 1.4rem;
+
+                    border-radius: 5px;
+                }
+            }
+            button {
+                width: 100%;
+                text-transform: uppercase;
+            }
+        }
+
+        .another-span {
+            text-align: center;
+            font-size: 1.6rem;
+            color: $boder-color-1;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "";
+                display: inline-block;
+                height: 1px;
+                width: 40%;
+
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: $boder-color-1;
+            }
+
+            &::before {
+                left: 0;
+            }
+
+            &::after {
+                right: 0;
+            }
+        }
+
+        .another-register {
+        }
+
+        .social-register {
+            flex: 1;
+            margin: $m-0;
+            color: #fff;
+            font-size: 1.4rem;
+
+            padding: 2px 12px 2px 2px;
+            border-radius: 3px;
+            cursor: pointer;
+
+            &:hover{
+                opacity: .8;
+            }
+
+            .thumb-icon {
+                width: 36px;
+                height: 36px;
+
+                .icon {
+                    width: 22px;
+                    height: 22px;
+                    background-image: url(./../../images//social-icon.png);
+                }
+            }
+        }
+
+        .social-register.facebook {
+            background-color: #1877f2;
+            .icon {
+                background-size: 372% 232%;
+                background-position: 76.47058823529412% 15.151515151515152%;
+            }
+        }
+
+        .social-register.google {
+            background-color: #4285f4;
+            .thumb-icon {
+                background-color: #fff;
+                .icon {
+                    background-size: 516.6666666666666% 322.22222222222223%;
+                    background-position: 100% 100%;
+                }
+            }
+        }
+
+        .social-register.apple {
+            background-color: #000;
+            .icon {
+                background-size: 290.625% 181.25%;
+                background-position: 8.19672131147541% 19.23076923076923%;
+            }
+        }
+
+        .register-policy{
+           font-size: 1.3rem;
+        }
+
+        p{
+            font-size: 1.4rem;
+            text-align: center;
+            a{
+                color: $color-0;
+            }
+        }
+    }
+}

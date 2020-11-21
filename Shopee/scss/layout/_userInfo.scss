@@ -1,0 +1,33 @@
+.user-sidebar{
+
+}
+
+.user-brief{
+    display: flex;
+    align-items: center;
+    .user-brief__avatar{
+        width: 50px;
+        height: 50px;
+        margin-right: $m-2;
+
+        img{
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .user-brief__right{
+        flex: 1;
+        .user-brief__username{
+            font-size: 1.6rem;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        .user-brief__edit{
+            font-size: 1.4rem;
+        }
+    }
+}

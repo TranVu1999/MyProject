@@ -88,6 +88,59 @@ span[class^="icon"]::after {
   font-weight: 600;
 }
 
+.container {
+  width: 94%;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+.mb-1 {
+  margin-bottom: 10px !important;
+}
+
+.mb-2 {
+  margin-bottom: 2rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 3rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 4rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 5rem !important;
+}
+
+.mt-1 {
+  margin-top: 10px !important;
+}
+
+.mt-2 {
+  margin-top: 2rem !important;
+}
+
+.mt-3 {
+  margin-top: 3rem !important;
+}
+
+.mt-4 {
+  margin-top: 4rem !important;
+}
+
+.mt-5 {
+  margin-top: 5rem !important;
+}
+
 .ellipsis-text {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -105,17 +158,16 @@ span[class^="icon"]::after {
           justify-content: space-between;
 }
 
-.container {
-  width: 94%;
-  padding-left: 0;
-  padding-right: 0;
-  max-width: none;
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1600px;
-  }
+.d-flex-center {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .title-box {
@@ -696,6 +748,21 @@ span[class^="icon"]::after {
   padding-left: 16px;
   padding-right: 16px;
   cursor: pointer;
+}
+
+.header__content {
+  padding: 20px 0;
+}
+
+.header__content p {
+  margin: 8px 0 0 12px;
+  font-size: 2.2rem;
+  color: #222;
+}
+
+.header__content .header--right {
+  margin-top: 8px;
+  color: #fe3c00;
 }
 
 .header__top a {
@@ -1648,8 +1715,182 @@ span[class^="icon"]::after {
   color: #fff;
 }
 
-.footer {
-  margin-top: 50px;
+.user-brief {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-brief .user-brief__avatar {
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+}
+
+.user-brief .user-brief__avatar img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-brief .user-brief__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.user-brief .user-brief__right .user-brief__username {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.user-brief .user-brief__right .user-brief__edit {
+  font-size: 1.4rem;
+}
+
+.register {
+  padding: 90px 0;
+  background-color: #ee4d2d;
+}
+
+.register .register__content {
+  max-width: 1040px;
+  margin: 0 auto;
+  background: url(./../../images/bg-form.png) no-repeat center;
+  background-size: cover;
+  text-align: right;
+}
+
+.register .register__form {
+  background-color: #fff;
+  display: inline-block;
+  text-align: left;
+  border-radius: 5px;
+  max-width: 450px;
+  padding: 30px;
+}
+
+.register .register__form .form-title {
+  color: #222;
+  font-size: 2.6rem;
+  margin-bottom: 34px;
+}
+
+.register .register__form form .form-group input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 12px 12px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+
+.register .register__form form button {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.register .register__form .another-span {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #ccc;
+  position: relative;
+}
+
+.register .register__form .another-span::before, .register .register__form .another-span::after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #ccc;
+}
+
+.register .register__form .another-span::before {
+  left: 0;
+}
+
+.register .register__form .another-span::after {
+  right: 0;
+}
+
+.register .register__form .social-register {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 4px;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 2px 12px 2px 2px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.register .register__form .social-register:hover {
+  opacity: .8;
+}
+
+.register .register__form .social-register .thumb-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.register .register__form .social-register .thumb-icon .icon {
+  width: 22px;
+  height: 22px;
+  background-image: url(./../../images//social-icon.png);
+}
+
+.register .register__form .social-register.facebook {
+  background-color: #1877f2;
+}
+
+.register .register__form .social-register.facebook .icon {
+  background-size: 372% 232%;
+  background-position: 76.47058823529412% 15.151515151515152%;
+}
+
+.register .register__form .social-register.google {
+  background-color: #4285f4;
+}
+
+.register .register__form .social-register.google .thumb-icon {
+  background-color: #fff;
+}
+
+.register .register__form .social-register.google .thumb-icon .icon {
+  background-size: 516.6666666666666% 322.22222222222223%;
+  background-position: 100% 100%;
+}
+
+.register .register__form .social-register.apple {
+  background-color: #000;
+}
+
+.register .register__form .social-register.apple .icon {
+  background-size: 290.625% 181.25%;
+  background-position: 8.19672131147541% 19.23076923076923%;
+}
+
+.register .register__form .register-policy {
+  font-size: 1.3rem;
+}
+
+.register .register__form p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.register .register__form p a {
+  color: #fe3c00;
 }
 
 .footer a:hover {
