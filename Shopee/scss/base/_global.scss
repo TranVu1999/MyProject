@@ -32,6 +32,23 @@
     margin-top: 5rem!important;
 }
 
+// Margin left
+.ml-1{
+    margin-left: 10px!important;
+}
+.ml-2{
+    margin-left: 2rem!important;
+}
+.ml-3{
+    margin-left: 3rem!important;
+}
+.ml-4{
+    margin-left:4rem!important;
+}
+.ml-5{
+    margin-left: 5rem!important;
+}
+
 // Ellipsis-text
 .ellipsis-text {
     text-overflow: ellipsis;
@@ -49,4 +66,15 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
+}
+
+.d-flex-start {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+// Text color
+.text-color-black{
+    color: $color-1;
 }

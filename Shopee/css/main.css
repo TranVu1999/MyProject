@@ -141,6 +141,26 @@ span[class^="icon"]::after {
   margin-top: 5rem !important;
 }
 
+.ml-1 {
+  margin-left: 10px !important;
+}
+
+.ml-2 {
+  margin-left: 2rem !important;
+}
+
+.ml-3 {
+  margin-left: 3rem !important;
+}
+
+.ml-4 {
+  margin-left: 4rem !important;
+}
+
+.ml-5 {
+  margin-left: 5rem !important;
+}
+
 .ellipsis-text {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -168,6 +188,22 @@ span[class^="icon"]::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.d-flex-start {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.text-color-black {
+  color: #222;
 }
 
 .title-box {
@@ -733,6 +769,58 @@ span[class^="icon"]::after {
 .shopee-btn:hover {
   background-color: #fff;
   color: #fe3c00;
+}
+
+.select-box {
+  position: relative;
+  min-width: 130px;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-right: 12px !important;
+}
+
+.select-box svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: #666;
+}
+
+.select-box .select-option {
+  display: none;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  overflow-y: scroll;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 5px #ccc;
+          box-shadow: 0 5px 5px #ccc;
+}
+
+.select-box .select-option .option-item {
+  padding: 4px 16px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.select-box .select-option .option-item:hover {
+  background-color: #fe3c00;
+  color: #fff;
+}
+
+.select-box.active .select-option {
+  display: block;
+}
+
+.select-box:hover {
+  border-color: #fe3c00;
+}
+
+.select-box:hover .select-option {
+  display: block;
 }
 
 .header {
@@ -1745,13 +1833,194 @@ span[class^="icon"]::after {
 }
 
 .user-brief .user-brief__right .user-brief__username {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.5;
+  color: #222;
 }
 
 .user-brief .user-brief__right .user-brief__edit {
   font-size: 1.4rem;
+}
+
+.user-sidebar-menu {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.user-sidebar-menu a:hover, .user-sidebar-menu a.active {
+  color: #fe3c00;
+}
+
+.user-sidebar-menu .user-sidebar-menu__item {
+  margin-bottom: 2.4rem;
+}
+
+.user-sidebar-menu .user-sidebar-menu__item--icon {
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  line-height: 24px;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-right: 12px;
+}
+
+.user-sidebar-submenu {
+  padding-left: 36px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  margin-top: 0;
+}
+
+.user-sidebar-submenu .user-sidebar-submenu__item {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.user-sidebar-menu__item.active .user-sidebar-submenu {
+  margin-top: 15px;
+  max-height: 250px;
+}
+
+.user-content {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+}
+
+.user-content .user-content__title-box {
+  font-size: 1.4rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-content .user-content__title-box .user-content__title {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.user-coin {
+  color: #f6a700;
+}
+
+.user-coin img {
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 1.4rem;
+}
+
+.user-coin .amount-coin--number {
+  font-size: 3.2rem;
+  margin-right: 8px;
+}
+
+.user-coin .amount-coin--text p {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.user-coin .amount-coin--text a {
+  color: #666;
+  font-size: 1.4rem;
+}
+
+.user-coin .give-coin {
+  font-size: 1.6rem;
+}
+
+.user-coin .give-coin svg {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 4px;
+  fill: #f6a700;
+}
+
+.user-coin .user-coin__tutorial {
+  margin-top: 100px;
+  text-align: center;
+  color: #666;
+  font-size: 1.4rem;
+}
+
+.user-coin .user-coin__tutorial button {
+  font-size: 1.6rem;
+}
+
+.user-account {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.user-account * {
+  margin: 0;
+}
+
+.user-account .info-account {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.user-account .upload-avatar {
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
+}
+
+.user-account .form-group {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.user-account .form-group label {
+  width: 20%;
+  text-align: right;
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+
+.user-account .form-group input {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.user-account .form-group input, .user-account .form-group a {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.user-account .form-group a {
+  color: #05a;
+  text-decoration: underline;
+}
+
+.user-account .form-group span {
+  margin-right: 8px;
+}
+
+.user-account .upload-avatar {
+  text-align: center;
+  color: #999;
+}
+
+.user-account .upload-avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.user-account.small-form input {
+  max-width: 350px;
 }
 
 .register {

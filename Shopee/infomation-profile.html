@@ -183,11 +183,7 @@
 
         <!-- START PAGE MAIN -->
         <section class="container page-main detail-product">
-            <ul class="bread-crumb">
-                <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
-                <li><a href="#">User</a></li>
-            </ul>
-
+            
             <div class="row-content">
                 <div class="col-sidebar">
                     <div class="user-sidebar">
@@ -203,10 +199,209 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="mt-5 user-sidebar-menu">
+                            <div class="user-sidebar-menu__item toggle-menu">
+                                <div class="d-flex-start user-sidebar-menu__item--span">
+                                    <div class="user-sidebar-menu__item--icon" style="background-color: #FFC107;">
+                                        <i class="far fa-user"></i>
+                                    </div>
+                                    <a href="#" class="user-sidebar-menu__item--text">Tài khoản của tôi</a>
+                                </div>
+                                <div class="user-sidebar-submenu">
+                                    <a href="" class="user-sidebar-submenu__item">Hồ Sơ</a>
+                                    <a href="" class="user-sidebar-submenu__item">Ngân Hàng</a>
+                                    <a href="" class="user-sidebar-submenu__item">Địa chỉ</a>
+                                    <a href="" class="user-sidebar-submenu__item">Đổi mật khẩu</a>
+                                </div>
+                            </div>
+
+                            <div class="user-sidebar-menu__item">
+                                <div class="d-flex-start user-sidebar-menu__item--span">
+                                    <div class="user-sidebar-menu__item--icon" style="background-color: #44B5FF;">
+                                        <i class="fas fa-list-ul"></i>
+                                    </div>
+                                    <a href="" class="user-sidebar-menu__item--text">Đơn mua</a>
+                                </div>
+                            </div>
+
+                            <div class="user-sidebar-menu__item toggle-menu">
+                                <div class="d-flex-start user-sidebar-menu__item--span">
+                                    <div class="user-sidebar-menu__item--icon" style="background-color: #EE4D2D;">
+                                        <i class="far fa-bell"></i>
+                                    </div>
+                                    <a href="" class="user-sidebar-menu__item--text">Thông báo</a>
+                                </div>
+                                <div class="user-sidebar-submenu">
+                                    <a href="" class="user-sidebar-submenu__item">Cập nhật đơn hàng</a>
+                                    <a href="" class="user-sidebar-submenu__item">Khuyến mãi</a>
+                                    <a href="" class="user-sidebar-submenu__item">Cập nhật ví</a>
+                                    <a href="" class="user-sidebar-submenu__item">Hoạt động gần đây</a>
+                                    <a href="" class="user-sidebar-submenu__item">Cập nhật Shopee</a>
+                                </div>
+                            </div>
+
+                            <div class="user-sidebar-menu__item">
+                                <div class="d-flex-start user-sidebar-menu__item--span">
+                                    <div class="user-sidebar-menu__item--icon" style="background-color: #FF7761;">
+                                        <i class="fab fa-discourse"></i>
+                                    </div>
+                                    <a href="" class="user-sidebar-menu__item--text">Ví Voucher</a>
+                                </div>
+                            </div>
+
+                            <div class="user-sidebar-menu__item">
+                                <div class="d-flex-start user-sidebar-menu__item--span">
+                                    <div class="user-sidebar-menu__item--icon" style="background-color: #FFAE04;">
+                                        <i class="far fa-money-bill-alt"></i>
+                                    </div>
+                                    <a href="" class="user-sidebar-menu__item--text">Shopee Xu</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-main">
+                    <div class="user-content">
+                        <div class="mb-3 user-content__title-box">
+                            <h2 class="user-content__title">Hồ Sơ Của Tôi</h2>
+                            <p>Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
+                        </div>
 
+                        <div class="d-flex-between user-account" id="user-account">
+                            <form class="info-account">
+                                <div class="d-flex-start form-group">
+                                    <label for="">Tên đăng nhập</label>
+                                    <p class="text-color-black">tranvudpqn123</p>
+                                </div>
+
+                                <div class="d-flex-start form-group">
+                                    <label for="">Tên </label>
+                                    <input type="text" class="text-color-black">
+                                </div>
+
+                                <div class="d-flex-start form-group">
+                                    <label for="">Email </label>
+                                    <p class="text-color-black">
+                                        <span>tr****@gmail.com</span>
+                                        <a href="#">Thay Đổi</a>
+                                    </p>
+                                </div>
+
+                                <div class="d-flex-start form-group">
+                                    <label>Số điện thoại </label>
+                                    <p class="text-color-black"> <span>037 767 0509</span>  <a href="#">Thay Đổi</a></p>
+                                </div>
+
+                                <div class="d-flex-start form-group">
+                                    <label for="">Tên Shop </label>
+                                    <input type="text" value="tranvudpqn123">
+                                </div>
+
+                                <div class="d-flex-start form-group">
+                                    <label for="">Giới tính </label>
+                                    <div class="d-flex-start radio-wrap">
+                                        <div class="radio-box">
+                                            <input type="radio" name="gender" checked>
+                                            <label for="" class="text-color-black">Nam</label>
+                                        </div>
+                                        <div class="radio-box">
+                                            <input type="radio" name="gender">
+                                            <label for="" class="text-color-black">Nữ</label>
+                                        </div>
+                                        <div class="radio-box">
+                                            <input type="radio" name="gender">
+                                            <label for="" class="text-color-black">Khác</label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="d-flex-start form-group">
+                                    <label for="">Ngày Sinh </label>
+                                    <div class="d-flex-start select-wrap">
+                                        <div class="select-box ">
+                                            <div class="d-flex-between select-rex---box">
+                                                <span class="select-res">1</span>
+                                                <svg enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0" class="shopee-svg-icon icon-arrow-up"><g><path d="m11 8.5c0-.1 0-.2-.1-.3l-5-6c-.1-.1-.3-.2-.4-.2s-.3.1-.4.2l-5 6c-.2.2-.1.5.1.7s.5.1.7-.1l4.6-5.5 4.6 5.5c.2.2.5.2.7.1.1-.1.2-.3.2-.4z"></path></g></svg>
+                                            </div>
+                                            
+                                            <div class="select-option">
+                                                <div class="option-item">1</div>
+                                                <div class="option-item">2</div>
+                                                <div class="option-item">3</div>
+                                                <div class="option-item">4</div>
+                                                <div class="option-item">5</div>
+                                                <div class="option-item">6</div>
+                                                <div class="option-item">7</div>
+                                                <div class="option-item">8</div>
+                                                <div class="option-item">9</div>
+                                                <div class="option-item">10</div>
+                                            </div>
+                                        </div>
+                                        <div class="select-box ">
+                                            <div class="d-flex-between select-rex---box">
+                                                <span class="select-res">1</span>
+                                                <svg enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0" class="shopee-svg-icon icon-arrow-up"><g><path d="m11 8.5c0-.1 0-.2-.1-.3l-5-6c-.1-.1-.3-.2-.4-.2s-.3.1-.4.2l-5 6c-.2.2-.1.5.1.7s.5.1.7-.1l4.6-5.5 4.6 5.5c.2.2.5.2.7.1.1-.1.2-.3.2-.4z"></path></g></svg>
+                                            </div>
+                                            
+                                            <div class="select-option">
+                                                <div class="option-item">1</div>
+                                                <div class="option-item">2</div>
+                                                <div class="option-item">3</div>
+                                                <div class="option-item">4</div>
+                                                <div class="option-item">5</div>
+                                                <div class="option-item">6</div>
+                                                <div class="option-item">7</div>
+                                                <div class="option-item">8</div>
+                                                <div class="option-item">9</div>
+                                                <div class="option-item">10</div>
+                                            </div>
+                                        </div>
+                                        <div class="select-box ">
+                                            <div class="d-flex-between select-rex---box">
+                                                <span class="select-res">1</span>
+                                                <svg enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0" class="shopee-svg-icon icon-arrow-up"><g><path d="m11 8.5c0-.1 0-.2-.1-.3l-5-6c-.1-.1-.3-.2-.4-.2s-.3.1-.4.2l-5 6c-.2.2-.1.5.1.7s.5.1.7-.1l4.6-5.5 4.6 5.5c.2.2.5.2.7.1.1-.1.2-.3.2-.4z"></path></g></svg>
+                                            </div>
+                                            
+                                            <div class="select-option">
+                                                <div class="option-item">1</div>
+                                                <div class="option-item">2</div>
+                                                <div class="option-item">3</div>
+                                                <div class="option-item">4</div>
+                                                <div class="option-item">5</div>
+                                                <div class="option-item">6</div>
+                                                <div class="option-item">7</div>
+                                                <div class="option-item">8</div>
+                                                <div class="option-item">9</div>
+                                                <div class="option-item">10</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="d-flex-start form-group">
+                                    <label></label>
+                                    <button class="mt-2 mb-3 shopee-btn">Lưu</button>
+                                </div>
+                            </form>
+
+                            <form class="upload-avatar">
+                                <div class="form-group">
+                                    <div class="img-avatar">
+                                        <img src="./images/userAvatar.jfif" alt="avatar">
+                                    </div>
+                                    <input type="file" hidden accept=".jpg,.jpeg,.png">
+                                    <button class="mt-2 mb-3 shopee-btn">Chọn ảnh</button>
+
+                                    <p class="avatar-uploader__text">Dụng lượng file tối đa 1 MB</p>
+                                    <p class="avatar-uploader__text">Định dạng:.JPEG, .PNG</p>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
                 </div>
 
                 
@@ -402,6 +597,7 @@
 
     <!-- CAROUSEL -->
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/settingSidebar.js"></script>
     <script src="./js/main.js"></script>
 
 </body>

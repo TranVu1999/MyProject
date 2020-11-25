@@ -1,0 +1,55 @@
+.select-box{
+    position: relative;
+    min-width: 130px;
+    border: 1px solid $boder-color-1;
+    padding: $p-1 $p-3;
+
+    cursor: pointer;
+    margin-right: $m-2!important;
+    
+
+    svg{
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: #666;
+    }
+
+    .select-option{
+        display: none;
+
+        position: absolute;
+        top: 105%;
+        left: 0;
+        width: 100%;
+
+        height: 180px;
+        overflow-y: scroll;
+        background-color: #fff;
+        box-shadow: 0 5px 5px $boder-color-1;
+
+        .option-item{
+            padding: $p-0 $p-3;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover{
+                background-color: $color-0;
+               color: #fff;
+            }
+        }
+    }
+
+    &.active{
+        .select-option{
+            display: block;
+            
+        }
+    }
+
+    &:hover{
+        border-color: $color-0;
+        .select-option{
+            display: block;
+        }
+    }
+}

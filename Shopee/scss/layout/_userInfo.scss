@@ -1,7 +1,3 @@
-.user-sidebar{
-
-}
-
 .user-brief{
     display: flex;
     align-items: center;
@@ -21,13 +17,207 @@
     .user-brief__right{
         flex: 1;
         .user-brief__username{
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: bold;
             line-height: 1.5;
+            color: $color-1;
         }
 
         .user-brief__edit{
             font-size: 1.4rem;
         }
+    }
+}
+
+.user-sidebar-menu{
+    font-size: 1.5rem;
+    color: $color-1;
+
+    a{
+        &:hover,
+        &.active{
+            color: $color-0;
+        }
+
+    }
+
+    .user-sidebar-menu__item{
+        margin-bottom: 2.4rem;
+    }
+
+    .user-sidebar-menu__item--icon{
+        color: #fff;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+
+        line-height: 24px;
+        text-align: center;
+        font-size: 1.3rem;
+        margin-right: $m-2;
+    }
+}
+
+.user-sidebar-submenu{
+    padding-left: 36px;
+    max-height: 0;
+    overflow: hidden;
+
+    transition: all .6s;
+    margin-top: 0;
+    .user-sidebar-submenu__item{
+        display: block;
+        margin-bottom: $m-2;
+    }
+}
+
+.user-sidebar-menu__item{
+    &.active{
+        .user-sidebar-submenu{
+            margin-top: 15px;
+            max-height: 250px;
+        }
+    }
+    
+}
+
+// USER CONTENT
+.user-content{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0, .1);
+    padding: 15px 20px;
+
+    .user-content__title-box{
+        font-size: 1.4rem;
+        border-bottom: 1px solid $boder-color-1;
+
+        .user-content__title{
+            font-size: 2rem;
+            font-weight: normal;
+        }
+    }
+    
+
+    
+}
+
+// USER COIN
+.user-coin{
+    color: #f6a700;
+    img{
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        margin-right: 1.4rem;
+    }
+
+    .amount-coin--number{
+        font-size: 3.2rem;
+        margin-right: $m-1;
+    }
+
+    .amount-coin--text{
+        p{
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        a{
+            color: #666;
+            font-size: 1.4rem;
+        }
+    }
+
+    .give-coin{
+        font-size: 1.6rem;
+
+        svg{
+            width: 1rem;
+            height: 1rem;
+            margin-left: $m-0;
+            fill: #f6a700;
+        }
+    }
+
+    .user-coin__tutorial{
+        margin-top: 100px;
+        text-align: center;
+        color: #666;
+        font-size: 1.4rem;
+
+        button{
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+// USER ACCOUNT
+.user-account{
+    align-items: flex-start;
+    *{
+        margin: 0;
+    }
+
+    .info-account{
+        flex: 1;
+    }
+
+    .upload-avatar{
+        flex-basis: 400px;
+    }
+
+    
+
+    .form-group{
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+        label{
+            width: 20%;
+            text-align: right;
+            text-transform: capitalize;
+            margin-right: $m-4;
+        }
+
+        input{
+            border: 1px solid $boder-color-1;
+            padding: $p-1 $p-2;
+            border-radius: 3px;
+        }
+
+        input, a{
+            flex-grow: 1;
+        }
+
+        a{
+            color: #05a;
+            text-decoration: underline;
+        }
+
+        span{
+            margin-right: $m-1;
+        }
+
+        .radio-wrap{
+            
+        }
+    }
+
+    .upload-avatar{
+        
+        text-align: center;
+        color: #999;
+
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}
+
+.user-account.small-form{
+    input{
+        max-width: 350px;
     }
 }
