@@ -1,0 +1,81 @@
+// BUTTON
+.coffee-btn{
+    border: 1px solid $text-main-color;
+    color: $text-main-color;
+    padding: $distance-3 $distance-4;
+    display: inline-block;
+
+    font-size: 1.6rem;
+    transition: all .4s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $primary-bg;
+        color: $text-main-color;
+        border-color: $primary-bg;
+    }
+}
+
+.coffee-btn.main-bg{
+    border-color: $primary-bg;
+    background-color: $primary-bg;
+
+    &:hover{
+        background-color: transparent;
+    }
+}
+
+// TITLE
+.coffee-title{
+    font-family: 'Great Vibes', cursive;
+    color: $primary-bg;
+    font-size: 3rem;
+}
+
+// DISPLAY FLEX
+.d-flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// MARGIN
+.mt-1{
+    margin-top: 10px!important;
+}
+.mt-2{
+    margin-top: 20px!important;
+}
+.mt-3{
+    margin-top: 30px!important;
+}
+.mt-4{
+    margin-top: 40px!important;
+}
+.mt-5{
+    margin-top: 50px!important;
+}
+
+
+.mb-1{
+    margin-bottom: 10px!important;
+}
+.mb-2{
+    margin-bottom: 20px!important;
+}
+.mb-3{
+    margin-bottom: 30px!important;
+}
+.mb-4{
+    margin-bottom: 40px!important;
+}
+.mb-5{
+    margin-bottom: 50px!important;
+}
+    

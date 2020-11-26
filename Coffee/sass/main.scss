@@ -1,0 +1,20 @@
+// 1. Helper
+@import "./helpers/variables";
+
+// 2. Vendor
+
+// 3. Base
+@import "./base/reset";
+@import "./base/global";
+
+// 4. Component
+
+// 5. Layout
+@import "./layouts/header";
+
+@import "./layouts/carousel";
+@import "./layouts/gridImage";
+
+// 6. Page
+
+// 7. Theme
