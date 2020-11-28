@@ -1,0 +1,35 @@
+.contact__content{
+    background-color: #000;
+    div[class*='col']{
+        padding: 0;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .contact__form{
+        padding: 0 75px;
+
+        h6{
+            font-size: 3rem;
+        }
+
+        .form-group{
+            width: 45%;
+        }
+
+        button{
+            background-color: $primary-bg;
+            border-color: $primary-bg;
+            color: #000;
+            min-width: 180px;
+
+            &:hover{
+                background-color: transparent;
+                color: $text-primary-color;
+                border-color: $primary-bg;
+            }
+        }
+    }
+}

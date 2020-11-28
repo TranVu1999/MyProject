@@ -1,0 +1,44 @@
+.blog{
+    background-image: url(./../../images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .blog__thumb{
+        img{
+            max-width: 100%;
+            height: 270px;
+            object-fit: cover;
+        }
+    }
+
+    .blog__text{
+        font-size: 1.6rem;
+        color: rgba(255, 255, 255, .5);
+
+        .blog__time{
+            span{
+                margin-right: $distance-0;
+            }
+
+            span.icon{
+                margin-right: 2px;
+            }
+        }
+
+        .blog__title{
+            color: $text-main-color;
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: capitalize;
+
+            &:hover{
+                color: $text-primary-color;
+            }
+        }
+
+        .blog__desc{
+            font-size: 1.8rem;
+        }
+    }
+}

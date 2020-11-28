@@ -10,6 +10,7 @@ html, body {
   font-size: 10px;
   line-height: 1;
   color: #fff;
+  font-weight: 300;
 }
 
 a, a:hover {
@@ -28,6 +29,11 @@ button, button:focus {
 
 .container-fluid, .container {
   padding: 0;
+}
+
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .coffee-btn {
@@ -56,10 +62,28 @@ button, button:focus {
   background-color: transparent;
 }
 
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title p {
+  margin-top: 20px;
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 100;
+}
+
 .coffee-title {
   font-family: 'Great Vibes', cursive;
   color: #c49b63;
   font-size: 3rem;
+}
+
+.coffee-dark-title {
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .d-flex-between {
@@ -84,6 +108,18 @@ button, button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.d-flex-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .mt-1 {
@@ -124,6 +160,71 @@ button, button:focus {
 
 .mb-5 {
   margin-bottom: 50px !important;
+}
+
+.form-group {
+  width: 50%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  font-size: 1.8rem;
+}
+
+.form-group input {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 300;
+}
+
+.form-group input:focus + .label-name::after,
+.form-group input:valid + .label-name::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.form-group label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-group label::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -2px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.form-group .content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.form-group input:focus + .label-name .content-name,
+.form-group input:valid + .label-name .content-name {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 14px;
+  color: #fff;
 }
 
 .header {
@@ -327,5 +428,172 @@ button, button:focus {
   -webkit-transition: opacity .4s .2s;
   transition: opacity .4s .2s;
   opacity: 1;
+}
+
+.blog {
+  background-image: url(./../../images/bg_4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blog .blog__thumb img {
+  max-width: 100%;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog .blog__text {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.blog .blog__text .blog__time span {
+  margin-right: 4px;
+}
+
+.blog .blog__text .blog__time span.icon {
+  margin-right: 2px;
+}
+
+.blog .blog__text .blog__title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.blog .blog__text .blog__title:hover {
+  color: #c49b63;
+}
+
+.blog .blog__text .blog__desc {
+  font-size: 1.8rem;
+}
+
+.contact__content {
+  background-color: #000;
+}
+
+.contact__content div[class*='col'] {
+  padding: 0;
+}
+
+.contact__content iframe {
+  width: 100%;
+}
+
+.contact__content .contact__form {
+  padding: 0 75px;
+}
+
+.contact__content .contact__form h6 {
+  font-size: 3rem;
+}
+
+.contact__content .contact__form .form-group {
+  width: 45%;
+}
+
+.contact__content .contact__form button {
+  background-color: #c49b63;
+  border-color: #c49b63;
+  color: #000;
+  min-width: 180px;
+}
+
+.contact__content .contact__form button:hover {
+  background-color: transparent;
+  color: #c49b63;
+  border-color: #c49b63;
+}
+
+.footer {
+  background-color: #120f0f;
+  padding: 7rem 0;
+}
+
+.footer a:hover {
+  color: #c49b63;
+}
+
+.footer .copyright {
+  font-size: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__content .widget {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.footer__content .widget h6 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+.footer__content .widget li {
+  margin-bottom: 12px;
+}
+
+.footer__content .widget li .icon {
+  font-size: 2.2rem;
+  margin-right: 12px;
+}
+
+.footer__content .social-icon a {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 55px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  font-size: 2rem;
+  margin-right: 8px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.footer__content .social-icon a:hover {
+  -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.footer__content .social-icon a.facebook:hover {
+  background-color: #3b5999;
+}
+
+.footer__content .social-icon a.twitter:hover {
+  background-color: #55acee;
+}
+
+.footer__content .social-icon a.instagram:hover {
+  background-color: #e4405f;
+}
+
+.footer__content .blog-wrap img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.footer__content .blog-wrap__text a {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.footer__content .blog-wrap__time {
+  color: gray;
+  font-size: 1.4rem;
+}
+
+.footer__content .blog-wrap__time > div {
+  display: inline;
 }
 /*# sourceMappingURL=main.css.map */

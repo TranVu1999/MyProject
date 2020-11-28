@@ -1,0 +1,94 @@
+.footer{
+    background-color: #120f0f;
+    padding: 7rem 0;
+
+    a:hover{
+        color: $primary-bg;
+    }
+
+    .copyright{
+        font-size: 2rem;
+        text-align: center;
+        color: rgba(255, 255, 255, .7);
+    }
+}
+
+.footer__content{
+    .widget{
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 1.5;
+        h6{
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 5rem;
+        }
+
+        li{
+            margin-bottom: $distance-2;
+
+            .icon{
+                font-size: 2.2rem;
+                margin-right: $distance-2;
+            }
+        }
+    }
+
+    .social-icon{
+        a{
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+
+            line-height: 55px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            font-size: 2rem;
+
+            margin-right: $distance-1;
+            transition: all .4s;
+
+            &:hover{
+                box-shadow: 0 0 20px rgba(255, 255, 255, .5);
+            }
+
+            &.facebook:hover{
+                background-color: #3b5999;
+            }
+            &.twitter:hover{
+                background-color: #55acee;
+            }
+            &.instagram:hover{
+                background-color: #e4405f;
+            }
+        }
+    }
+
+    .blog-wrap{
+        
+        img{
+            width: 80px;
+            height: 80px;
+            margin-right: $distance-4;
+        }
+    }
+
+    .blog-wrap__text{
+        a{
+            font-size: 1.8rem;
+            line-height: 1.2;
+        }
+    }
+
+    .blog-wrap__time{
+        color: gray;
+        font-size: 1.4rem;
+        &>div{
+            display: inline;
+        }
+    }
+
+    
+}
