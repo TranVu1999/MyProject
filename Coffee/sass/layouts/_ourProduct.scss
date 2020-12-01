@@ -1,0 +1,26 @@
+.our-product{
+    background-image: url(./../../images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .our-product__nav--item{
+        font-size: 2rem;
+        padding: $distance-2 $distance-3;
+        margin: 0 $distance-0;
+        color: $text-primary-color;
+
+        cursor: pointer;
+        font-weight: 400;
+        border-bottom: 1px solid $primary-bg;
+        &.active{
+            background-color: $primary-bg;
+            color: #000;
+        }
+
+        &:hover{
+            background-color: $primary-bg;
+            color: #000;
+        }
+    }
+}

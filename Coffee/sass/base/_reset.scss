@@ -25,8 +25,13 @@ ul, ol{
 button, button:focus{
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 .container-fluid, .container{
     padding: 0;
+
+    .row{
+        margin: 0!important;
+    }
 }

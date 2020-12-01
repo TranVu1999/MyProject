@@ -1,0 +1,50 @@
+.our-menu{
+    background-image: url(./../../images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .section-title{
+        text-align: right;
+
+        .coffee-title{
+            right: 0;
+            left: 0;
+            transform: translate(0);
+        }
+
+        p{
+            display: inline-block;
+            width: 75%;
+        }
+        button{
+            padding: $distance-4 $distance-4;
+        }
+    }
+
+    .our-menu__grid{
+
+        .our-menu__grid--left{
+            margin-right: 3rem;
+        }
+        
+        .our-menu__grid--right{
+            margin-top: 3rem;
+        }
+
+        .our-menu__grid--item{
+            display: block;
+            width: 255px;
+            height: 200px;
+            margin-bottom: 30px;
+
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

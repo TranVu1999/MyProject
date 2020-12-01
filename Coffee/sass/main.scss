@@ -9,12 +9,18 @@
 
 // 4. Component
 @import "./components/form";
+@import "./components/productItem";
+@import "./components/button";
 
 // 5. Layout
 @import "./layouts/header";
 
 @import "./layouts/carousel";
+@import "./layouts/ourFeature";
+@import "./layouts/ourMenu";
 @import "./layouts/gridImage";
+@import "./layouts/ourProduct";
+@import "./layouts/customerSay";
 @import "./layouts/blog";
 @import "./layouts/contact";
 

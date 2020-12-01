@@ -1,0 +1,13 @@
+.btn-dark{
+    color: $text-primary-color;
+    border: 1px solid $primary-bg;
+    background-color: transparent;
+    font-size: 1.4rem;
+    padding: $distance-1 $distance-2;
+
+    &:hover{
+        background-color: $primary-bg;
+        color: $text-main-color;
+    }
+}
+
