@@ -39,6 +39,13 @@
                     Coffee 
                     <small>Blend</small>
                 </a>
+
+                <button id="toggle-menu" class="toggle-menu">
+                    <span class="icon icon-menu"></span>
+                    <span class="icon icon-cross"></span>
+                    Menu
+                </button>
+
                 <nav class="header__navbar">
                     <ul>
                         <li class="nav-link"><a href="#">Home</a></li>
@@ -53,7 +60,6 @@
                 </nav>
             </div>
         </header>
-        
         <!-- END HEADER -->
 
         <!-- START MAIN SLIDER -->
@@ -113,7 +119,7 @@
             <div class="container-fluid time-open__content">
                 <div class="row">
                     <div class="col-lg-1"></div>
-                    <div class="col-lg-2 py-3">
+                    <div class="col-lg-2">
                         <div class="d-flex-start time-open__box">
                             <span class="icon icon-phone"></span>
                             <div>
@@ -122,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 py-3">
+                    <div class="col-lg-2 ">
                         <div class="d-flex-start time-open__box">
                             <span class="icon icon-location"></span>
                             <div>
@@ -131,7 +137,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 py-3">
+                    <div class="col-lg-2">
                         <div class="d-flex-start time-open__box">
                             <span class="icon icon-phone"></span>
                             <div>
@@ -173,16 +179,18 @@
                                     </div>
                                 </div>
                                 <div class="d-flex-between">
-                                    <div class="form-group w-100">
+                                    <div class="form-group">
                                         <input type="text" name="name" autocomplete="off" required>
                                         <label for="name" class="label-name">
                                             <span class="content-name">Message</span>
                                         </label>
                                     </div>
+
+                                    <div class="form-group">
+                                        <button class="coffee-btn">Appointment</button>
+                                    </div>
                                 </div>
-                                <div class="mt-2 d-flex-center">
-                                    <button class="coffee-btn">Appointment</button>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -195,8 +203,8 @@
         <section class="our-story">
             <div class="container-fluid our-story__content">
                 <div class="row">
-                    <div class="col-lg-6 our-story--left"></div>
-                    <div class="col-lg-6 section-padding our-story--right">
+                    <div class="col-md-6 col-lg-6 our-story--left"></div>
+                    <div class="col-md-6 col-lg-6 section-padding our-story--right">
                         <div class="wow bounceInRight our-story__text">
                             <div class="section-title">
                                 <h6 class="coffee-title">Discover</h6>
@@ -214,7 +222,7 @@
         <section class="section-padding our-feature">
             <div class="container-fluid our-feature__content">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <div class="wow bounceInUp our-feature__item">
                             <div class="our-feature__item--thumb">
                                 <img src="./images/icon1.PNG" alt="">
@@ -223,7 +231,7 @@
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <div class="wow bounceInUp our-feature__item">
                             <div class="our-feature__item--thumb">
                                 <img src="./images/icon2.PNG" alt="">
@@ -232,7 +240,7 @@
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <div class="wow bounceInUp our-feature__item">
                             <div class="our-feature__item--thumb">
                                 <img src="./images/icon3.PNG" alt="">
@@ -295,7 +303,7 @@
         <section class="section-padding our-product">
             <div class="container our-product__content">
                 <div class="row d-flex-center">
-                    <div class="mb-5 col-7">
+                    <div class="mb-5 col-md-7">
                         <div class="wow bounceInUp section-title">
                             <h6 class="coffee-title">Discover</h6>
                             <h2 class="coffee-dark-title">Best Coffee Sellers</h2>
@@ -374,7 +382,7 @@
         <section class="section-padding our-product">
             <div class="container-fluid our-product__content">
                 <div class="row d-flex-center">
-                    <div class="col-7">
+                    <div class="col-md-7">
                         <div class="wow bounceInUp section-title">
                             <h6 class="coffee-title">Discover</h6>
                             <h2 class="coffee-dark-title">Our Products</h2>
@@ -422,7 +430,7 @@
         <section class="customer-say">
             <div class="container-fluid position-relative customer-say__content overlay">
                 <div class="mb-5 row d-flex-center">
-                    <div class="col-7">
+                    <div class="col-md-7">
                         <div class="wow bounceInUp section-title">
                             <h6 class="coffee-title">Testimony</h6>
                             <h2 class="coffee-dark-title">Recent From Blog</h2>
@@ -501,7 +509,7 @@
         <section class="section-padding blog">
             <div class="container blog-content">
                 <div class="mb-5 row d-flex-center">
-                    <div class="col-7">
+                    <div class="col-md-7">
                         <div class="wow bounceInLeft section-title">
                             <h2 class="coffee-dark-title">Recent From Blog</h2>
                             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -732,6 +740,24 @@
             </div>
         </footer>
         <!-- END FOOTER -->
+
+        <!-- RESPONSIVE MENU -->
+        <div id="" class="responsive-menu">
+            <h2 class="title">Menu</h2>
+            <nav class="header__navbar">
+                <ul>
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link"><a href="#">Menu</a></li>
+                    <li class="nav-link"><a href="#">Services</a></li>
+                    <li class="nav-link"><a href="#">Blog</a></li>
+                    <li class="nav-link"><a href="#">About</a></li>
+                    <li class="nav-link"><a href="#">Shop</a></li>
+                    <li class="nav-link"><a href="#">Contact</a></li>
+                    <li><a href="#"><span class="icon icon-cart"></span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- RESPONSIVE MENU -->
     
 
     <!-- SCRIPT -->

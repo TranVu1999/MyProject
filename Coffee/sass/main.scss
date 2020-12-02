@@ -1,18 +1,18 @@
 // 1. Helper
 @import "./helpers/variables";
 
-// 2. Vendor
+// // 2. Vendor
 
-// 3. Base
+// // 3. Base
 @import "./base/reset";
 @import "./base/global";
 
-// 4. Component
+// // 4. Component
 @import "./components/form";
 @import "./components/productItem";
 @import "./components/button";
 
-// 5. Layout
+// // 5. Layout
 @import "./layouts/header";
 
 @import "./layouts/carousel";
@@ -29,7 +29,7 @@
 
 @import "./layouts/footer";
 
-// 6. Page
-@import "./pages/index";
+// // 6. Page
+// @import "./pages/index";
 
-// 7. Theme
+// // 7. Theme

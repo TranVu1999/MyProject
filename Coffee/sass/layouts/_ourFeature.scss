@@ -37,3 +37,9 @@
         width: 80%;
     }
 }
+
+@media screen and (max-width: 767px){
+    .our-feature__item{
+        margin-bottom: 4rem;
+    }
+}

@@ -8,6 +8,7 @@
     .time-open__box{
         align-items: flex-start;
         font-size: 1.7rem;
+        padding: 3rem 0;
 
         span.icon{
             margin-right: $distance-3;
@@ -57,4 +58,24 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 991px){
+    .time-open{
+        padding: 3rem 0;
+
+        div[class|="col"]{
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .time-open__box{
+            padding: 1.5rem 3rem;
+        }
+
+        .time-open__box.form{
+            position: initial!important;
+        }
+    }
+    
 }
