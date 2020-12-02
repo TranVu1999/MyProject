@@ -77,5 +77,23 @@
             position: initial!important;
         }
     }
-    
+}
+
+@media screen and (max-width: 567px){
+    .time-open{
+
+        .time-open__box{
+            padding: 1.5rem;
+        }
+
+        .contact__form{
+            &>div{
+                display: block;
+            }
+            
+            .form-group{
+                width: 100%;
+            }
+        }
+    }
 }

@@ -73,7 +73,7 @@
     }
 
     .blog-wrap{
-        
+        align-items: flex-start;
         img{
             width: 80px;
             height: 80px;
@@ -94,7 +94,21 @@
         &>div{
             display: inline;
         }
-    }
+    } 
+}
 
-    
+@media screen and (max-width: 567px){
+    .footer{
+        .container-fluid{
+            padding: 0 1.5rem!important;
+        }
+    }
+}
+
+@media screen and (max-width: 399px){
+    .footer{
+        .container-fluid{
+            padding: 0 .5rem!important;
+        }
+    }
 }

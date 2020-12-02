@@ -39,3 +39,16 @@
         padding: 5rem 4rem;
     }
 }
+
+@media screen and (max-width: 567px){
+    .contact__form{
+        padding: 3rem;
+        &>div{
+            display: block;
+        }
+        
+        .form-group{
+            width: 100%;
+        }
+    }
+}

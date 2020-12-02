@@ -29,6 +29,7 @@
             p{
                 font-weight: 300;
                 color: gray;
+                text-align: justify;
             }
         }
         
@@ -51,6 +52,15 @@
 
         .our-story__text{
             margin-left: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 567px){
+    .our-story{
+        .our-story__text{
+            padding: 0 1.5rem;
+            background-color: transparent;
         }
     }
 }
