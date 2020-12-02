@@ -1,0 +1,36 @@
+.our-story{
+    background-image: url(./../../images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .our-story--left{
+        background-image: url(./../../images/about.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .our-story__text{
+        background-color: rgba(0,0,0,.5);
+        margin-left: -100px;
+        width: 100%;
+        padding: 4rem;
+
+        line-height: 1.5;
+        
+        .section-title{
+            text-align: left;
+
+            .coffee-title{
+                left: 70px;
+            }
+
+            p{
+                font-weight: 300;
+                color: gray;
+            }
+        }
+        
+    }
+}

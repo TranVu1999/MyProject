@@ -4,6 +4,10 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    .container-fluid{
+        padding: 0 3rem!important;
+    }
+
     .blog__thumb{
         img{
             width: 100%;
@@ -42,3 +46,10 @@
         }
     }
 }
+
+@media screen and (max-width: 767px){
+    .blog__item{
+        margin-bottom: 6.5rem;
+    }
+}
+

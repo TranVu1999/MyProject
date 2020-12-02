@@ -7,29 +7,35 @@
     iframe{
         width: 100%;
     }
+}
 
-    .contact__form{
-        padding: 0 75px;
+.contact__form{
+    padding: 0 75px;
 
-        h6{
-            font-size: 3rem;
-        }
+    h6{
+        font-size: 3rem;
+    }
 
-        .form-group{
-            width: 45%;
-        }
+    .form-group{
+        width: 45%;
+    }
 
-        button{
-            background-color: $primary-bg;
+    button{
+        background-color: $primary-bg;
+        border-color: $primary-bg;
+        color: #000;
+        min-width: 180px;
+
+        &:hover{
+            background-color: transparent;
+            color: $text-primary-color;
             border-color: $primary-bg;
-            color: #000;
-            min-width: 180px;
-
-            &:hover{
-                background-color: transparent;
-                color: $text-primary-color;
-                border-color: $primary-bg;
-            }
         }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .contact__form{
+        padding: 5rem 4rem;
     }
 }
