@@ -122,7 +122,16 @@
     margin-bottom: 50px!important;
 }
 
+
+
 // PADDING
+.p-0{
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
 .py-1{
     padding-top: 10px!important;
     padding-bottom: 10px!important;
@@ -131,5 +140,11 @@
 .py-3{
     padding-top: 30px!important;
     padding-bottom: 30px!important;
+}
+
+
+// TEXT
+.text-color-primary{
+    color: $text-primary-color;
 }
     

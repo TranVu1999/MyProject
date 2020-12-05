@@ -1,4 +1,5 @@
-.form-group{
+
+.animation.form-group{
     width: 50%;
     position: relative;
     height: 50px;
@@ -60,6 +61,46 @@
         transform: translateY(-150%);
         font-size: 14px;
         color: #fff;
+    }
+}
+
+.normal.form-group{
+    label{
+        display: block;
+        font-size: 1.5rem;
+        margin-bottom: $distance-2;
+    }
+
+    input, select{
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, .1);
+        padding: $distance-3 $distance-4;
+        width: 100%;
+        
+        color: $text-main-color;
+        font-size: 1.4rem;
+
+        &:focus{
+            border-color: $primary-bg;
+        }
+    }
+
+    .radio-box{
+        
+        label{
+            margin: 0;
+            margin-right: $distance-4;
+        }
+        input{
+            display: inline;
+            width: auto;
+            margin-right: $distance-0;
+        }
+    }
+
+    option{
+        background-color: transparent;
+        color: #000;
     }
 }
 

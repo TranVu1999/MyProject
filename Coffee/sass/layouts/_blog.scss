@@ -1,12 +1,8 @@
 .blog{
-    background-image: url(./../../images/bg_4.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
     .container-fluid{
         padding: 0 3rem!important;
     }
+
 
     .blog__thumb{
         img{
@@ -45,11 +41,54 @@
             font-size: 1.8rem;
         }
     }
+
+    .blog-content__nav{
+        text-align: center;
+
+        li{
+            display: inline-block;
+            height: 45px;
+            width: 45px;
+            border: 1px solid $primary-bg;
+
+            border-radius: 50%;
+            line-height: 45px;
+            text-align: center;
+            font-size: 2rem;
+
+            margin: 0 $distance-0;
+
+            a{
+                display: block;
+            }
+            
+            &:hover{
+                background-color: $primary-bg;
+                color: $text-main-color;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px){
     .blog__item{
         margin-bottom: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 567px){
+    .blog{
+        .blog-content__nav{
+            
+    
+            li{
+                
+                height: 32px;
+                width: 32px;
+                line-height: 32px;
+                font-size: 1.6rem;
+            }
+        }
     }
 }
 

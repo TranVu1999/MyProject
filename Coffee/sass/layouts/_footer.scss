@@ -71,31 +71,8 @@
             }
         }
     }
-
-    .blog-wrap{
-        align-items: flex-start;
-        img{
-            width: 80px;
-            height: 80px;
-            margin-right: $distance-4;
-        }
-    }
-
-    .blog-wrap__text{
-        a{
-            font-size: 1.8rem;
-            line-height: 1.2;
-        }
-    }
-
-    .blog-wrap__time{
-        color: gray;
-        font-size: 1.4rem;
-        &>div{
-            display: inline;
-        }
-    } 
 }
+
 
 @media screen and (max-width: 567px){
     .footer{

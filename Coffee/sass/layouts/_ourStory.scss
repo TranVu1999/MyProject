@@ -1,14 +1,6 @@
 .our-story{
-    background-image: url(./../../images/bg_4.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
     .our-story--left{
-        background-image: url(./../../images/about.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        @include backgroundImage(url(./../../images/about.jpg), cover, center, no-repeat);
     }
 
     .our-story__text{

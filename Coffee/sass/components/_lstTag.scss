@@ -1,0 +1,16 @@
+.lst-tag{
+    .tag-item{
+        display: inline-block;
+        border: 1px solid $primary-bg;
+        border-radius: 5px;
+        padding: $distance-1 $distance-3;
+
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-right: $distance-1;
+        margin-bottom: $distance-1;
+        &:hover{
+            border-color: #000;
+        }
+    }
+}

@@ -39,6 +39,25 @@
         &:last-child{
             padding-right: 0;
         }
+
+        .cart{
+            position: relative;
+        }
+
+        .number{
+            background-color: $primary-bg;
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 20px;
+
+            top: -20px;
+            right: -20px;
+            text-align: center;
+            line-height:22px;
+
+            border-radius: 50%;
+        }
     }
 
     li.nav-link{
@@ -58,7 +77,8 @@
             z-index: 0;
             transition: all .4s;
         }
-        &:hover::after{
+        &:hover::after, 
+        &.active::after{
             height: 110%;
         }
 

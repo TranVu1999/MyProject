@@ -5,13 +5,25 @@
 }
 
 html, body{
-    font-family: 'Josefin Sans', sans-serif;
+    // font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 10px;
     line-height: 1;
 
     color: #fff;
     font-weight: 300;
     overflow-x: hidden;
+
+    @include backgroundImage(url(./../../images/bg_4.jpg), cover, center, no-repeat);
+    background-attachment: fixed;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.4;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Josefin Sans", Arial, sans-serif;
 }
 
 a, a:hover{
@@ -23,7 +35,9 @@ ul, ol{
     list-style: none;
 }
 
-button, button:focus{
+button, button:focus,
+input, input:focus,
+select, select:focus{
     outline: none;
     border: none;
     cursor: pointer;
@@ -36,3 +50,24 @@ button, button:focus{
         margin: 0!important;
     }
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #666; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primary-bg; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f1f1f1; 
+  }

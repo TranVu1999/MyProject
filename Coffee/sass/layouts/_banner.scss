@@ -1,0 +1,46 @@
+.banner{
+    @include backgroundImage(url(./../../images/bg_3.jpg), cover, center, no-repeat);
+    .banner__content{
+        position: relative;
+        min-height: 600px;
+
+        &:after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,.5);
+        }
+    }
+
+
+    .banner__text{
+        z-index: 1;
+        text-transform: uppercase;
+        text-align: center;
+        h1{
+            font-size: 4rem;
+            margin-bottom: $distance-4;
+            letter-spacing: 2px;
+        }
+
+        li{
+            display: inline-block;
+            margin: 0 $distance-1;
+            padding: 0 $distance-0 $distance-0;
+            font-size: 1.3rem;
+            font-weight: 400;
+
+            color: rgba(255, 255, 255, .6);
+            border-bottom: 2px solid rgba(255, 255, 255, .4);
+
+            &:first-child{
+                color: rgba(255, 255, 255, .8);
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+@mixin  backgroundImage($url, $bg_size, $bg_position, $bg_repeat) {
+    background-image: $url;
+    background-size: $bg_size;
+    background-position: $bg_position;
+    background-repeat: $bg_repeat;
+}

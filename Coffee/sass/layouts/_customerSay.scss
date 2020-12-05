@@ -1,8 +1,5 @@
 .customer-say{
-    background-image: url(./../../images/bg_1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include backgroundImage(url(./../../images/bg_1.jpg), cover, center, no-repeat);
 
     *{
         position: relative;
