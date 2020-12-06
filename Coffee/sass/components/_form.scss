@@ -1,11 +1,10 @@
 
-.animation.form-group{
-    width: 50%;
+.animate.form-group{
     position: relative;
     height: 50px;
     overflow: hidden;
 
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 
     input{
         height: 100%;
@@ -58,8 +57,8 @@
     
     input:focus + .label-name .content-name,
     input:valid + .label-name .content-name{
-        transform: translateY(-150%);
-        font-size: 14px;
+        transform: translateY(-90%);
+        font-size: 1.3rem;
         color: #fff;
     }
 }
@@ -69,6 +68,7 @@
         display: block;
         font-size: 1.5rem;
         margin-bottom: $distance-2;
+        line-height: 1.5;
     }
 
     input, select{
@@ -79,7 +79,7 @@
         
         color: $text-main-color;
         font-size: 1.4rem;
-
+        
         &:focus{
             border-color: $primary-bg;
         }
@@ -101,6 +101,22 @@
     option{
         background-color: transparent;
         color: #000;
+    }
+
+    button{
+        background-color: $primary-bg;
+        border: 1px solid $primary-bg;
+        color: #000;
+        font-size: 1.4rem;
+
+        padding: $distance-4 3rem;
+        width: 100%;
+
+        &:hover{
+            background-color: transparent;
+            color: $text-primary-color;
+        }
+
     }
 }
 

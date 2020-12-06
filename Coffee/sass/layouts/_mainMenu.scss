@@ -1,18 +1,14 @@
 .main-menu{
     
-
     .coffee-menu--box{
         h3{
             text-transform: uppercase;
-            font-size: 2.6rem;
+            font-size: 2.4rem;
             letter-spacing: 1px;
             margin-bottom: 3rem;
         }
 
         .coffee-menu__item{
-            font-size: 1.8rem;
-            font-weight: 400;
-
             &>div{
                 flex: 1;
                 align-items: flex-end;
@@ -29,6 +25,8 @@
 
             .coffee-menu__item--title{
                 color: #bfbfbf;
+                font-size: 1.8rem;
+                font-weight: 400;
             }
 
             .space{
@@ -40,13 +38,12 @@
 
             .coffee-menu__item--price{
                 color: #c49b63;
+                font-size: 1.5rem;
             }
 
             p{
-                margin-top: 1rem;
                 margin-bottom: 0;
-                font-weight: 300;
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 color: gray;
             }
         }

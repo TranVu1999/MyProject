@@ -3,7 +3,7 @@
 
     
     .main-slider__item{
-        min-height: 650px;
+        min-height: 700px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -18,7 +18,7 @@
         bottom: 0;
         right: 0;
 
-        background-color: rgba(0,0,0,.3);
+        background-color: rgba(0,0,0,.5);
         z-index: 0;
     }
 
@@ -40,8 +40,8 @@
         }
 
         p{
-            font-size: 2rem;
-            font-weight: 300;
+            font-size: 1.8rem;
+            line-height: 1.5;
         }
     }
 

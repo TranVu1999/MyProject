@@ -8,7 +8,7 @@ html, body{
     // font-family: 'Josefin Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
-    line-height: 1;
+    line-height: 1.8;
 
     color: #fff;
     font-weight: 300;
@@ -43,13 +43,6 @@ select, select:focus{
     cursor: pointer;
 }
 
-.container-fluid, .container{
-    padding: 0;
-
-    .row{
-        margin: 0!important;
-    }
-}
 
 /* width */
 ::-webkit-scrollbar {

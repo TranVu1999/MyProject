@@ -7,8 +7,11 @@
 
     .time-open__box{
         align-items: flex-start;
-        font-size: 1.7rem;
         padding: 3rem 0;
+
+        h6{
+            font-size: 1.6rem;
+        }
 
         span.icon{
             margin-right: $distance-3;
@@ -21,8 +24,8 @@
         }
 
         p{
-            line-height: 1.3;
             color: rgba(255, 255, 255, .5);
+            font-size: 1.5rem;
         }
     }
 

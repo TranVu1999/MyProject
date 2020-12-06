@@ -1,8 +1,5 @@
 .contact__content{
     background-color: #000;
-    div[class*='col']{
-        padding: 0;
-    }
 
     iframe{
         width: 100%;
@@ -10,14 +7,10 @@
 }
 
 .contact__form{
-    padding: 0 75px;
+    padding: 0 75px 0 30px;
 
     h6{
         font-size: 3rem;
-    }
-
-    .form-group{
-        width: 45%;
     }
 
     button{
