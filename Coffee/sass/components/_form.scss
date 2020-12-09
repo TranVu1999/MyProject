@@ -120,3 +120,16 @@
     }
 }
 
+
+@media screen and (max-width: 499px){
+    .normal.form-group{
+    
+        .radio-box{
+             display: block;
+             label{
+                 margin-bottom: 2rem;
+             }
+           
+        }
+    }
+}

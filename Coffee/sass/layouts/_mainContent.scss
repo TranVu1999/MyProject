@@ -194,3 +194,15 @@
         }
     }
 }
+
+@media screen and (max-width: 499px){
+    .main-content__content{
+        padding: 0;
+        
+
+        .form-checkout, .total-detail, .payment-detail{
+            padding: 3rem 1.5rem;
+        }
+    }
+}
+

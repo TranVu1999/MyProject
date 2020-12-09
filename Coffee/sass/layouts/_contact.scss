@@ -28,20 +28,33 @@
 }
 
 @media screen and (max-width: 991px){
-    .contact__form{
-        padding: 5rem 4rem;
+    .contact__content{
+        .contact__form{
+            padding: 5rem 4rem;
+        }
     }
+    
 }
 
 @media screen and (max-width: 567px){
-    .contact__form{
-        padding: 3rem;
-        &>div{
-            display: block;
+    .contact__content{
+        .contact__content--left{
+            padding-right: 0;
         }
-        
-        .form-group{
-            width: 100%;
+        .contact__form{
+            padding: 30px 0;
+            &>div{
+                display: block;
+            }
+            
+            .form-group{
+                width: 100%;
+            }
+
+            .coffee-btn{
+                width: 100%;
+            }
         }
     }
+    
 }

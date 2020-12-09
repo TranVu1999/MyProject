@@ -371,6 +371,15 @@ select, select:focus {
   color: #c49b63;
 }
 
+@media screen and (max-width: 499px) {
+  .normal.form-group .radio-box {
+    display: block;
+  }
+  .normal.form-group .radio-box label {
+    margin-bottom: 2rem;
+  }
+}
+
 .product-item {
   text-align: center;
   font-size: 1.5rem;
@@ -907,7 +916,7 @@ select, select:focus {
   .time-open {
     padding: 3rem 0;
   }
-  .time-open div[class|="col"] {
+  .time-open div[class|="col"]:last-child {
     padding-left: 0;
     padding-right: 0;
   }
@@ -1414,19 +1423,25 @@ select, select:focus {
 }
 
 @media screen and (max-width: 991px) {
-  .contact__form {
+  .contact__content .contact__form {
     padding: 5rem 4rem;
   }
 }
 
 @media screen and (max-width: 567px) {
-  .contact__form {
-    padding: 3rem;
+  .contact__content .contact__content--left {
+    padding-right: 0;
   }
-  .contact__form > div {
+  .contact__content .contact__form {
+    padding: 30px 0;
+  }
+  .contact__content .contact__form > div {
     display: block;
   }
-  .contact__form .form-group {
+  .contact__content .contact__form .form-group {
+    width: 100%;
+  }
+  .contact__content .contact__form .coffee-btn {
     width: 100%;
   }
 }
@@ -1627,6 +1642,15 @@ select, select:focus {
   }
   .main-content__content .payment-detail {
     margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .main-content__content {
+    padding: 0;
+  }
+  .main-content__content .form-checkout, .main-content__content .total-detail, .main-content__content .payment-detail {
+    padding: 3rem 1.5rem;
   }
 }
 
