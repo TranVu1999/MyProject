@@ -36,7 +36,7 @@
 
     li{
         display: inline-block;
-        padding: $distance-0 $distance-4;
+        padding: $distance-0 0;
         position: relative;
 
         &:last-child{
@@ -51,45 +51,111 @@
             background-color: $primary-bg;
             position: absolute;
             display: block;
-            width: 20px;
-            height: 20px;
+            width: 28px;
+            height: 28px;
 
             top: -20px;
             right: -20px;
             text-align: center;
-            line-height:22px;
+            line-height:28px;
 
             border-radius: 50%;
         }
     }
 
     li.nav-link{
-        &::after{
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
 
-
-            width: 80%;
-            height: 1px;
-
-            background-color: $primary-bg;
-            z-index: 0;
-            transition: all .4s;
-        }
-        &:hover::after, 
-        &.active::after{
-            height: 110%;
-        }
-
-        a{
+        &>a{
             position: relative;
-            z-index: 1;
+            display: block;
+            padding: $distance-0 $distance-4;
+            *{
+                position: relative;
+                z-index: 1;
+            }
+
+
+            &::after{
+                content: '';
+                display: block;
+                width: 80%;
+                height: 1px;
+                transition: height .4s;
+
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $primary-bg;
+
+                z-index: -1;
+            }
+        }
+
+        &:hover>a{
+            &::after{
+                height: 100%;
+            }
         }
     }
+
+    li.toggle-sub-menu{
+        position: relative;
+
+        a{
+            &::after{
+                transform: translateX(-38%);
+            }
+        }
+
+        span.icon-down{
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-right: 3px solid #fff;
+            border-bottom:3px solid #fff;
+            border-left:6px solid transparent;
+
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: rotate(45deg) translate(-65%, -61%);
+        }
+
+        .sub-menu{
+            display: none;
+
+            position: absolute;
+            width: 160px;
+            top: 100%;
+            left: 0;
+
+            background-color: #0D0D0D;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+
+            border-top: 8px solid #000;
+            border-bottom: 8px solid #000;
+
+            li{
+                display: block;
+                padding: $distance-1 $distance-4;
+
+                &:hover{
+                    color: $text-primary-color;
+                }
+            }
+        }
+
+        &:hover{
+            .sub-menu{
+                display: block;
+            }
+        }
+    }
+
+    
 }
 
 .toggle-menu{
@@ -108,47 +174,98 @@
     }
 }
 
-.responsive-menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    min-width: 300px;
-
-    transform: translateX(-100%);
-
-    background-color: rgb(0,0,0);
-    z-index: 100;
-    color: $text-main-color;
-    text-align: center;
-
-    transition: all .5s ease-in-out;
-
-    .title{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        font-size: 2.8rem;
-        text-transform: uppercase;
-
-        letter-spacing: 2px;
-    }
-
-    .header__navbar{
-        display: block;
-        font-size: 2rem;
-        
-        li{
-            display: block;
-            margin-bottom: 2rem;
-        }
-    }
-}
-
 
 @media screen and (max-width: 991px){
-    .header__navbar{
-        display: none;
+    .header{
+        position: relative;
+        .header__navbar{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #000;
+            width: 100%;
+
+            padding: $distance-2 0 $distance-4;
+            min-height: 100vh;
+            display: none;
+
+            li{
+                display: block;
+                text-align: center;
+                padding: $distance-2 0;
+                position: relative;
+
+                a{
+                    display: inline-block
+                    ;
+                }
+
+                &:hover{
+                    color: $text-primary-color;
+                }
+                &:hover::after{
+                    background-color: $primary-bg;
+                }
+
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 50%;
+                    height: 1px;
+                    background-color: rgba(255, 255, 255, .1);
+
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            li.toggle-sub-menu{
+                position: relative;
+
+                span.icon-down{
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    border-top: 6px solid transparent;
+                    border-right: 3px solid #fff;
+                    border-bottom:3px solid #fff;
+                    border-left:6px solid transparent;
+        
+                    position: absolute;
+                    top: 50%;
+                    right: 5px;
+                    transform: rotate(45deg) translate(-65%, -61%);
+                }
+
+                &:hover{
+                    span.icon-down{
+                        border-right: 3px solid $primary-bg;
+                        border-bottom:3px solid $primary-bg;
+                    }
+
+                    .sub-menu{
+                        display: block;
+                    }
+                    
+                }
+
+                .sub-menu{
+                    position: initial;
+                    width: 100%;
+                    
+                    li{
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                }
+        
+                
+            }
+        }
     }
+    
 
     .toggle-menu{
         display: inline-block;

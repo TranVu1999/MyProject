@@ -64,3 +64,15 @@ select, select:focus{
   ::-webkit-scrollbar-thumb:hover {
     background: #f1f1f1; 
   }
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 499px){
+    .container, .container-fluid{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

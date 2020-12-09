@@ -55,7 +55,17 @@
                         <li class="nav-link"><a href="./services.html">Services</a></li>
                         <li class="nav-link"><a href="./blog.html">Blog</a></li>
                         <li class="nav-link"><a href="./about.html">About</a></li>
-                        <li class="nav-link"><a href="#">Shop</a></li>
+                        <li class="nav-link toggle-sub-menu">
+                            <a href="#">
+                                Shop
+                                <span class="icon-down"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">Checkout</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-link"><a href="#">Contact</a></li>
                         <li><a href="#" class="cart"><span class="icon icon-cart"></span> <span class="number">3</span></a></li>
                     </ul>
@@ -89,7 +99,7 @@
         <section class="section-padding main-content">
             <div class="container main-content__content">
                 <div class="row blog-detail__content">
-                    <div class="col-lg-8 blog-detail--left">
+                    <div class="col-lg-8 main-content--left">
                         <h1 class="blog-title">10 Tips For The Traveler</h1>
                         <div class="blog-text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
@@ -157,7 +167,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 blog-detail--right">
+                    <div class="col-lg-4 main-content--right">
                         <form class="mb-5 search">
                             <div class="form-group search-input">
                                 <input type="text" placeholder="Search...">
@@ -402,25 +412,6 @@
             </div>
         </footer>
         <!-- END FOOTER -->
-
-        <!-- RESPONSIVE MENU -->
-        <div id="responsive-menu" class="responsive-menu">
-            <h2 class="title">Menu</h2>
-            <nav class="header__navbar">
-                <ul>
-                    <li class="nav-link"><a href="#">Home</a></li>
-                    <li class="nav-link"><a href="#">Menu</a></li>
-                    <li class="nav-link"><a href="#">Services</a></li>
-                    <li class="nav-link"><a href="#">Blog</a></li>
-                    <li class="nav-link"><a href="#">About</a></li>
-                    <li class="nav-link"><a href="#">Shop</a></li>
-                    <li class="nav-link"><a href="#">Contact</a></li>
-                    <li><a href="#"><span class="icon icon-cart"></span></a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- RESPONSIVE MENU -->
-    
 
     <!-- SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

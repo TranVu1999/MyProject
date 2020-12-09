@@ -13,9 +13,6 @@
         line-height: 1.5;
     }
 
-    .container-fluid{
-        padding: 0 3rem!important;
-    }
 }
 
 .footer__content{
@@ -73,19 +70,3 @@
     }
 }
 
-
-@media screen and (max-width: 567px){
-    .footer{
-        .container-fluid{
-            padding: 0 1.5rem!important;
-        }
-    }
-}
-
-@media screen and (max-width: 399px){
-    .footer{
-        .container-fluid{
-            padding: 0 .5rem!important;
-        }
-    }
-}

@@ -69,12 +69,18 @@
         padding-left: 1.5rem;
     }
 
-    .form-checkout, .cart-detail{
+    .form-checkout, .total-detail, .payment-detail{
         background-color: #030202;
         padding: 3rem;
     }
 
-    .cart-detail{
+    .cart-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .total-detail{
         padding: 1.5rem 3rem;
         font-size: 1.5rem;
         color: #bfbfbf;
@@ -90,6 +96,8 @@
             background-color: rgba(255, 255, 255, .1);
         }
     }
+    
+
 
     .main-content--left{
         padding-right: 3rem;
@@ -161,4 +169,28 @@
             display: inline;
         }
     } 
+}
+
+@media screen and (max-width: 991px){
+    .main-content__content{
+        padding: 0;
+        
+
+        .main-content--left, .main-content--right{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .main-content--right{
+            margin-top: 5rem;
+        }
+
+        .cart-grid{
+            grid-template-columns: 1fr;
+        }
+
+        .payment-detail{
+            margin-top: 5rem;
+        }
+    }
 }

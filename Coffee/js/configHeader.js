@@ -4,13 +4,14 @@ elmToggleMenu.addEventListener('click', function() {
         elmToggleMenu.classList.remove('active');
         $('#toggle-menu .icon-menu').css('display', 'inline');
         $('#toggle-menu .icon-cross').css('display', 'none');
-        $('#responsive-menu').css('transform', 'translateX(-100%)');
+        
+        $('.header__navbar').css('display', 'none');
     }else{
         elmToggleMenu.classList.add('active');
         $('#toggle-menu .icon-menu').css('display', 'none');
         $('#toggle-menu .icon-cross').css('display', 'inline');
-        $('#responsive-menu').css('transform', 'translateX(0%)');
-
+        
+        $('.header__navbar').css('display', 'block');
     }
     
 })

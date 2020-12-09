@@ -49,3 +49,27 @@
         }
     }
 }
+
+@media screen and (max-width: 399px){
+    .main-menu{
+        
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .coffee-menu--box{
+            
+            .coffee-menu__item{
+                align-items: flex-start;
+            }
+
+            .coffee-menu__item--info{
+                display: block;
+
+                .space{
+                    display: none;
+                }
+            }
+        }
+    }
+}

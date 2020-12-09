@@ -19,3 +19,12 @@
         }
     }
 }
+
+@media screen and (max-width: 499px){
+    .our-product{
+        .our-product__nav{
+            display: block;
+            padding: 0 15px;
+        }
+    }
+}
