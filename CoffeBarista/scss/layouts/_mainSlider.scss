@@ -1,0 +1,110 @@
+.main-slider__content{
+    .item__content{
+        height: 580px;
+        position: relative;
+        z-index: 5;
+    }
+
+    .slide-title-box{
+        position: absolute;
+        top: 22%;
+        left: 80px;
+        
+
+        .title-box__animate, .desc-box__animate, h1{
+            font-size: 90px;
+            text-transform: uppercase;
+            color: #fff;
+
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 100px;            
+        }
+
+        .blur-animate, .move-animate{
+            display: inline-block;
+        }
+
+        .letter{
+            display: inline-block;
+            margin-right: -28px;
+            color: rgb(0, 94, 32);
+        }
+
+        .desc-box__animate{
+            margin-top: 20px;
+
+            font-size: 20px;
+            font-family: Merriweather;
+            font-style: italic;
+            text-transform: initial;
+
+            letter-spacing: 0;
+            min-width: 487px;
+            max-width: 487px;
+            
+            line-height: 30px;
+            font-weight: 400;
+            // color: rgb(49, 42, 38);
+        }
+
+        .read-more-box__animate{
+            margin-top: 30px;
+        }
+    }
+
+    .main-carousel__nav{
+        button{
+            color: #fff;
+            font-size: 32px;
+        }
+
+        .nav-left, .nav-right{
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            transition: all .3s ease-in-out;
+        }
+
+        .nav-left{
+            left: 20px;
+            &:hover{
+                transform: translate(-5px, -50%);
+            }
+        }
+        .nav-right{
+            right: 20px;
+            &:hover{
+                transform: translate(5px, -50%);
+            }
+        }
+    }
+
+    .main-carousel__dots{
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button{
+            display: inline-block;
+            background-color: #fff;
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+
+            margin: 0 8px;
+
+            &.active{
+                height: 16px;
+                width: 16px;
+                box-shadow: 0 0 10px #fff;
+            }
+        }
+    }
+}

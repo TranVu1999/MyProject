@@ -1,0 +1,20 @@
+.coffee-btn{
+    display: inline-block;
+
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: $second-color;
+    padding: 18px 40px;
+
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        background-color: $primary-color;
+        color: #fff;
+    }
+}

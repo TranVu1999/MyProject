@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Barista</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="./images/sub-logo.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="./vendor/icon-moon.css">
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    
+    <div class="main-wrapper">
+        <!-- START HEADER -->
+        <header class="header">
+            <div class="d-flex-between px-25 header__content">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="./images/logo-1.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li class="bulkhead"><span></span></li>
+                        <li><a href="#" class="header__cart">
+                            <span class="icon icon-cart"></span>
+                            <span class="number">0</span>
+                        </a></li>
+                        <li><a href="#" class="header__search"><span class="icon icon-search"></span></a></li>
+                        <li><a href="#" class="header__humburger"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- START MAIN SLIDER -->
+        <section class="main-slider">
+            <div class="main-slider__content">
+                <div class="carousel main-carousel" id="main_carousel">
+                    <div class="coursel__content">
+                        <div class="item">
+                            <div class="item__content" style="background-image: url(./images/slider1.jpg);">
+                                <div class="slide-title-box">
+                                    <h1>Made</h1>
+                                    <div class="title-box__animate">
+                                        <div class="blur-animate">
+                                            With
+                                        </div>
+                                        <div class="move-animate">
+                                            <div class="letter">F</div>
+                                            <div class="letter">E</div>
+                                            <div class="letter">E</div>
+                                            <div class="letter">L</div>
+                                            <div class="letter">I</div>
+                                            <div class="letter">N</div>
+                                            <div class="letter">G</div>
+                                        </div>
+                                    </div>
+                                    <div class="desc-box__animate">
+                                        Lorem ipsum dolor sit amet, nec ne oficiis electram. dolore nominati vim et.
+                                    </div>
+                                    <div class="read-more-box__animate">
+                                        <a href="#" class="coffee-btn">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="main-carousel__nav">
+                                    <button class="nav-left"><span class="icon icon-arrow-left2"></span></button>
+                                    <button class="nav-right"><span class="icon icon-arrow-right2"></span></button>
+                                </div>
+                                <div class="main-carousel__dots">
+                                    <button class="dot active"></button>
+                                    <button class="dot"></button>
+                                    <button class="dot"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END MAIN SLIDER -->
+
+        <!-- START BANNER -->
+        <section class="banner">
+            <div class="cf-container d-flex-between banner__content">
+                <a href="#" class="banner__item" style="background-image: url(./images/banner1.jpg);">
+                    <div class="banner--overlay"></div>
+                    <div class="d-flex-between banner--text">
+                        <h6>New Coffee Flavours</h6>
+                        <button>Read more <span class="icon icon-arrow-right2"></span></button>
+                    </div>
+                </a>
+                <a href="#" class="banner__item" style="background-image: url(./images/banner2.jpg);">
+                    <div class="banner--overlay"></div>
+                    <div class="d-flex-between banner--text">
+                        <h6>This Friday 25% off</h6>
+                        <button>Read more <span class="icon icon-arrow-right2"></span></button>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- END BANNER -->
+
+        <!-- START LST PRODUCT -->
+        <section class="lst-product">
+            <div class="title-box">
+                <p>What Happens Here</p>
+                <h2>Coffee House Merchandise</h2>
+            </div>
+            <div class="cf-container d-gr-4 lst-product__container"> 
+                <div class="product-item">
+                    <a href="#" class="product-item__thumb">
+                        <img src="./images/prod1.jpg" alt="product">
+                        <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                    </a>
+                    <div class="product-item__text">
+                        <h4 class="product-item__title"><a href="#" >Paper Pouch</a></h4>
+                        
+                        <div class="product-item__rate">
+                            <div class="product-item__rate--overlay" style="width: 12%;"></div>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                        </div>
+                        <p class="product-item__price">
+                            <span> <span class="price-symboy">$</span>46.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__thumb">
+                        <label>Sale</label>
+                        <img src="./images/prod2.jpg" alt="product">
+                        <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                    </a>
+                    <div class="product-item__text">
+                        <h4 class="product-item__title"><a href="#" >Paper Bag</a></h4>
+                        
+                        <div class="product-item__rate">
+                            <div class="product-item__rate--overlay" style="width: 30%;"></div>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                        </div>
+                        <p class="product-item__price">
+                            <del> <span class="price-symboy">$</span>98.00</del>
+                            <span> <span class="price-symboy">$</span>79.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__thumb">
+                        <img src="./images/prod3.jpg" alt="product">
+                        <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                    </a>
+                    <div class="product-item__text">
+                        <h4 class="product-item__title"><a href="#" >Plastic pouch</a></h4>
+                        
+                        <div class="product-item__rate">
+                            <div class="product-item__rate--overlay" style="width: 20%;"></div>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                        </div>
+                        <p class="product-item__price">
+                            <span> <span class="price-symboy">$</span>27.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__thumb">
+                        <img src="./images/prod1.jpg" alt="product">
+                        <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                    </a>
+                    <div class="product-item__text">
+                        <h4 class="product-item__title"><a href="#" >Coffee pot</a></h4>
+                        
+                        <div class="product-item__rate">
+                            <div class="product-item__rate--overlay" style="width: 10%;"></div>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                        </div>
+                        <p class="product-item__price">
+                            <span> <span class="price-symboy">$</span>71.00</span> 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <a href="#" class="product-item__thumb">
+                        <img src="./images/prod5.jpg" alt="product">
+                        <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                    </a>
+                    <div class="product-item__text">
+                        <h4 class="product-item__title"><a href="#" >Tea pot</a></h4>
+                        
+                        <div class="product-item__rate">
+                            <div class="product-item__rate--overlay" style="width: 12%;"></div>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                        </div>
+                        <p class="product-item__price">
+                            <span> <span class="price-symboy">$</span>54.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__thumb">
+                        <label>Sale</label>
+                        <img src="./images/prod6.jpg" alt="product">
+                        <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                    </a>
+                    <div class="product-item__text">
+                        <h4 class="product-item__title"><a href="#" >Paper Cup</a></h4>
+                        
+                        <div class="product-item__rate">
+                            <div class="product-item__rate--overlay" style="width: 30%;"></div>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                        </div>
+                        <p class="product-item__price">
+                            <span> <span class="price-symboy">$</span>31.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__thumb">
+                        <img src="./images/prod7.jpg" alt="product">
+                        <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                    </a>
+                    <div class="product-item__text">
+                        <h4 class="product-item__title"><a href="#" >Choco Bites</a></h4>
+                        
+                        <div class="product-item__rate">
+                            <div class="product-item__rate--overlay" style="width: 20%;"></div>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                        </div>
+                        <p class="product-item__price">
+                            <span> <span class="price-symboy">$</span>63.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__thumb">
+                        <img src="./images/prod8.jpg" alt="product">
+                        <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                    </a>
+                    <div class="product-item__text">
+                        <h4 class="product-item__title"><a href="#" >Ground Coffee</a></h4>
+                        
+                        <div class="product-item__rate">
+                            <div class="product-item__rate--overlay" style="width: 10%;"></div>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                        </div>
+                        <p class="product-item__price">
+                            <span> <span class="price-symboy">$</span>75.00</span> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END LST PRODUCT -->
+
+        <!-- START PARALLAX -->
+        <section class="parallax">
+            <div class="title-box">
+                <p>What Happens Here</p>
+                <h2 class="none-under">This Friday 25% Off & Special Gift</h2>
+                <a href="#" class="coffee-btn">Read More</a>
+            </div>
+        </section>
+        <!-- END PARALLAX -->
+
+        <!-- START LST PRODUCT -->
+        <section class="lst-product">
+            <div class="title-box">
+                <p>What Happens Here</p>
+                <h2>Merchandise - Sale</h2>
+            </div>
+            <div class="cf-container d-gr-4 lst-product__container"> 
+                <div class="product-item">
+                    <a href="#" class="product-item__thumb">
+                        <img src="./images/prod1.jpg" alt="product">
+                        <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                    </a>
+                    <div class="product-item__text">
+                        <h4 class="product-item__title"><a href="#" >Paper Pouch</a></h4>
+                        
+                        <div class="product-item__rate">
+                            <div class="product-item__rate--overlay" style="width: 12%;"></div>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                        </div>
+                        <p class="product-item__price">
+                            <span> <span class="price-symboy">$</span>46.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__thumb">
+                        <label>Sale</label>
+                        <img src="./images/prod2.jpg" alt="product">
+                        <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                    </a>
+                    <div class="product-item__text">
+                        <h4 class="product-item__title"><a href="#" >Paper Bag</a></h4>
+                        
+                        <div class="product-item__rate">
+                            <div class="product-item__rate--overlay" style="width: 30%;"></div>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                        </div>
+                        <p class="product-item__price">
+                            <del> <span class="price-symboy">$</span>98.00</del>
+                            <span> <span class="price-symboy">$</span>79.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__thumb">
+                        <img src="./images/prod3.jpg" alt="product">
+                        <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                    </a>
+                    <div class="product-item__text">
+                        <h4 class="product-item__title"><a href="#" >Plastic pouch</a></h4>
+                        
+                        <div class="product-item__rate">
+                            <div class="product-item__rate--overlay" style="width: 20%;"></div>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                        </div>
+                        <p class="product-item__price">
+                            <span> <span class="price-symboy">$</span>27.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="#" class="product-item__thumb">
+                        <img src="./images/prod1.jpg" alt="product">
+                        <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                    </a>
+                    <div class="product-item__text">
+                        <h4 class="product-item__title"><a href="#" >Coffee pot</a></h4>
+                        
+                        <div class="product-item__rate">
+                            <div class="product-item__rate--overlay" style="width: 10%;"></div>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                            <span class="icon icon-star-full"></span>
+                        </div>
+                        <p class="product-item__price">
+                            <span> <span class="price-symboy">$</span>71.00</span> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END LST PRODUCT -->
+
+        <!-- START BANNER -->
+        <!-- END BANNER -->
+
+        <!-- START SLIDER BRAND-->
+        <!-- END SLIDER BRAND-->
+
+        <!-- START FOOTER -->
+        <!-- END FOOTER -->
+    </div>
+</body>
+</html>
