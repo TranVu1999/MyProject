@@ -103,6 +103,18 @@ button, button:focus {
   padding-right: 25px;
 }
 
+.pr-15 {
+  padding-right: 15px;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.highlight {
+  color: #c7a17a !important;
+}
+
 .carousel .coursel__content .item__content {
   background-size: cover;
   background-position: center;
@@ -498,5 +510,79 @@ button, button:focus {
   background-size: cover;
   padding: 75px 0;
   margin: 50px 0;
+}
+
+.footer {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #c7a17a;
+}
+
+.footer .copy-right {
+  background-color: #000;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 50px 0;
+  color: #acacac;
+}
+
+.footer .copy-right .social {
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer .copy-right .social a {
+  margin: 0 8px;
+}
+
+.footer__content .footer__content--top {
+  background-image: url(./../../images/footer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+
+.footer__content .footer-widget h6 {
+  font-size: 19px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.footer__content .footer-widget .timeline {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 80%;
+  letter-spacing: 1px;
+}
+
+.footer__content .footer-widget .timeline li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.footer__content .footer-widget .timeline li span:last-child {
+  color: #acacac;
+}
+
+.footer__content .footer-widget .timeline li .space {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 1px;
+  background-color: rgba(168, 164, 161, 0.25);
+  margin: 0 8px 4px;
 }
 /*# sourceMappingURL=main.css.map */
