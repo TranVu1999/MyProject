@@ -1,0 +1,16 @@
+.product-detail .product-detail__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-detail .product-images {
+  min-height: 500px;
+  background-color: yellow;
+}
+
+.product-detail .product-summary {
+  min-height: 500px;
+  background-color: grey;
+}
+/*# sourceMappingURL=product-detail.css.map */

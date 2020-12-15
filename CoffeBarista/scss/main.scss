@@ -9,6 +9,7 @@
 @import './components/carousel';
 @import './components/button';
 @import './components/product';
+@import './components/form';
 
 // Layout
 @import './layouts/header';
@@ -17,4 +18,10 @@
 @import './layouts/banner';
 @import './layouts/parallax';
 
+@import './layouts/mainPage';
+
 @import './layouts/footer';
+
+// Page
+@import './pages/product-detail';
+@import './pages/shop';

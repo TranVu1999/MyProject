@@ -1,0 +1,55 @@
+.page{
+    .banner{
+        background-image: url(./../../images/shop-title-area.jpg);
+        background-position: center 0px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        
+    
+        .banner--text{
+            font-size: 33px;
+            color: #fff;
+            text-transform: uppercase;
+            height: 390px;
+        }
+    }
+}
+
+
+.main-page{
+    margin-top: 100px;
+    
+    .main-page__content{
+        width: 75%;
+    }
+    .main-page__sidebar{
+        width: 25%;
+    }
+
+    .lst-product__control{
+        margin-bottom: 20px;
+        color: #989898;
+        line-height: 20px;
+        font-weight: 400;
+
+        font-family: 'Merriweather',serif;
+        font-style: italic;
+
+        .select-result-box{
+            width: 210px;
+            height: 50px;
+            cursor: pointer;
+
+            .icon{
+                color: $primary-color;
+            }
+
+            &:hover{
+                color: #262626!important;
+                .icon{
+                    color: #262626;
+                }
+            }
+        }
+    }
+}

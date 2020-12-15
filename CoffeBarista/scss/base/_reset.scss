@@ -6,7 +6,9 @@
 
 html, body{
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
+    line-height: 26px;
+    font-size: 14px;
+    color: #666;
 
 }
 
@@ -25,7 +27,8 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Oswald', sans-serif;
 }
 
-button, button:focus{
+button, button:focus,
+input, input:focus{
     background-color: transparent;
     border: navajowhite;
     cursor: pointer;
