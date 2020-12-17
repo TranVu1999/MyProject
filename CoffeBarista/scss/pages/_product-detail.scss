@@ -80,4 +80,104 @@
             }
         }
     }
+
+    .product-tabs{
+        border-bottom: 2px solid #efefef;
+        border-top: 2px solid #efefef;
+        padding: 60px 0 35px;
+        text-align: center;
+
+        .product-nav__item{
+            display: inline-block;
+
+            a{
+                display: block;
+                padding: 13px 0;
+                font-size: 19px;
+                font-weight: 700;
+
+                text-transform: uppercase;
+                border-bottom: 2px solid #efefef;
+
+                h4{
+                    padding: 0 25px;
+                    border-right: 2px solid #efefef;
+                }
+            }
+
+            &:last-child{
+                a{
+                    h4{
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        .product-tab__item{
+            padding: 27px 50px;
+
+            h2{
+               font-size: 18px;
+               margin-bottom: 35px; 
+               letter-spacing: 1px;
+               text-align: left;
+            }
+        }
+    }
+
+    table{
+        width: 100%;
+        tbody{
+            tr{
+                border: 1px solid  #efefef;
+            }
+
+            th, td{
+                padding: 16px 7px;
+            }
+
+            th{
+                border-right: 1px solid #efefef;
+            }
+        }
+    }
+
+    .cmt-list{
+        .cmt-item{
+            border-bottom: 2px solid #efefef;
+            padding-bottom: 35px;
+            margin-bottom: 20px;
+        }
+        .cmt-item__content{
+            text-align: left;
+
+            .cmt-item--text{
+                flex: 1;
+            }
+
+            img{
+                margin-right: 24px;
+                border-radius: 50%;
+                width: 83px;
+                height: 83px;
+            }
+
+            .author{
+                font-size: 18px;
+                line-height: 1;
+            }
+
+            .time{
+                font-size: 12px;
+                color: $primary-color;
+                font-family: 'Merriweather',serif;
+                font-style: italic;
+            }
+
+            p{
+                margin-top: 10px;
+            }
+        }
+    }
 }

@@ -25,6 +25,9 @@ h1, h2, h3, h4, h5, h6{
     font-size: inherit;
     margin: 0;
     font-family: 'Oswald', sans-serif;
+    color: #30271c;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 button, button:focus,
@@ -33,6 +36,11 @@ input, input:focus{
     border: navajowhite;
     cursor: pointer;
     outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
