@@ -1,0 +1,6 @@
+Template: https://barista.qodeinteractive.com/about-me/
+
+Có thể chức năng khôi phục dữ liệu sau mỗi lần update Data nha.
+Khi người lạ biết được đường link api có thể sử dụng postmain để cập nhật database => bị rò rỉ api
+Sử dụng một thuộc tính cho mỗi tài khoản : accessToken chứa một dãy các ký tự (chữ ký) để xác thực 
+có đúng là người dùng (admin) đó chính là người thêm hay không.

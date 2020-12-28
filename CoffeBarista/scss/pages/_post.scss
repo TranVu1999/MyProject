@@ -1,0 +1,104 @@
+.post__content{
+    .post--image{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .post--text{
+        padding-top: 40px;
+    }
+
+    .post--title{
+        margin-bottom: 10px;
+        font-size: 22px;
+        line-height: 1.2;
+        letter-spacing: .5px;
+    }
+
+    .post--info{
+        color: $primary-color;
+        font-style: italic;
+        font-size: 13px;
+        line-height: 14px;
+
+        margin-bottom: 30px;
+        font-family: 'Merriweather', serif;
+
+        div{
+            display: inline-block;
+        }
+
+        .post--info__author::after,
+        .post--info__categories::after{
+            content: '/';
+            margin: 0 7px;
+        }
+    }
+
+    .post--inner{
+        blockquote{
+            width: 65%;
+            padding: 9px 0 9px 33px;
+            border-left: 3px solid $primary-color;
+            font-family: 'Merriweather',serif;
+
+            font-style: italic;
+            font-size: 20px;
+            line-height: 33px;
+            color: $main-color;
+        }
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .post--bottom{
+        margin-top: 50px;
+        .post--bottom__left{
+            font-family: 'Merriweather' ,serif;
+            color: $primary-color;
+            font-style: italic;
+        }
+        
+        .social{
+            &>span{
+                font-family: 'Merriweather' ,serif;
+                color: $primary-color;
+                margin-right: 14px;
+                font-style: italic;
+            }
+
+            a{
+                margin-right: 18px;
+                color: #757575;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .author-description{
+        margin-top: 35px;
+        .author-description--image{
+            width: 175px;
+
+            img{
+                max-width: 100%;
+            }
+        }
+
+        .author-description--text-holder{
+            flex: 1;
+            padding-left: 30px;
+        }
+
+        .author-name{
+            font-size: 22px;
+        }
+    }
+}

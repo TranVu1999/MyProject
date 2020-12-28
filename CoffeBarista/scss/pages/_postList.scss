@@ -1,0 +1,28 @@
+.post-list-page{
+    .post-item{
+        display: flex;
+
+        .post-item__image{
+            width: 40%;
+            margin-right: 4%;
+
+            a{
+                display: block;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .post-item__text{
+            width: 56%;
+
+            .post-item--title{
+                margin-bottom: 11px;
+                font-size: 22px;
+                letter-spacing: .5px;
+                line-height: 1.2;
+            }
+        }
+    }
+}

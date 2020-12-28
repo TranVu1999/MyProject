@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Barista</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="./images/sub-logo.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="./vendor/icon-moon.css">
+    <link rel="stylesheet" href="./Font/style.css">
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    <div class="main-wrapper page">
+        <!-- START HEADER -->
+        <header class="header dark">
+            <div class="d-flex-between px-25 header__content">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="./images/logo-2.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li class="bulkhead"><span></span></li>
+                        <li><a href="#" class="header__cart">
+                            <span class="icon icon-cart"></span>
+                            <span class="number">0</span>
+                        </a></li>
+                        <li><a href="#" class="header__search"><span class="icon icon-search"></span></a></li>
+                        <li><a href="#" class="header__humburger"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- START BANNER -->
+        <div class="banner">
+            <div class="py-0 banner__content">
+                <div class="d-flex-center banner--text">
+                    <h1>Blog List</h1>
+                </div>
+            </div>
+        </div>
+        <!-- END BANNER -->
+
+        <!-- START MAIN PAGE -->
+        <section class="main-page section-padding">
+            <div class="cf-container">
+                <div class="d-flex-between align-start post-list-page">
+                    <div class="main-page__content post-list__content">
+                        <article class="post-item">
+                            <div class="post-item__image">
+                                <a href="#">
+                                    <img src="./images/blog-standard-img-1-300x195.jpg" alt="post">
+                                </a>
+                            </div>
+                            <div class="post-item__text">
+                                <h2 class="post-item--title">
+                                    <a href="#">Expand your mind, change everthing</a>
+                                </h2>
+                                <div class="post-item--info">
+                                    <div class="post-item--info__author">
+                                        <a href="#">by Jane Doe</a>
+                                    </div>
+                                    <div class="post-item--info__categories">
+                                        <a href="#">Lifestyle</a>
+                                    </div>
+                                    <div class="post-item--info__update">
+                                        <span>01.03.2016</span>
+                                    </div>
+                                </div>
+                                <p class="post-item--short-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat dictum lacus, ut hendrerit mi pulvinar vel. Fusce id nibh...
+                                </p>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="main-page__sidebar">
+                        <div class="sidebar--widget">
+                            <h5>Search</h5>
+                            <form class="search">
+                                <div class="d-flex-center form-group">
+                                    <input type="text" placeholder="Type here...">
+                                    <button><span aria-hidden="true" class="icon_search"></span></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="sidebar--widget">
+                            <h5>Recent Posts</h5>
+                            <ul class="lst-post">
+                                <li class="post-item">
+                                    <a href="#" class="post-thumb">
+                                        <img src="./images/post2.jpg" alt="post thumb">
+                                    </a>
+                                    <div class="post-text">
+                                        
+                                        <h6 class="post-title"><a href="#">Make it Simple</a> </h6>
+                                        
+                                        <span class="post-update">23.02.2020</span>
+                                    </div>
+                                </li>
+                                <li class="post-item">
+                                    <a href="#" class="post-thumb">
+                                        <img src="./images/post3.jpg" alt="post thumb">
+                                    </a>
+                                    <div class="post-text">
+                                        
+                                        <h6 class="post-title"><a href="#">Coffee Shop</a> </h6>
+                                        
+                                        <span class="post-update">23.02.2020</span>
+                                    </div>
+                                </li>
+                                <li class="post-item">
+                                    
+                                    <a href="#" class="post-thumb">
+                                        <img src="./images/post4.jpg" alt="post thumb">
+                                    </a>
+                                    <div class="post-text">
+                                        
+                                        <h6 class="post-title"><a href="#">Coffee Bar</a> </h6>
+                                        
+                                        <span class="post-update">23.02.2020</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar--widget">
+                            <h5>Categories</h5>
+                            <ul class="lst-cat">
+                                <li class="cat-item">
+                                    <span aria-hidden="true" class="arrow_triangle-right"></span>
+                                    <a href="#">Competition (3)</a>
+                                </li>
+                                <li class="cat-item">
+                                    <span aria-hidden="true" class="arrow_triangle-right"></span>
+                                    <a href="#">Dilicious (15)</a>
+                                </li>
+                                <li class="cat-item">
+                                    <span aria-hidden="true" class="arrow_triangle-right"></span>
+                                    <a href="#">Enjoyment (15)</a>
+                                </li>
+                                <li class="cat-item">
+                                    <span aria-hidden="true" class="arrow_triangle-right"></span>
+                                    <a href="#">Life (3)</a>
+                                </li>
+                                <li class="cat-item">
+                                    <span aria-hidden="true" class="arrow_triangle-right"></span>
+                                    <a href="#">Lifestyle (17)</a>
+                                </li>
+                                <li class="cat-item">
+                                    <span aria-hidden="true" class="arrow_triangle-right"></span>
+                                    <a href="#">Media (7)</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar--widget">
+                            <h5>Folow Us</h5>
+                            <div class="social">
+                                <a href="#"><span class="icon icon-facebook"></span></a>
+                                <a href="#"><span class="icon icon-twitter"></span></a>
+                                <a href="#"><span class="icon icon-vimeo"></span></a>
+                                <a href="#"><span class="icon icon-linkedin2"></span></a>
+                                <a href="#"><span class="icon icon-tumblr"></span></a>
+                                <a href="#"><span class="icon icon-instagram"></span></a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar--widget">
+                            <h5>Tags</h5>
+                            <div class="lst-tag">
+                                <a href="#" class="tag">Artists</a>
+                                <a href="#" class="tag">Exhibition</a>
+                                <a href="#" class="tag">Features</a>
+                                <a href="#" class="tag">Jobs</a>
+                                <a href="#" class="tag">Lectures</a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar--widget">
+                            <a href="#" class="advertisement">
+                                <img src="./images/side-bar-img-1.jpg" alt="advertisement">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> 
+        </section>
+        <!-- END MAIN PAGE -->
+
+        <!-- START FOOTER -->
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__content--top">
+                    <div class="cf-container d-gr-4">
+                        <div class="footer-widget">
+                            <h6>Opening Hours</h6>
+                            <ul class="timeline">
+                                <li>
+                                    <span>Monday</span>
+                                    <div class="space"></div>
+                                    <span class="highlight">Closed</span>
+                                </li>
+                                <li>
+                                    <span>Tuesday</span>
+                                    <div class="space"></div>
+                                    <span>9:00 - 22:00</span>
+                                </li>
+                                <li>
+                                    <span>Wednesday</span>
+                                    <div class="space"></div>
+                                    <span>9:00 - 22:00</span>
+                                </li>
+                                <li>
+                                    <span>Thursday</span>
+                                    <div class="space"></div>
+                                    <span>9:00 - 22:00</span>
+                                </li>
+                                <li>
+                                    <span>Friday</span>
+                                    <div class="space"></div>
+                                    <span>9:00 - 1:00</span>
+                                </li>
+                                <li>
+                                    <span>Saturday</span>
+                                    <div class="space"></div>
+                                    <span>12:00 - 01:00</span>
+                                </li>
+                                <li>
+                                    <span>Sunday</span>
+                                    <div class="space"></div>
+                                    <span>9:00 - 22:00</span>
+                                </li>
+
+                            </ul>
+                            
+                        </div>
+                        <div class="footer-widget">
+                            <h6>Latest Post</h6>
+                            <ul class="lst-lastest-post">
+                                <li>
+                                    <a href="#">Expand your mind, chagne everything</a>
+                                    <span class="post-date">14.02.2017</span>
+                                </li>
+                                <li>
+                                    <a href="#">Places to get lost</a>
+                                    <span class="post-date">14.02.2017</span>
+                                </li>
+                                <li>
+                                    <a href="#">Lewis Howes</a>
+                                    <span class="post-date">14.02.2017</span>
+                                </li>
+                                <li>
+                                    <a href="#">Elevate Your Expectations</a>
+                                    <span class="post-date">14.02.2017</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-widget">
+                            <h6>Contact Us</h6>
+                            <div class="text-widget">
+                                <a href="#" class="highlight">admin123@gmail.com</a>
+                                <br>
+                                1-444-123-4559
+                                <br>
+                                Raymond Boulevard 224,
+                                <br>
+                                New York
+                            </div>
+                            <h6>The last standard post</h6>
+                            <form>
+                                <div class="form-group d-flex-between">
+                                    <input type="text" placeholder="Your E-Mail">
+                                    <button><span class="icon icon-play3"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="footer-widget">
+                            <h6>Other Location</h6>
+                            <h5 class="mb-25">Barista Coffee Shop</h5>
+                            <div class="text-widget">
+                                2606 Saints Alley
+                                <br>
+                                Tampa, FL 33602
+                            </div>
+                            <div class="line mb-25"></div>
+                            <h5 class="mb-25">Barista Cafe</h5>
+                            <div class="text-widget">
+                                3497 Watson Street
+                                <br>
+                                Camden, NJ 08102
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="copy-right">
+                    <div class="cf-container d-flex-between">
+                        <span>Barista Edge Themes</span>
+                        <div class="social">
+                            <a href="#"><span class="icon icon-facebook"></span></a>
+                            <a href="#"><span class="icon icon-twitter"></span></a>
+                            <a href="#"><span class="icon icon-vimeo"></span></a>
+                            <a href="#"><span class="icon icon-linkedin2"></span></a>
+                            <a href="#"><span class="icon icon-tumblr"></span></a>
+                            <a href="#"><span class="icon icon-instagram"></span></a>
+                        </div>
+                        <span>© 2017 All rights reserved</span>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+</body>
+</html>
