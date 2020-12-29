@@ -13,6 +13,7 @@
 @import './components/heading';
 @import './components/post';
 @import './components/navigation';
+@import './components/breadcrumb';
 
 // Layout
 @import './layouts/header';
@@ -20,6 +21,7 @@
 @import './layouts/mainSlider';
 @import './layouts/banner';
 @import './layouts/parallax';
+@import './layouts/sercives';
 
 @import './layouts/mainPage';
 
@@ -31,3 +33,4 @@
 @import './pages/aboutMe';
 @import './pages/post';
 @import './pages/postList';
+@import './pages/notFound';

@@ -9,7 +9,7 @@ html, body{
     line-height: 26px;
     font-size: 14px;
     color: #666;
-
+    background-color: #eae7de;
 }
 
 ul{
@@ -38,6 +38,13 @@ table {
 
 img{
     max-width: 100%;
+}
+
+select, select:focus{
+    background: transparent;
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
 }
 
 

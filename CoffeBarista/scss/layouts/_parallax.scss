@@ -1,8 +1,21 @@
 .parallax{
-    background-image: url(./../../images/banner3.png);
+    background-image: url(./../../images/home-parallax.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    padding: 75px 0;
 
     margin: 50px 0;
+    min-height: 500px;
+    position: relative;
+
+    svg.parallax--top{
+        
+        position: absolute;
+        bottom: 0;
+    }
+
+    svg.parallax--bottom{
+        position: absolute;
+        transform: rotateX(180deg);
+    }
 }

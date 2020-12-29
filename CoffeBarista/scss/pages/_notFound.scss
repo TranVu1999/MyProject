@@ -1,0 +1,42 @@
+.not-found-page{
+    text-align: center;
+    margin: 40px 0 0px;
+
+    .not-found-page__content{
+        padding: 0 20%;
+        
+    }
+
+    .not-found--title{
+        font-family: Oswald,sans-serif;
+        font-size: 120px;
+        letter-spacing: -6px;
+        color: #313131;
+
+        line-height: 1em;
+        display: block;
+        position: relative;
+        margin-bottom: 60px;
+
+        &::after{
+            content: '';
+            display: block;
+            width: 120px;
+            height: 3px;
+
+            background-color: $primary-color;
+            position: absolute;
+            left: 50%;
+            bottom: -30px;
+            transform: translateX(-50%);
+        }
+    }
+
+    h3:nth-child(2){
+        margin-bottom: 24px;
+    }
+
+    p{
+        margin-bottom: 60px;
+    }
+}
