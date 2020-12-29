@@ -53,3 +53,31 @@
         }
     }
 }
+
+.post.intro-post{
+    display: block;
+
+    .post--image{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .post--text{
+        width: 100%;
+        .number{
+            color: $primary-color;
+            font-family: Merriweather,serif;
+            font-style: italic;
+            margin-right: 15px;
+
+            display: inline-block;
+            font-size: 60px;
+            letter-spacing: -3px;
+            font-weight: 400;
+        }
+
+        &__info{    
+            margin-bottom: 15px;
+        }
+    }
+}

@@ -571,6 +571,34 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   margin: 0 7px;
 }
 
+.post.intro-post {
+  display: block;
+}
+
+.post.intro-post .post--image {
+  width: 100%;
+  margin-right: 0;
+}
+
+.post.intro-post .post--text {
+  width: 100%;
+}
+
+.post.intro-post .post--text .number {
+  color: #c7a17a;
+  font-family: Merriweather,serif;
+  font-style: italic;
+  margin-right: 15px;
+  display: inline-block;
+  font-size: 60px;
+  letter-spacing: -3px;
+  font-weight: 400;
+}
+
+.post.intro-post .post--text__info {
+  margin-bottom: 15px;
+}
+
 .nav {
   background-color: #eae7de;
   padding: 35px 0;
@@ -905,7 +933,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   background-position: center;
   background-size: cover;
   margin: 50px 0;
-  min-height: 500px;
+  min-height: 600px;
   position: relative;
 }
 
@@ -920,45 +948,66 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
           transform: rotateX(180deg);
 }
 
-.our-services .our-service--thumb {
+.parallax .parallax__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+.parallax .parallax--left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 40px;
+}
+
+.parallax .parallax--right {
+  color: #fff;
+  padding: 0 60px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.parallax .parallax--right .parallax--title {
+  font-family: Merriweather,serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 27px;
+}
+
+.parallax .parallax--right h2 {
+  color: #fff;
   position: relative;
+  margin-bottom: 50px;
 }
 
-.our-services .our-service--thumb a {
-  display: block;
-}
-
-.our-services .our-service--thumb a::after {
+.parallax .parallax--right h2::after {
   content: '';
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 120px;
+  height: 3px;
+  background-color: #fff;
   position: absolute;
-  top: 0;
   left: 0;
-  background: transparent;
-  -webkit-transition: background-color 0.3s cubic-bezier(0.4, 0.87, 0.4, 0.87);
-  transition: background-color 0.3s cubic-bezier(0.4, 0.87, 0.4, 0.87);
+  bottom: -30px;
 }
 
-.our-services .our-service--thumb a:hover::after {
-  background-color: rgba(0, 0, 0, 0.2);
+.our-services--item {
+  text-align: center;
 }
 
-.our-services .our-service--thumb img {
-  display: block;
-  width: 100%;
+.our-services--item img {
+  margin-bottom: 20px;
 }
 
-.our-services .our-service--title .number {
-  color: #c7a17a;
-  font-family: Merriweather,serif;
-  font-style: italic;
-  margin-right: 15px;
-  display: inline-block;
-  font-size: 60px;
-  letter-spacing: -3px;
-  font-weight: 400;
+.our-services--item:nth-child(3) img {
+  position: relative;
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
 }
 
 .page .banner {
