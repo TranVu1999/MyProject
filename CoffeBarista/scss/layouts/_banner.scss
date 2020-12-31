@@ -78,3 +78,19 @@
         }
     }
 }
+
+.full-banner{
+    height: 625px;
+    background-size: cover;
+    background-position: center 0px;
+    background-attachment: fixed;
+
+    .banner--text{
+
+        h1{
+            color: #fff;
+        }
+        
+    }
+    
+}

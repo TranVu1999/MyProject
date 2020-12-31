@@ -1,0 +1,22 @@
+.offer__content{
+    column-gap: 50px;
+    row-gap: 30px;
+    .offer--item{
+        display: flex;
+        align-items: flex-start;
+
+        .offer-img{
+            margin-right: 15px;
+            span{
+                font-size: 42px;
+            }
+            
+        }
+
+        .offer-text{
+            h4{
+                margin-top: 10px;
+            }
+        }
+    }
+}

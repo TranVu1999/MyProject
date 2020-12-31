@@ -1,0 +1,42 @@
+.contact-page{
+    align-items: flex-start;
+    .contact--left, .contact--right{
+        flex: 1;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .contact-us{
+        width: 100%;
+        
+
+        input, textarea{
+            background-color: #f6f4ef;
+            color: #C9A580;
+            width: 100%;
+            padding: 17px 20px;
+            margin-bottom: 20px;
+
+            border: 2px solid transparent;
+            font-size: 13px;
+            font-family: 'Merriweather',serif;
+            font-style: italic;
+
+            &:focus{
+                border: 2px solid #eae7de;
+            }
+
+            &::placeholder{
+                color: #C9A580;
+            }
+        }
+
+        textarea{
+            height: 193px;
+        }
+
+        
+    }
+}

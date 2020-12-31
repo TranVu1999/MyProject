@@ -24,7 +24,8 @@ a, a:hover{
 
 
 button, button:focus,
-input, input:focus{
+input, input:focus,
+textarea, textarea:focus{
     background-color: transparent;
     border: navajowhite;
     cursor: pointer;
