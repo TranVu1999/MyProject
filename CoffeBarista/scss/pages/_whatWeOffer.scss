@@ -20,10 +20,31 @@
             }
         }
     }
-
-    .offer-grid-image{
-        gap: 0;
-    }
-
-
 }
+
+.offer-grid-image{
+    gap: 0;
+    .grid-image--img{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 18% 40px 16% 50px;
+
+        .grid-image--content.text-white{
+            .barista-read-more, h2, p{
+                color: #fff!important;
+            }
+
+            p{
+                margin: 40px 0 30px;
+            }
+        }
+
+        .grid-image--content{
+            .barista-read-more{
+                color: $main-color!important;
+            }
+        }
+    }
+}
+

@@ -1,10 +1,9 @@
 .not-found-page{
     text-align: center;
-    margin: 40px 0 0px;
 
-    .not-found-page__content{
-        padding: 0 20%;
-        
+    .not-found-page--top{
+        background-color: #f5f5f5;
+        padding: 64px 0;
     }
 
     .not-found--title{
@@ -37,6 +36,7 @@
     }
 
     p{
+        padding: 0 20%;
         margin-bottom: 60px;
     }
 }
