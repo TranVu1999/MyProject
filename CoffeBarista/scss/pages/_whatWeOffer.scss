@@ -7,8 +7,9 @@
 
         .offer-img{
             margin-right: 15px;
-            span{
-                font-size: 42px;
+            svg{
+                width: 42px;
+                height: 45px;
             }
             
         }
@@ -19,4 +20,10 @@
             }
         }
     }
+
+    .offer-grid-image{
+        gap: 0;
+    }
+
+
 }
