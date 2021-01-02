@@ -141,3 +141,27 @@
         
     }
 }
+
+@media screen and (max-width: 768px){
+    .footer{
+        .copy-right{
+            text-align: center;
+            padding: 25px 0;
+            &>div{
+                display: block;
+            }
+
+            .social{
+                margin: 4px 0;
+            }
+        }
+    }
+
+    .footer__content{
+        .footer__content--top{
+            .footer-grid{
+                grid-template-columns: 1fr;
+            }    
+        }
+    }
+}

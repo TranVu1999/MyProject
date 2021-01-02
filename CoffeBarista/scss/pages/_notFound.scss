@@ -40,3 +40,28 @@
         margin-bottom: 60px;
     }
 }
+
+@media screen and (max-width: 768px){
+    .not-found-page{
+        p{
+            padding: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .not-found-page{
+
+        h3:nth-child(1){
+            margin-bottom: 10px;
+        }
+        .not-found-page--top{
+            padding: 50px 0;
+            text-align: left;
+
+            &>div>div{
+                display: block;
+            }
+        }
+    }
+}
