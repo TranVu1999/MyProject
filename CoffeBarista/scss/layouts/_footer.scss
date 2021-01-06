@@ -142,6 +142,16 @@
     }
 }
 
+@media screen and (max-width: 1024px){
+    .footer__content{
+        .footer-widget{
+            .timeline{
+                width: 100%;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px){
     .footer{
         .copy-right{
@@ -157,6 +167,16 @@
         }
     }
 
+    .footer__content{
+        .footer__content--top{
+            .footer-grid{
+                grid-template-columns: 1fr 1fr;
+            }    
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
     .footer__content{
         .footer__content--top{
             .footer-grid{

@@ -45,3 +45,30 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px){
+    .about-page{
+        display: block;
+
+        .about--left{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about--right{
+            padding: 6% 4% 0 8%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .about-page{
+        .about--right{
+            padding: 0;
+            .about-text{
+                padding: 0;
+            }
+        }
+    }
+}
