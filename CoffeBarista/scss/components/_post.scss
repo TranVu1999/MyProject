@@ -10,6 +10,7 @@
             display: block;
             img{
                 width: 100%;
+                object-fit: cover;
             }
 
             &:hover{
@@ -79,5 +80,27 @@
         &__info{    
             margin-bottom: 15px;
         }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .post{
+        display: block;
+
+        &--image{
+            width: 100%;
+            margin-right: 0;
+        }
+
+        &--text{
+            width: 100%;
+
+            &__title{
+                margin-top: 15px;
+                
+            }
+    
+        }
+    
     }
 }
