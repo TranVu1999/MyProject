@@ -21,13 +21,18 @@
 .main-page{
     padding-top: 70px;
     padding-bottom: 100px;
+
+    &__breadcrumb{
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
     
-    .main-page__content{
+    &__content{
         width: 75%;
         padding-right: 15px;
     }
 
-    .main-page__sidebar{
+    &__sidebar{
         width: 25%;
         padding-left: 15px;
     }
