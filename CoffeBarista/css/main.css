@@ -2680,9 +2680,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   line-height: 1;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   cursor: pointer;
   position: relative;
 }
@@ -2922,5 +2922,101 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   width: 100px;
   margin-right: 15px;
   border: 1px solid #cccccc;
+}
+
+.account-page .lst-invoice {
+  width: 100%;
+  text-align: left;
+  line-height: 1.2;
+  background-color: #fff;
+}
+
+.account-page .lst-invoice th {
+  width: 130px;
+  padding: 20px 15px 30px;
+}
+
+.account-page .lst-invoice th:nth-child(3) {
+  width: auto;
+}
+
+.account-page .lst-invoice th:last-child {
+  text-align: right;
+}
+
+.account-page .lst-invoice tr td {
+  padding: 0px 15px 30px;
+}
+
+.account-page .lst-invoice tr td:first-child {
+  color: #30271c;
+}
+
+.account-page .lst-invoice tr td:first-child:hover {
+  color: #c7a17a;
+}
+
+.account-page .lst-invoice tr td:last-child {
+  text-align: right;
+}
+
+.account-page .account__address a:hover {
+  color: #c7a17a;
+}
+
+.account-page .account__address .add-address {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 8px 0;
+  background-color: #fff;
+  border: 1px dashed #d8d8d8;
+  font-weight: 700;
+}
+
+.account-page .account__address .add-address:hover {
+  border-color: #c7a17a;
+  color: #c7a17a;
+}
+
+.account-page .account__address .add-address a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.account-page .account__address .add-address .icon_plus {
+  font-size: 28px;
+  margin-right: 20px;
+}
+
+.account-page .lst-address .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  padding: 17px 15px;
+  margin-bottom: 3px;
+}
+
+.account-page .lst-address .name {
+  text-transform: uppercase;
+}
+
+.account-page .lst-address .name .notify {
+  color: #26bc4e;
+  text-transform: none;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.account-page .lst-address .name, .account-page .lst-address .address, .account-page .lst-address .phone, .account-page .lst-address .edit {
+  color: #30271c;
+}
+
+.account-page .lst-address .address span, .account-page .lst-address .phone span {
+  color: #666;
 }
 /*# sourceMappingURL=main.css.map */
