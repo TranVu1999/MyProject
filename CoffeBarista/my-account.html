@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Barista</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="./images/sub-logo.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="./vendor/icon-moon.css">
+    <link rel="stylesheet" href="./Font/style.css">
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- START HEADER -->
+        <header class="header">
+            <div class="d-flex-between px-25 header__content">
+                <div class="header--nav-toggle">
+                    <input type="checkbox" id="toggle-menu">
+                    <label for="toggle-menu" class="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="./images/logo-1.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li class="bulkhead"><span></span></li>
+                        <li><a href="#" class="header__cart">
+                            <span class="icon icon-cart"></span>
+                            <span class="number">0</span>
+                        </a></li>
+                        <li><a href="#" class="header__search"><span class="icon icon-search"></span></a></li>
+                        <li><a href="#" class="header__humburger"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- START MAIN PAGE -->
+        <section class="main-page section-padding">
+            <div class="main-page__breadcrumb">
+                <div class="cf-container d-flex-between full-screen">
+                    <h3>My Account</h3>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Barista</a></li>
+                        <li class="breadcrumb-item"><a href="./my-account.html">My Account</a></li>
+                    </ul>
+                </div>
+                
+
+                <div class="d-flex-between responsive">
+                    <a href="#" id="beforeNav"><span aria-hidden="true" class="arrow_carrot-left"></span></a>
+                    <h3 id="titlePage">My Account</h3>
+                    <a href="#" class="cart">
+                        <span aria-hidden="true" class="icon_cart_alt"></span>
+                        <span class="number">1</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cf-container d-flex-between align-start account-page">
+                <div class="main-page__sidebar account__sidebar">
+                    <div class="d-flex-start account__author">
+                        <img src="./images/avatar.png" alt="avatar">
+                        <div class="account__author--text">
+                            <span>Tài khoản này của</span>
+                            <h5>Trần Lê Anh Vũ</h5>
+                        </div>
+                    </div>
+
+                    <ul class="account__nav">
+                        <li class="account__nav--item active" data-account-content="info">
+                            <div class="nav--item__thumb"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg></div>
+                            <div class="nav--item__text">Thông tin tài khoản</div>
+                            <span aria-hidden="true" class="res-icon arrow_carrot-right"></span>
+                        </li>
+                        <li class="account__nav--item" >
+                            <div class="nav--item__thumb"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path></svg></div>
+                            <div class="nav--item__text">Thông báo của tôi <span>6</span></div>
+                            <span aria-hidden="true" class="res-icon arrow_carrot-right"></span>
+                        </li>
+                        <li class="account__nav--item" data-account-content="my-invoice">
+                            <div class="nav--item__thumb"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path></svg></div>
+                            <div class="nav--item__text">Quản lý đơn hàng</div>
+                            <span aria-hidden="true" class="res-icon arrow_carrot-right"></span>
+                        </li>
+                        <li class="account__nav--item" data-account-content="address">
+                            <div class="nav--item__thumb"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg></div>
+                            <div class="nav--item__text">Số địa chỉ</div>
+                            <span aria-hidden="true" class="res-icon arrow_carrot-right"></span>
+                        </li>
+                        <li class="account__nav--item" data-account-content="my-commented">
+                            <div class="nav--item__thumb">
+                                <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/review-2.svg">
+                            </div>
+                            <div class="nav--item__text">Nhận xét sản phẩm đã mua</div>
+                            <span aria-hidden="true" class="res-icon arrow_carrot-right"></span>
+                        </li>
+                        <li class="account__nav--item" data-account-content="my-readed">
+                            <div class="nav--item__thumb"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg></div>
+                            <div class="nav--item__text">Sản phẩm bạn đã xem</div>
+                            <span aria-hidden="true" class="res-icon arrow_carrot-right"></span>
+                        </li>
+                        <li class="account__nav--item" data-account-content="my-favorite">
+                            <div class="nav--item__thumb"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg></div>
+                            <div class="nav--item__text">Sản phẩm yêu thích</div>
+                            <span aria-hidden="true" class="res-icon arrow_carrot-right"></span>
+                        </li>
+                        <li class="account__nav--item" data-account-content="save-for-later">
+                            <div class="nav--item__thumb"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path></svg></div>
+                            <div class="nav--item__text">Sản phẩm mua sau</div>
+                            <span aria-hidden="true" class="res-icon arrow_carrot-right"></span>
+                        </li>
+                        <li class="account__nav--item">
+                            <div class="nav--item__thumb">
+                                <img class="icon" srcset="https://salt.tikicdn.com/ts/upload/b5/33/14/09096979a40d25a2ad3976e3809ceb78.png 2x, https://salt.tikicdn.com/ts/upload/4a/d4/da/77fe4fd0c771088f7794ba3ce66782eb.png 1x">
+                            </div>
+                            <div class="nav--item__text">Quản lý xu của tôi</div>
+                            <span aria-hidden="true" class="res-icon arrow_carrot-right"></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-page__content account__container">
+                    <div class="account__container--widget">
+                        <div id="info" class="account-content--box form">
+                            <span class="account__title">Thông tin tài khoản</span>
+                            <div class="bg-white account__content">
+                                <form class="account__info">
+                                    <div class="form-group">
+                                        <div class="input-label">Họ tên</div>
+                                        <div class="input-group">
+                                            <input type="text" value="Trần Lê Anh Vũ"> 
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-label">Số điện thoại</div>
+                                        <div class="input-group">
+                                            <input type="text" class="pattern" value="0123 456 789">
+                                            <button>Gởi mã xác thực</button> 
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-label">Mã xác thực</div>
+                                        <div class="input-group" placeholder="Nhập mã xác thực">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-label">Email </div>
+                                        <div class="input-group">
+                                            <input type="text" value="Tranvudpqn123@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-label gender-label">Giới tính</div>
+                                        <div class="input-group">
+                                            <div class="radio-group">
+                                                <input type="radio" name="gender" id="male">
+                                                <label for="male">
+                                                    <div class="label-radio"></div>
+                                                    Nam
+                                                </label>
+                                                
+                                            </div>
+                                            <div class="radio-group">
+                                                <input type="radio" name="gender" id="female">
+                                                <label for="female">
+                                                    <div class="label-radio"></div>
+                                                    Nữ
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group form-group--date">
+                                        <div class="input-label">Ngày sinh<p>(không bắt buộc)</p></div>
+                                        <div class="select-group">
+                                            <select>
+                                                <option>Ngày</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                            </select>
+                                            <select>
+                                                <option>Tháng</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                            </select>
+                                            <select>
+                                                <option>Năm</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-label"></div>
+                                        <div class="input-group">
+                                            <div class="checkbox-group">
+                                                <input type="checkbox" id="update-password">
+
+                                                <label for="update-password">
+                                                    <div class="label-checkbox"></div>
+                                                    Thay đổi mật khẩu
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="update-password-group">
+                                        <div class="form-group">
+                                            <div class="input-label"><label>Mật khẩu cũ</label> </div>
+                                            <div class="input-group">
+                                                <input type="text" placeholder="Nhập mật khẩu cũ"> 
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label"><label>Mật khẩu mới</label></div>
+                                            <div class="input-group">
+                                                <input type="text" placeholder="Nhập mật khẩu mới"> 
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-label"><label>Nhập lại</label></div>
+                                            <div class="input-group">
+                                                <input type="text" placeholder="Nhập lại mật khẩu mới"> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <div class="input-label"></div>
+                                        <button>Cập nhật</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div id="address" class="account-content--box">
+                            <span class="account__title">Địa chỉ của tôi</span>
+                            <div class="account__content">
+                                <div class="account__address">
+                                    <div class="add-address">
+                                        <a href="#" class="d-flex-start">
+                                            <span aria-hidden="true" class="icon_plus"></span> Thêm địa chỉ mới
+                                        </a>
+                                        
+                                    </div>
+                                    <ul class="lst-address">
+                                        <li class="item">
+                                            <div class="info">
+                                                <div class="name">
+                                                    Trần Lê Anh Vũ
+                                                    <span class="notify">
+                                                        <span aria-hidden="true" class="icon_check_alt2"></span>
+                                                        <span>Địa chỉ mặc định</span>
+                                                    </span>
+                                                </div>
+                                                <div class="address">
+                                                    <span>Địa chỉ: </span>
+                                                    156b, Lã Xuân Oai, Phường Tăng Nhơn Phú A, Quận 9, Hồ Chí Minh
+                                                </div>
+                                                <div class="phone">
+                                                    <span>Điện thoại: </span>
+                                                    0377670509
+                                                </div>
+
+                                                <div class="respon-info">
+                                                    Trần Lê Anh Vũ - 0377670509
+                                                </div>
+                                            </div>
+                                            <div class="action">
+                                                <a href="#" class="edit">Chỉnh sửa</a>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="info">
+                                                <div class="name">
+                                                    Trần Lê Anh Vũ
+                                                </div>
+                                                <div class="address">
+                                                    <span>Địa chỉ: </span>
+                                                    156b, Lã Xuân Oai, Phường Tăng Nhơn Phú A, Quận 9, Hồ Chí Minh
+                                                </div>
+                                                <div class="phone">
+                                                    <span>Điện thoại: </span>
+                                                    0377670509
+                                                </div>
+                                                <div class="respon-info">
+                                                    Trần Lê Anh Vũ - 0377670509
+                                                </div>
+                                            </div>
+                                            <div class="action">
+                                                <a href="#" class="edit">Chỉnh sửa</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="add-address" class="account-content--box">
+                            <span class="account__title">Tạo địa chỉ</span>
+                            <div class="bg-white account__content">
+                                <form class="account__info">
+                                    <div class="form-group">
+                                        <div class="input-label">Họ tên</div>
+                                        <div class="input-group">
+                                            <input type="text" value="Trần Lê Anh Vũ" placeholder="Nhập họ và tên"> 
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-label">Công ty</div>
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Nhập công ty"> 
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-label">Số điện thoại</div>
+                                        <div class="input-group">
+                                            <input type="text" class="pattern" placeholder="Nhập số điện thoại">
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <div class="input-label">Tỉnh/Thành phố</div>
+                                        <div class="input-group">
+                                            <select>
+                                                <option value="0">Chọn Tỉnh/Thành phố</option>
+                                                <option value="1">Hồ Chí Minh</option>
+                                                <option value="2">Hà Nội</option>
+                                                <option value="3">Quảng Ngãi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-label">Quận huyện</div>
+                                        <div class="input-group">
+                                            <select>
+                                                <option>Chọn Quận huyện</option>
+                                                <option>Quận 1</option>
+                                                <option>Quận 2</option>
+                                                <option>Quận 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <div class="input-label">Phường xã</div>
+                                        <div class="input-group">
+                                            <select>
+                                                <option>Chọn Phường xã</option>
+                                                <option>Tăng Nhơn Phú A</option>
+                                                <option>Tăng Nhơn Phú B</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-label">Địa chỉ</div>
+                                        <div class="input-group">
+                                            <textarea cols="30" rows="4" placeholder="Nhập địa chỉ" ></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-label">Loại địa chỉ</div>
+                                        <div class="input-group">
+                                            <div class="radio-group">
+                                                <input type="radio" name="addressType" id="home" checked>
+                                                <label for="home">
+                                                    <div class="label-radio"></div>
+                                                    Nhà riêng / Chung cư
+                                                </label>
+                                                
+                                            </div>
+                                            <div class="radio-group">
+                                                <input type="radio" name="addressType" id="company">
+                                                <label for="company">
+                                                    <div class="label-radio"></div>
+                                                    Cơ quan / Công ty
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <div class="input-label"></div>
+                                        <button>Cập nhật</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="my-favorite" class="account-content--box">
+                            <span class="account__title">Sản phẩm yêu thích (1)</span>
+                            <div class="account__content">
+                                <ul class="lst-prod-favorite">
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__thumb">
+                                            <img src="./images/prod4.jpg" alt="product">
+                                            <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                                        </a>
+                                        <div class="product-item__text">
+
+                                            <div class="d-flex-start">
+                                                <h4 class="product-title"><a href="#" >Coffee pot</a></h4>
+
+                                                <div class="product-rate">
+                                                    <div class="product-rate--overlay" style="width: 10%;"></div>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <p class="product-price">
+                                                <span> <span class="price-symboy">$</span>71.00</span> 
+                                            </p>
+
+                                            <p class="product__short-desc">Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil interpretaris pro, alia illum ea vim. Alienum phaedrum  ...</p>
+                                        </div>
+                                        <button class="product-item__del">
+                                            <span aria-hidden="true" class="icon_close_alt2"></span>
+                                        </button>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__thumb">
+                                            <img src="./images/prod4.jpg" alt="product">
+                                            <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                                        </a>
+                                        <div class="product-item__text">
+
+                                            <div class="d-flex-start">
+                                                <h4 class="product-title"><a href="#" >Coffee pot</a></h4>
+
+                                                <div class="product-rate">
+                                                    <div class="product-rate--overlay" style="width: 10%;"></div>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <p class="product-price">
+                                                <span> <span class="price-symboy">$</span>71.00</span> 
+                                            </p>
+
+                                            <p class="product__short-desc">Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil interpretaris pro, alia illum ea vim. Alienum phaedrum  ...</p>
+                                        </div>
+
+                                        <button class="product-item__del">
+                                            <span aria-hidden="true" class="icon_close_alt2"></span>
+                                        </button>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__thumb">
+                                            <img src="./images/prod4.jpg" alt="product">
+                                            <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                                        </a>
+                                        <div class="product-item__text">
+
+                                            <div class="d-flex-start">
+                                                <h4 class="product-title"><a href="#" >Coffee pot</a></h4>
+
+                                                <div class="product-rate">
+                                                    <div class="product-rate--overlay" style="width: 10%;"></div>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <p class="product-price">
+                                                <span> <span class="price-symboy">$</span>71.00</span> 
+                                            </p>
+
+                                            <p class="product__short-desc">Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil interpretaris pro, alia illum ea vim. Alienum phaedrum  ...</p>
+                                        </div>
+
+                                        <button class="product-item__del">
+                                            <span aria-hidden="true" class="icon_close_alt2"></span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="my-invoice" class="account-content--box">
+                            <span class="account__title">Đơn hàng của tôi</span>
+                            <div class="account__content">
+                                <table class="lst-invoice">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã đơn hàng</th>
+                                            <th>Ngày mua</th>
+                                            <th>Sản phẩm</th>
+                                            <th>Tổng tiền</th>
+                                            <th>Trạng thái đơn hàng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#">351077915</a>
+                                            </td>
+                                            <td>03/01/2021</td>
+                                            <td>Chicken Soup For The Soul </td>
+                                            <td>62.000 ₫</td>
+                                            <td>Giao hàng thành công</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">351077915</a>
+                                            </td>
+                                            <td>03/01/2021</td>
+                                            <td>Chicken Soup For The Soul </td>
+                                            <td>62.000 ₫</td>
+                                            <td>Giao hàng thành công</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">351077915</a>
+                                            </td>
+                                            <td>03/01/2021</td>
+                                            <td>Chicken Soup For The Soul </td>
+                                            <td>62.000 ₫</td>
+                                            <td>Giao hàng thành công</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">351077915</a>
+                                            </td>
+                                            <td>03/01/2021</td>
+                                            <td>Chicken Soup For The Soul </td>
+                                            <td>62.000 ₫</td>
+                                            <td>Giao hàng thành công</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">351077915</a>
+                                            </td>
+                                            <td>03/01/2021</td>
+                                            <td>Chicken Soup For The Soul </td>
+                                            <td>62.000 ₫</td>
+                                            <td>Giao hàng thành công</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">351077915</a>
+                                            </td>
+                                            <td>03/01/2021</td>
+                                            <td>Chicken Soup For The Soul </td>
+                                            <td>62.000 ₫</td>
+                                            <td>Giao hàng thành công</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">351077915</a>
+                                            </td>
+                                            <td>03/01/2021</td>
+                                            <td>Chicken Soup For The Soul </td>
+                                            <td>62.000 ₫</td>
+                                            <td>Giao hàng thành công</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div id="my-readed" class="account-content--box">
+                            <span class="account__title">Sản phẩm đã xem (3)</span>
+                            <div class="account__content">
+                                <ul class="lst-prod-favorite">
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__thumb">
+                                            <img src="./images/prod4.jpg" alt="product">
+                                            <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                                        </a>
+                                        <div class="product-item__text">
+
+                                            <div class="d-flex-start">
+                                                <h4 class="product-title"><a href="#" >Coffee pot</a></h4>
+
+                                                <div class="product-rate">
+                                                    <div class="product-rate--overlay" style="width: 10%;"></div>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <p class="product-price">
+                                                <span> <span class="price-symboy">$</span>71.00</span> 
+                                            </p>
+
+                                            <p class="product__short-desc">Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil interpretaris pro, alia illum ea vim. Alienum phaedrum  ...</p>
+                                        </div>
+                                        <button class="product-item__del">
+                                            <span aria-hidden="true" class="icon_close_alt2"></span>
+                                        </button>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__thumb">
+                                            <img src="./images/prod4.jpg" alt="product">
+                                            <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                                        </a>
+                                        <div class="product-item__text">
+
+                                            <div class="d-flex-start">
+                                                <h4 class="product-title"><a href="#" >Coffee pot</a></h4>
+
+                                                <div class="product-rate">
+                                                    <div class="product-rate--overlay" style="width: 10%;"></div>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <p class="product-price">
+                                                <span> <span class="price-symboy">$</span>71.00</span> 
+                                            </p>
+
+                                            <p class="product__short-desc">Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil interpretaris pro, alia illum ea vim. Alienum phaedrum  ...</p>
+                                        </div>
+
+                                        <button class="product-item__del">
+                                            <span aria-hidden="true" class="icon_close_alt2"></span>
+                                        </button>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__thumb">
+                                            <img src="./images/prod4.jpg" alt="product">
+                                            <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                                        </a>
+                                        <div class="product-item__text">
+
+                                            <div class="d-flex-start">
+                                                <h4 class="product-title"><a href="#" >Coffee pot</a></h4>
+
+                                                <div class="product-rate">
+                                                    <div class="product-rate--overlay" style="width: 10%;"></div>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <p class="product-price">
+                                                <span> <span class="price-symboy">$</span>71.00</span> 
+                                            </p>
+
+                                            <p class="product__short-desc">Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil interpretaris pro, alia illum ea vim. Alienum phaedrum  ...</p>
+                                        </div>
+
+                                        <button class="product-item__del">
+                                            <span aria-hidden="true" class="icon_close_alt2"></span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="save-for-later" class="account-content--box">
+                            <span class="account__title">Sản phẩm mua sau (3)</span>
+                            <div class="account__content">
+                                <ul class="lst-prod-favorite">
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__thumb">
+                                            <img src="./images/prod4.jpg" alt="product">
+                                            <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                                        </a>
+                                        <div class="product-item__text">
+
+                                            <div class="d-flex-start">
+                                                <h4 class="product-title"><a href="#" >Coffee pot</a></h4>
+
+                                                <div class="product-rate">
+                                                    <div class="product-rate--overlay" style="width: 10%;"></div>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <p class="product-price">
+                                                <span> <span class="price-symboy">$</span>71.00</span> 
+                                            </p>
+
+                                            <p class="product__short-desc">Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil interpretaris pro, alia illum ea vim. Alienum phaedrum  ...</p>
+                                        </div>
+                                        <button class="product-item__del">
+                                            <span aria-hidden="true" class="icon_close_alt2"></span>
+                                        </button>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__thumb">
+                                            <img src="./images/prod4.jpg" alt="product">
+                                            <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                                        </a>
+                                        <div class="product-item__text">
+
+                                            <div class="d-flex-start">
+                                                <h4 class="product-title"><a href="#" >Coffee pot</a></h4>
+
+                                                <div class="product-rate">
+                                                    <div class="product-rate--overlay" style="width: 10%;"></div>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <p class="product-price">
+                                                <span> <span class="price-symboy">$</span>71.00</span> 
+                                            </p>
+
+                                            <p class="product__short-desc">Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil interpretaris pro, alia illum ea vim. Alienum phaedrum  ...</p>
+                                        </div>
+
+                                        <button class="product-item__del">
+                                            <span aria-hidden="true" class="icon_close_alt2"></span>
+                                        </button>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__thumb">
+                                            <img src="./images/prod4.jpg" alt="product">
+                                            <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                                        </a>
+                                        <div class="product-item__text">
+
+                                            <div class="d-flex-start">
+                                                <h4 class="product-title"><a href="#" >Coffee pot</a></h4>
+
+                                                <div class="product-rate">
+                                                    <div class="product-rate--overlay" style="width: 10%;"></div>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <p class="product-price">
+                                                <span> <span class="price-symboy">$</span>71.00</span> 
+                                            </p>
+
+                                            <p class="product__short-desc">Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil interpretaris pro, alia illum ea vim. Alienum phaedrum  ...</p>
+                                        </div>
+
+                                        <button class="product-item__del">
+                                            <span aria-hidden="true" class="icon_close_alt2"></span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="my-commented" class="account-content--box">
+                            <span class="account__title">Sản phẩm đã nhận xét (3)</span>
+                            <div class="account__content">
+                                <ul class="lst-prod-favorite">
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__thumb">
+                                            <img src="./images/prod4.jpg" alt="product">
+                                            <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                                        </a>
+                                        <div class="product-item__text">
+
+                                            <div class="d-flex-start">
+                                                <h4 class="product-title"><a href="#" >Coffee pot</a></h4>
+
+                                                <div class="product-rate">
+                                                    <div class="product-rate--overlay" style="width: 10%;"></div>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <p class="product-price">
+                                                <span> <span class="price-symboy">$</span>71.00</span> 
+                                            </p>
+
+                                            <p class="product__short-desc">Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil interpretaris pro, alia illum ea vim. Alienum phaedrum  ...</p>
+                                        </div>
+                                        <button class="product-item__del">
+                                            <span aria-hidden="true" class="icon_close_alt2"></span>
+                                        </button>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__thumb">
+                                            <img src="./images/prod4.jpg" alt="product">
+                                            <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                                        </a>
+                                        <div class="product-item__text">
+
+                                            <div class="d-flex-start">
+                                                <h4 class="product-title"><a href="#" >Coffee pot</a></h4>
+
+                                                <div class="product-rate">
+                                                    <div class="product-rate--overlay" style="width: 10%;"></div>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <p class="product-price">
+                                                <span> <span class="price-symboy">$</span>71.00</span> 
+                                            </p>
+
+                                            <p class="product__short-desc">Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil interpretaris pro, alia illum ea vim. Alienum phaedrum  ...</p>
+                                        </div>
+
+                                        <button class="product-item__del">
+                                            <span aria-hidden="true" class="icon_close_alt2"></span>
+                                        </button>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__thumb">
+                                            <img src="./images/prod4.jpg" alt="product">
+                                            <button class="add-to-cart"><span class="icon icon-libreoffice"></span> Add To Cart</button>
+                                        </a>
+                                        <div class="product-item__text">
+
+                                            <div class="d-flex-start">
+                                                <h4 class="product-title"><a href="#" >Coffee pot</a></h4>
+
+                                                <div class="product-rate">
+                                                    <div class="product-rate--overlay" style="width: 10%;"></div>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                    <span class="icon icon-star-full"></span>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <p class="product-price">
+                                                <span> <span class="price-symboy">$</span>71.00</span> 
+                                            </p>
+
+                                            <p class="product__short-desc">Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil interpretaris pro, alia illum ea vim. Alienum phaedrum  ...</p>
+                                        </div>
+
+                                        <button class="product-item__del">
+                                            <span aria-hidden="true" class="icon_close_alt2"></span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END MAIN PAGE -->
+
+         <!-- START FOOTER -->
+         <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__content--top">
+                    <div class="cf-container d-gr-4 footer-grid">
+                        <div class="footer-widget">
+                            <h6>Opening Hours</h6>
+                            <ul class="timeline">
+                                <li>
+                                    <span>Monday</span>
+                                    <div class="space"></div>
+                                    <span class="highlight">Closed</span>
+                                </li>
+                                <li>
+                                    <span>Tuesday</span>
+                                    <div class="space"></div>
+                                    <span>9:00 - 22:00</span>
+                                </li>
+                                <li>
+                                    <span>Wednesday</span>
+                                    <div class="space"></div>
+                                    <span>9:00 - 22:00</span>
+                                </li>
+                                <li>
+                                    <span>Thursday</span>
+                                    <div class="space"></div>
+                                    <span>9:00 - 22:00</span>
+                                </li>
+                                <li>
+                                    <span>Friday</span>
+                                    <div class="space"></div>
+                                    <span>9:00 - 1:00</span>
+                                </li>
+                                <li>
+                                    <span>Saturday</span>
+                                    <div class="space"></div>
+                                    <span>12:00 - 01:00</span>
+                                </li>
+                                <li>
+                                    <span>Sunday</span>
+                                    <div class="space"></div>
+                                    <span>9:00 - 22:00</span>
+                                </li>
+
+                            </ul>
+                            
+                        </div>
+                        <div class="footer-widget">
+                            <h6>Latest Post</h6>
+                            <ul class="lst-lastest-post">
+                                <li>
+                                    <a href="#">Expand your mind, chagne everything</a>
+                                    <span class="post-date">14.02.2017</span>
+                                </li>
+                                <li>
+                                    <a href="#">Places to get lost</a>
+                                    <span class="post-date">14.02.2017</span>
+                                </li>
+                                <li>
+                                    <a href="#">Lewis Howes</a>
+                                    <span class="post-date">14.02.2017</span>
+                                </li>
+                                <li>
+                                    <a href="#">Elevate Your Expectations</a>
+                                    <span class="post-date">14.02.2017</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-widget">
+                            <h6>Contact Us</h6>
+                            <div class="text-widget">
+                                <a href="#" class="highlight">admin123@gmail.com</a>
+                                <br>
+                                1-444-123-4559
+                                <br>
+                                Raymond Boulevard 224,
+                                <br>
+                                New York
+                            </div>
+                            <h6>The last standard post</h6>
+                            <form>
+                                <div class="form-group d-flex-between">
+                                    <input type="text" placeholder="Your E-Mail">
+                                    <button><span class="icon icon-play3"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="footer-widget">
+                            <h6>Other Location</h6>
+                            <h5 class="mb-25">Barista Coffee Shop</h5>
+                            <div class="text-widget">
+                                2606 Saints Alley
+                                <br>
+                                Tampa, FL 33602
+                            </div>
+                            <div class="line mb-25"></div>
+                            <h5 class="mb-25">Barista Cafe</h5>
+                            <div class="text-widget">
+                                3497 Watson Street
+                                <br>
+                                Camden, NJ 08102
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="copy-right">
+                    <div class="cf-container d-flex-between">
+                        <span>Barista Edge Themes</span>
+                        <div class="social">
+                            <a href="#"><span class="icon icon-facebook"></span></a>
+                            <a href="#"><span class="icon icon-twitter"></span></a>
+                            <a href="#"><span class="icon icon-vimeo"></span></a>
+                            <a href="#"><span class="icon icon-linkedin2"></span></a>
+                            <a href="#"><span class="icon icon-tumblr"></span></a>
+                            <a href="#"><span class="icon icon-instagram"></span></a>
+                        </div>
+                        <span>© 2017 All rights reserved</span>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+
+    <script src="./js/helpers.js"></script>
+    <script src="./js/myAccount.js"></script>
+</body>
+</html>

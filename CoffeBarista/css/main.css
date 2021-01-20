@@ -2810,7 +2810,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 .account-page .account__container .account__content {
   margin-top: 0px;
-  padding: 25px 20px;
 }
 
 .account-page .account__info {
@@ -3078,19 +3077,39 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-transform: uppercase;
 }
 
-.account-page .lst-address .name .notify {
+.account-page .lst-address .name, .account-page .lst-address .address, .account-page .lst-address .phone, .account-page .lst-address .edit {
+  color: #30271c;
+}
+
+.account-page .lst-address .notify {
   color: #26bc4e;
   text-transform: none;
   font-size: 12px;
   margin-left: 20px;
 }
 
-.account-page .lst-address .name, .account-page .lst-address .address, .account-page .lst-address .phone, .account-page .lst-address .edit {
-  color: #30271c;
+.account-page .lst-address .edit {
+  text-decoration: underline;
 }
 
 .account-page .lst-address .address span, .account-page .lst-address .phone span {
   color: #666;
+}
+
+.account-page .lst-address .respon-info {
+  display: none;
+}
+
+.account-page .account-content--box {
+  display: none;
+}
+
+.account-page .account-content--box:first-child {
+  display: block;
+}
+
+.account-page .account-content--box.form .account__content {
+  padding: 25px 20px;
 }
 
 @media screen and (max-width: 320px) {
@@ -3137,6 +3156,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     border-bottom: 1px solid #cccccc;
     border-radius: 0;
     padding-left: 0;
+  }
+  .account-page .lst-address .item {
+    display: block;
+  }
+  .account-page .lst-address .phone, .account-page .lst-address .name, .account-page .lst-address .address span {
+    display: none;
+  }
+  .account-page .lst-address .respon-info {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
