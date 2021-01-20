@@ -3,11 +3,13 @@
         padding-left: 0;
     }
 
+    .main-page__content{
+        padding-right: 0;
+    }
+
     // account sidebar
     .account__sidebar{
-        // background-color: yellow;
-        min-height: 400px;
-
+        padding-right: 15px;
         .account__author{
             img{
                 width: 45px;
@@ -55,6 +57,16 @@
             transform: scaleX(0);
         }
 
+        .res-icon{
+            display: none;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+
+            font-size: 24px;
+        }
+
         .nav--item__thumb{
             width: 45px;
             text-align: center;
@@ -79,17 +91,20 @@
         }
 
         &:hover, &.active{
-            .nav--item__text{
+            .nav--item__text, .res-icon{
                 color: $primary-color;
             }
             &::after{
                 transform: scaleX(1);
             }
         }
+
+
     }
 
     // account contaienr
     .account__container{
+        padding-left: 15px;
         .account__title{
             line-height: 50px;
             color: #000;
@@ -101,13 +116,13 @@
         }
 
         .account__content{
-            margin-top: 15px;
+            margin-top: 0px;
+            padding: 25px 20px;
         }
     }
 
     .account__info{
         width: 600px;
-        // background-color: gray;
         p{
             margin: 0;
             padding-top: 6px;
@@ -143,6 +158,13 @@
                 flex: 1;
                 button{
                     border-radius: 0px 5px 5px 0;
+                }
+
+                select{
+                    width: 100%;
+                    margin: 0;
+                    border-radius: 5px;
+                    padding: 8px 8px;
                 }
             }
         }
@@ -238,7 +260,7 @@
             }
         }
 
-        input{
+        input, textarea{
             width: 100%;
             border: 1px solid rgb(204, 204, 204);
             padding: 8px 10px;
@@ -354,6 +376,69 @@
 
         .address span, .phone span{
             color: #666;
+        }
+    }
+}
+
+// Responsive
+@media screen and (max-width: 320px){
+    .account-page{       
+        
+        &.cf-container{
+            width: 100%;
+            padding: 0;
+        }
+
+        .account__sidebar{
+            padding-right: 0;
+
+            .account__author{
+                padding-left: 13px;
+            }
+        }
+
+        .account__nav--item{
+            background-color: #fff;
+            .res-icon{
+                display: block;
+            }
+        }
+
+        .account__container{
+            display: none;
+            padding-left: 0;
+
+            .account__title{
+                padding-left: 15px;
+            }
+        }
+
+        .account__info{
+            width: 100%;
+            .form-group{
+                display: block;
+
+                .gender-label, &.form-group--date{
+                    display: none;
+                }
+                
+                button{
+                    width: 100%;
+                }
+            }
+
+            .update-password-group{
+                label{
+                    display: none;
+                }
+            }
+
+            input, textarea{
+                border: none;
+                border-bottom: 1px solid rgb(204, 204, 204);
+                border-radius: 0;
+                padding-left: 0;
+            }
         }
     }
 }

@@ -50,6 +50,10 @@ select, select:focus {
   background-color: #fff;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
 .cf-bg {
   background-color: #eae7de;
 }
@@ -786,6 +790,49 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 .breadcrumb .breadcrumb-item:hover {
   color: #30271c;
+}
+
+.responsive {
+  display: none;
+  background-color: #c7a17a;
+  color: #30271c;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 15px 20px 15px 6px;
+}
+
+.responsive a:hover {
+  color: #fff;
+}
+
+.responsive .cart {
+  position: relative;
+}
+
+.responsive .cart .number {
+  font-size: 13px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  background-color: #30271c;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+  .full-screen {
+    display: none;
+  }
+  .responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header {
@@ -2651,8 +2698,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   padding-left: 0;
 }
 
+.account-page .main-page__content {
+  padding-right: 0;
+}
+
 .account-page .account__sidebar {
-  min-height: 400px;
+  padding-right: 15px;
 }
 
 .account-page .account__sidebar .account__author img {
@@ -2704,6 +2755,16 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
           transform: scaleX(0);
 }
 
+.account-page .account__nav--item .res-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 24px;
+}
+
 .account-page .account__nav--item .nav--item__thumb {
   width: 45px;
   text-align: center;
@@ -2725,13 +2786,17 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   margin-left: 4px;
 }
 
-.account-page .account__nav--item:hover .nav--item__text, .account-page .account__nav--item.active .nav--item__text {
+.account-page .account__nav--item:hover .nav--item__text, .account-page .account__nav--item:hover .res-icon, .account-page .account__nav--item.active .nav--item__text, .account-page .account__nav--item.active .res-icon {
   color: #c7a17a;
 }
 
 .account-page .account__nav--item:hover::after, .account-page .account__nav--item.active::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.account-page .account__container {
+  padding-left: 15px;
 }
 
 .account-page .account__container .account__title {
@@ -2744,7 +2809,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 .account-page .account__container .account__content {
-  margin-top: 15px;
+  margin-top: 0px;
+  padding: 25px 20px;
 }
 
 .account-page .account__info {
@@ -2796,6 +2862,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 .account-page .account__info .form-group .input-group button {
   border-radius: 0px 5px 5px 0;
+}
+
+.account-page .account__info .form-group .input-group select {
+  width: 100%;
+  margin: 0;
+  border-radius: 5px;
+  padding: 8px 8px;
 }
 
 .account-page .account__info .radio-group {
@@ -2899,7 +2972,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   background-color: #c7a17a;
 }
 
-.account-page .account__info input {
+.account-page .account__info input, .account-page .account__info textarea {
   width: 100%;
   border: 1px solid #cccccc;
   padding: 8px 10px;
@@ -2908,7 +2981,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   transition: all .3s ease-in-out;
 }
 
-.account-page .account__info input:focus {
+.account-page .account__info input:focus, .account-page .account__info textarea:focus {
   border-color: #c7a17a;
 }
 
@@ -3018,5 +3091,52 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 .account-page .lst-address .address span, .account-page .lst-address .phone span {
   color: #666;
+}
+
+@media screen and (max-width: 320px) {
+  .account-page.cf-container {
+    width: 100%;
+    padding: 0;
+  }
+  .account-page .account__sidebar {
+    padding-right: 0;
+  }
+  .account-page .account__sidebar .account__author {
+    padding-left: 13px;
+  }
+  .account-page .account__nav--item {
+    background-color: #fff;
+  }
+  .account-page .account__nav--item .res-icon {
+    display: block;
+  }
+  .account-page .account__container {
+    display: none;
+    padding-left: 0;
+  }
+  .account-page .account__container .account__title {
+    padding-left: 15px;
+  }
+  .account-page .account__info {
+    width: 100%;
+  }
+  .account-page .account__info .form-group {
+    display: block;
+  }
+  .account-page .account__info .form-group .gender-label, .account-page .account__info .form-group.form-group--date {
+    display: none;
+  }
+  .account-page .account__info .form-group button {
+    width: 100%;
+  }
+  .account-page .account__info .update-password-group label {
+    display: none;
+  }
+  .account-page .account__info input, .account-page .account__info textarea {
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0;
+    padding-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

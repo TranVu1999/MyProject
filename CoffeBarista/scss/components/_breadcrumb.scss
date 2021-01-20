@@ -23,5 +23,59 @@
         &:hover{
             color: $main-color;
         }
+    }    
+}
+
+.responsive{
+    display: none;
+    background-color: $primary-color;
+    color: $main-color;
+    font-size: 26px;
+    font-weight: 700;
+
+    padding: 15px 20px 15px 6px;
+
+    a:hover{
+        color: #fff;
     }
+
+    .cart{
+        position: relative;
+
+        .number{
+            font-size: 13px;
+            position: absolute;
+            top: -8px;
+            right: -8px;
+
+            display: block;
+            width: 20px;
+            height: 20px;
+            color: #fff;
+            background-color: $main-color;
+
+            border-radius: 50%;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+    
+}
+
+.responsive{
+    // display: flex;
+}
+
+
+// Responsive
+@media screen and (max-width: 320px){
+    .full-screen{
+        display: none;
+    }
+
+    .responsive{
+        display: flex;
+    }
+
+
 }
