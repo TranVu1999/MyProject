@@ -3032,6 +3032,178 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-align: right;
 }
 
+.account-page .lst-invoice-row {
+  display: none;
+}
+
+.account-page .lst-invoice-row .item:last-child .invoice-box {
+  border-bottom: 1px solid #ccc;
+}
+
+.account-page .lst-invoice-row .invoice-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 1.3;
+  padding: 15px 15px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.account-page .lst-invoice-row .invoice-box p {
+  margin: 0;
+}
+
+.account-page .lst-invoice-row .invoice-box .invoice--title {
+  color: #30271c;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.account-page .lst-invoice-row .invoice-box .invoice--status {
+  color: #26bc4e;
+}
+
+.account-page .lst-invoice-row .invoice-box .invoice--status .time {
+  color: #fa1313;
+}
+
+.account-page .invoice-detail {
+  padding: 15px 15px;
+}
+
+.account-page .invoice-detail--top {
+  color: #30271c;
+  margin-bottom: 30px;
+}
+
+.account-page .invoice-detail--top span {
+  color: #666;
+}
+
+.account-page .invoice-detail__info h5 {
+  margin-bottom: 25px;
+}
+
+.account-page .invoice-detail__info .invoide-widget {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.account-page .invoice-detail__info .invoide-widget:first-child {
+  padding-right: 15px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.account-page .invoice-detail__info .invoide-widget:nth-child(2) {
+  padding: 0 15px;
+}
+
+.account-page .invoice-detail__info .invoide-widget:last-child {
+  padding-left: 15px;
+}
+
+.account-page .invoice-detail__info .invoide-widget p {
+  margin: 0;
+}
+
+.account-page .invoice-detail__info .invoide-widget .customer-name {
+  text-transform: uppercase;
+}
+
+.account-page .invoice-detail__content {
+  margin-top: 50px;
+}
+
+.account-page .invoice-detail__content .widget {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.account-page .invoice-detail__content .widget:last-child {
+  text-align: right;
+}
+
+.account-page .invoice-detail__content .widget-product {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.account-page .invoice-detail__content .widget-product .product-thumb {
+  width: 100px;
+}
+
+.account-page .invoice-detail__content .widget-product .product-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.account-page .invoice-detail__content .widget-product .btn {
+  border: 1px solid #c7a17a;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0px 8px;
+}
+
+.account-page .invoice-detail__content .widget-product .btn:hover {
+  color: #c7a17a;
+}
+
+.account-page .invoice-detail__content .invoide-detail__head {
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.account-page .invoice-detail__content .invoide-detail__footer {
+  margin-top: 15px;
+}
+
+.account-page .invoice-detail__content .invoide-detail__footer .widget-space {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.account-page .invoice-detail__content .invoide-detail__footer .widget-label, .account-page .invoice-detail__content .invoide-detail__footer .widget-total {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: right;
+}
+
+.account-page .invoice-detail__content .invoide-detail__footer .total-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #30271c;
+}
+
+.account-page .invoice-detail__content .product-item {
+  padding: 15px 0;
+  border-top: 1px solid #ccc;
+}
+
+.account-page .invoice-detail__content .product-item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
 .account-page .account__address a:hover {
   color: #c7a17a;
 }
@@ -3164,6 +3336,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     display: none;
   }
   .account-page .lst-address .respon-info {
+    display: block;
+  }
+  .account-page .lst-invoice {
+    display: none;
+  }
+  .account-page .lst-invoice-row {
     display: block;
   }
 }

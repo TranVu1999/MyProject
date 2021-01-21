@@ -319,6 +319,161 @@
         }
     }
 
+    .lst-invoice-row{
+        display: none;
+        .item:last-child{
+            .invoice-box{
+                border-bottom: 1px solid #ccc;
+            }
+        }
+
+        .invoice-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            line-height: 1.3;
+
+            padding: 15px 15px;
+            border-top: 1px solid #ccc;
+            background-color: #fff;            
+
+            p{
+                margin: 0;
+            }
+
+            .invoice--title{
+                color: $main-color;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            .invoice--status{
+                color: rgb(38, 188, 78);
+
+                .time{
+                    color: rgb(250, 19, 19);
+                }
+            }
+        }
+
+    }
+
+    // Start Style Detail Invoice
+
+    .invoice-detail{
+        padding: 15px 15px;
+    }
+
+    .invoice-detail--top{
+        color: $main-color;
+        margin-bottom: 30px;
+
+        span{
+            color: #666;
+        }
+    }
+
+    .invoice-detail__info{
+        h5{
+            margin-bottom: 25px;
+        }
+
+        .invoide-widget{
+            flex: 1;
+
+            &:first-child{
+                padding-right: 15px;
+                flex: 2;
+            }
+
+            &:nth-child(2){
+                padding: 0 15px;
+            }
+
+            &:last-child{
+                padding-left: 15px;
+            }
+
+            p{
+                margin: 0;
+            }
+
+            .customer-name{
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .invoice-detail__content{
+        margin-top: 50px;
+        
+        .widget{
+            flex: 1;
+
+            &:last-child{
+                text-align: right;
+            }
+        }
+
+        .widget-product{
+            flex: 4;
+            display: flex;
+            align-items: flex-start;
+
+            .product-thumb{
+                width: 100px;
+            }
+
+            .product-text{
+                flex: 1;
+            }
+            
+            .btn{
+                border: 1px solid $primary-color;
+                border-radius: 5px;
+                display: inline-block;
+                padding: 0px 8px;
+
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .invoide-detail__head{
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+
+        .invoide-detail__footer{
+            margin-top: 15px;
+            .widget-space{
+                flex: 4;
+            }
+
+            .widget-label, .widget-total{
+                flex: 2;
+                text-align: right;
+            }
+
+            .total-price{
+                font-size: 20px;
+                font-weight: 700;
+                color: $main-color;
+            }
+        }
+
+        .product-item{
+            padding: 15px 0;
+            border-top: 1px solid #ccc;
+
+            &:last-child{
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    }
+    // End Style Detail Invoice
+
     .account__address{
 
         a:hover{
@@ -400,6 +555,8 @@
             }
         }
     }
+
+
 }
 
 // Responsive
@@ -475,6 +632,14 @@
             .respon-info{
                 display: block;
             }
+        }
+
+        .lst-invoice{
+            display: none;
+        }
+
+        .lst-invoice-row{
+            display: block;
         }
     }
 }
