@@ -945,6 +945,46 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   border-right: 2px solid rgba(0, 0, 0, 0.5);
 }
 
+.header__nav li.toggle-sub-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.header__nav li.toggle-sub-menu .sub-menu {
+  position: absolute;
+  right: -15px;
+  top: 200%;
+  width: 200px;
+  height: 0;
+  background-color: #fff;
+  text-align: right;
+  overflow: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.header__nav li.toggle-sub-menu .sub-menu::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #c7a17a;
+}
+
+.header__nav li.toggle-sub-menu .sub-menu li {
+  display: block;
+  margin: 10px 0 10px 0;
+  padding: 0 15px;
+  font-family: Oswald,sans-serif;
+  color: #666;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.header__nav li.toggle-sub-menu:hover .sub-menu {
+  height: 70px;
+}
+
 .header__nav .header__cart {
   position: relative;
   display: inline-block;
@@ -1888,6 +1928,169 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   .footer__content .footer__content--top .footer-grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+.login-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-popup.active {
+  display: block;
+}
+
+.login-popup .login__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 400px;
+  height: 480px;
+  background-color: #fff;
+  border-radius: 25px 25px 10px 10px;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: opacity .5s, -webkit-transform 1s .3s;
+  transition: opacity .5s, -webkit-transform 1s .3s;
+  transition: opacity .5s, transform 1s .3s;
+  transition: opacity .5s, transform 1s .3s, -webkit-transform 1s .3s;
+}
+
+.login-popup.active .login__container {
+  -webkit-animation: movePopup .5s;
+          animation: movePopup .5s;
+}
+
+.login-popup .login--header {
+  background-color: #30271c;
+  padding: 15px 40px;
+  position: relative;
+}
+
+.login-popup .login--header h3 {
+  color: #fff;
+}
+
+.login-popup .login--header .close-popup {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  font-size: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.login-popup .login--header .close-popup:hover {
+  color: #dedede;
+}
+
+.login-popup .login--body {
+  padding: 20px 40px;
+}
+
+.login-popup .login--body .login-form {
+  width: 100%;
+}
+
+.login-popup .login--body .form-group {
+  margin-bottom: 20px;
+}
+
+.login-popup .login--body .input-label {
+  margin-bottom: 8px;
+}
+
+.login-popup .login--body input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 12px 18px;
+  border-radius: 5px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.login-popup .login--body button {
+  width: 100%;
+  background-color: #c7a17a;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.login-popup .login--body .login-action a {
+  text-decoration: underline;
+}
+
+.login-popup .login--body .login-action a:hover {
+  color: #c7a17a;
+}
+
+.login-popup .login--body .other-signup {
+  text-align: center;
+}
+
+.login-popup .login--body .other-signup .icon {
+  background-color: #30271c;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 2px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.login-popup .login--body .other-signup .icon:hover {
+  color: #c7a17a;
+}
+
+@-webkit-keyframes movePopup {
+  0% {
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    opacity: 0;
+  }
+  25% {
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes movePopup {
+  0% {
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    opacity: 0;
+  }
+  25% {
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
   }
 }
 

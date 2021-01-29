@@ -41,7 +41,15 @@
                         <li><a href="#">About</a></li>
                         <li><a href="#">Shop</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">My Account</a></li>
+
+                        <li class="toggle-sub-menu">
+                            <span id="toggleLoginForm">My Account</span>
+                            <ul class="sub-menu">
+                                <li><a href="#">Sign In</a></li>
+                                <li><a href="#">Sign Up</a></li>
+                            </ul>
+                        </li>
+
                         <li class="bulkhead"><span></span></li>
                         <li><a href="#" class="header__cart">
                             <span class="icon icon-cart"></span>
@@ -208,6 +216,56 @@
             
         </footer>
         <!-- END FOOTER -->
+
+        <!-- START LOGIN POPUP -->
+        <div id="login-popup" class="login-popup">
+            <div class="login__container">
+                <div class="login--header">
+                    <h3>Account Login</h3>
+                    <button id="btnCloseLoginPopup" class="close-popup">
+                        <span aria-hidden="true" class="icon_close_alt2"></span>
+                    </button>
+                </div>
+                <div class="login--body">
+                    <form class="login-form">
+                        <div class="form-group">
+                            <div class="input-label">Email / Username</div>
+                            <div class="input-group">
+                                <input type="text" placeholder="Please Enter Your Email/Account"> 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-label">Password</div>
+                            <div class="input-group">
+                                <input type="text" placeholder="Please Enter Password"> 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button>Login</button>
+                        </div>
+                        <div class="form-group login-action">
+                            <a href="#">Create account?</a>
+                            /
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <div class="form-group other-signup">
+                            <span>Or Sign Up Using</span>
+
+                            <p>
+                                <a href="#" class="icon"><span aria-hidden="true" class="social_facebook"></span></a>
+                                <a href="#" class="icon"><span aria-hidden="true" class="social_twitter"></span></a>
+                                <a href="#" class="icon"><span aria-hidden="true"  class="social_googleplus"></span></a>
+                            </p>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- END LOGIN POPUP -->
     </div>
+
+    <script src="./js/helpers.js"></script>
+    <script src="./js/loginPopup.js"></script>
 </body>
 </html>
