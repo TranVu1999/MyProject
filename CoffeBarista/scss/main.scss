@@ -1,5 +1,6 @@
 // Helpers
 @import './helpers/variables';
+@import './helpers/mixin';
 
 // Reset
 @import './base/reset';
@@ -14,6 +15,8 @@
 @import './components/post';
 @import './components/navigation';
 @import './components/breadcrumb';
+@import './components/loading';
+@import './components/cartList';
 
 // Layout
 @import './layouts/header';
@@ -44,3 +47,4 @@
 @import './pages/whatWeOffer';
 @import './pages/cart';
 @import './pages/myAccount';
+@import './pages/checkout';

@@ -68,7 +68,37 @@
             <div class="main-slider__content">
                 <div class="carousel main-carousel" id="main_carousel">
                     <div class="coursel__content">
-                        <div class="item">
+
+                        <div class="item active">
+                            <div class="item__content bg-white" style="background-image: url(./images/slider2.jpg);">
+                                <div class="slide-title-box">
+                                    <h1>DISTINCT</h1>
+                                    <div class="title-box__animate">
+                                        <div class="blur-animate">
+                                            <div class="letter">A</div>
+                                            <div class="letter">R</div>
+                                            <div class="letter">O</div>
+                                            <div class="letter">M</div>
+                                            <div class="letter">A</div>
+                                        </div>
+
+                                        <div class="pl-15 move-animate">
+                                            COFFEE
+                                        </div>
+                                    </div>
+
+                                    <div class="desc-box__animate">
+                                        Lorem ipsum dolor sit amet, nec ne oficiis electram. dolore nominati vim et.
+                                    </div>
+
+                                    <div class="read-more-box__animate">
+                                        <a href="#" class="coffee-btn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item ">
                             <div class="item__content" style="background-image: url(./images/slider1.jpg);">
                                 <div class="slide-title-box">
                                     <h1>Made</h1>
@@ -93,17 +123,45 @@
                                         <a href="#" class="coffee-btn">Read More</a>
                                     </div>
                                 </div>
-                                <div class="main-carousel__nav">
-                                    <button class="nav-left"><span class="icon icon-arrow-left2"></span></button>
-                                    <button class="nav-right"><span class="icon icon-arrow-right2"></span></button>
-                                </div>
-                                <div class="main-carousel__dots">
-                                    <button class="dot active"></button>
-                                    <button class="dot"></button>
-                                    <button class="dot"></button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item__content bg-white" style="background-image: url(./images/slider3.jpg);">
+                                <div class="slide-title-box">
+                                    <h1>UNIQUELY</h1>
+                                    <div class="title-box__animate">
+                                        <div class="blur-animate">
+                                            FRESH
+                                        </div>
+                                        <div class="move-animate">
+                                            <div class="letter">T</div>
+                                            <div class="letter">A</div>
+                                            <div class="letter">S</div>
+                                            <div class="letter">T</div>
+                                            <div class="letter">E</div>
+                                        </div>
+                                    </div>
+                                    <div class="desc-box__animate">
+                                        Lorem ipsum dolor sit amet, nec ne oficiis electram. dolore nominati vim et.
+                                    </div>
+                                    <div class="read-more-box__animate">
+                                        <a href="#" class="coffee-btn">Read More</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="main-carousel__nav">
+                        <button class="nav-left"><span class="icon icon-arrow-left2"></span></button>
+                        <button class="nav-right"><span class="icon icon-arrow-right2"></span></button>
+                    </div>
+
+                    <div class="main-carousel__dots">
+                        <button class="dot active" data-current-slide = "0"></button>
+                        <button class="dot" data-current-slide = "1"></button>
+                        <button class="dot" data-current-slide = "2"></button>
                     </div>
                 </div>
             </div>
@@ -542,11 +600,17 @@
                             <div class="item">
                                 <div class="item__content" style="background-image: url(./images/small-slider1.jpg);"></div>
                             </div>
+                            <div class="item">
+                                <div class="item__content" style="background-image: url(./images/small-slider1.jpg);"></div>
+                            </div>
+                            <div class="item">
+                                <div class="item__content" style="background-image: url(./images/small-slider1.jpg);"></div>
+                            </div>
                         </div>
                         <div class="small-carousel__dots">
-                            <button class="dot active"></button>
-                            <button class="dot"></button>
-                            <button class="dot"></button>
+                            <button class="dot active" data-current-slide = "0"></button>
+                            <button class="dot" data-current-slide = "1"></button>
+                            <button class="dot" data-current-slide = "2"></button>
                         </div>
                     </div>
                 </div>
@@ -1408,5 +1472,8 @@
         <!-- END FOOTER -->
         
     </div>
+
+    <script src="./js/mainSlider.js"></script>
+    <script src="./js/smallSlider.js"></script>
 </body>
 </html>

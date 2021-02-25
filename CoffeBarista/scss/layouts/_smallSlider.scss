@@ -25,6 +25,13 @@
 
         .small-carousel{
             position: relative;
+            height: 355px;
+            overflow: hidden;
+
+            .item{
+                transition: all .6s cubic-bezier(.21,-0.01,.48,.46);
+            }
+
             .item__content{
                 height: 355px;
             }
