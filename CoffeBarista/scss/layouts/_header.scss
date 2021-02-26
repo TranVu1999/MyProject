@@ -156,6 +156,25 @@
         }
     }
 
+    .toggle-box{
+        min-height: 0;
+        max-height: 0;
+        transition: all 1s;
+        overflow: hidden;
+        border-top: 2px solid transparent;
+    }
+
+    li.toggle-span:hover{
+        cursor: pointer;
+        &:hover{
+            .toggle-box{
+                max-height: 800px;
+                border-top: 2px solid $primary-color;
+            }
+        }
+        
+    }
+
     .header__cart{
         position: relative;
         display: inline-block;

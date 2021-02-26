@@ -43,10 +43,67 @@
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">My Account</a></li>
                         <li class="bulkhead"><span></span></li>
-                        <li><a href="#" class="header__cart">
-                            <span class="icon icon-cart"></span>
-                            <span class="number">0</span>
-                        </a></li>
+                        <li class="toggle-span">
+                            <div class="header__cart">
+                                <div>
+                                    <span class="icon icon-cart"></span>
+                                    <span class="number">0</span>
+                                </div>
+                                <div class="toggle-box cart--header">
+                                    <div class="cart__item">
+                                        <div class="item--thumbnail">
+                                            <a href="#">
+                                                <img src="https://barista.qodeinteractive.com/wp-content/uploads/2016/03/product-image-7-1-500x500.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item--text">
+                                            <a href="#">Choco Bites</a>
+                                            <span>Quanity: 1</span>
+                                            <p>$63.00</p>
+                                        </div>
+                                        <button class="item--control">
+                                            <span aria-hidden="true" class="icon_close"></span>
+                                        </button>
+                                    </div>
+                                    <div class="cart__item">
+                                        <div class="item--thumbnail">
+                                            <a href="#">
+                                                <img src="https://barista.qodeinteractive.com/wp-content/uploads/2016/03/product-image-7-1-500x500.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item--text">
+                                            <a href="#">Choco Bites</a>
+                                            <span>Quanity: 1</span>
+                                            <p>$63.00</p>
+                                        </div>
+                                        <button class="item--control">
+                                            <span aria-hidden="true" class="icon_close"></span>
+                                        </button>
+                                    </div>
+                                    <div class="cart__item">
+                                        <div class="item--thumbnail">
+                                            <a href="#">
+                                                <img src="https://barista.qodeinteractive.com/wp-content/uploads/2016/03/product-image-7-1-500x500.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item--text">
+                                            <a href="#">Choco Bites</a>
+                                            <span>Quanity: 1</span>
+                                            <p>$63.00</p>
+                                        </div>
+                                        <button class="item--control">
+                                            <span aria-hidden="true" class="icon_close"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="d-flex-between cart__control">
+                                        <a href="#" class="barista-btn">View Cart</a>
+                                        <a href="#" class="barista-btn">Check Out</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </li>
                         <li><a href="#" class="header__search"><span class="icon icon-search"></span></a></li>
                         <li><a href="#" class="header__humburger"><i class="fas fa-bars"></i></a></li>
                     </ul>
@@ -71,11 +128,71 @@
                 </div>
 
                 <div class="cf-container">
+                    <div class="accordition-toggle">
+                        <input type="checkbox" id="1">
+                        <div class="accordition-toggle--box">
+                            <div class="accordition-span">
+                                Have a coupon?
+                                <label for="1">Click here to enter your code</label>
+                            </div>
+                            <div class="accordition-detail">
+                                <span>If you have a coupon code, please apply it below.</span>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="input-control" placeholder="Coupon Code">
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="coffee-btn">Apply Coupon</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="confirm-info">
+                        <h3>BilLing & Shipping</h3>
+                        <form class = "form-info-invoice">
+                            <div class="row">
+                                <div class="form-group">
+                                    <input type="text" class="input-control" placeholder="Full Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="input-control" placeholder="PostCode / Zip">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <input type="text" class="input-control" placeholder="City">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="input-control" placeholder="Province">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <input type="text" class="input-control" placeholder="Wards">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="input-control" placeholder="House number and street name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <input type="text" class="input-control" placeholder="Phone">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="input-control" placeholder="Email">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
                     <div class="confirm-invoice">
                         <h3>Your Order</h3>
                         <div class="detail-invoice">
                             <div class="detail-invoice__header">
-                                <div class="d-flex-between">
+                                <div class="row">
                                     <div class="left">
                                         <h4>Product</h4>
                                     </div>
@@ -84,9 +201,82 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="detail-invoice__body"></div>
+                            <div class="detail-invoice__body">
+                                <div class="row">
+                                    <div class="left">
+                                        Paper Bag x 3
+                                    </div>
+                                    <div class="right">
+                                        $237.00
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">
+                                        Paper Bag x 3
+                                    </div>
+                                    <div class="right">
+                                        $237.00
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">
+                                        Paper Bag x 3
+                                    </div>
+                                    <div class="right">
+                                        $237.00
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">
+                                        Paper Bag x 3
+                                    </div>
+                                    <div class="right">
+                                        $237.00
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">
+                                        Paper Bag x 3
+                                    </div>
+                                    <div class="right">
+                                        $237.00
+                                    </div>
+                                </div>
+
+                            </div>  
+                            <div class="detail-invoice__footer">
+                                <div class="row">
+                                    <div class="left">
+                                        Subtotal
+                                    </div>
+                                    <div class="right">
+                                        $358.00
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">
+                                        Shipping
+                                    </div>
+                                    <div class="right">
+                                        Free Shipping
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">
+                                        Total
+                                    </div>
+                                    <div class="right">
+                                        $358.00
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
+                    <div class="confirm-action">
+                        <button class="coffee-btn">Place Order</button>
+                    </div>
+                    
                 </div>
                 
             </div>

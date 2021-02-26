@@ -590,6 +590,65 @@ form.form-book-table span.form-book-table--label {
   font-weight: 700;
 }
 
+form.form-info-invoice .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+}
+
+form.form-info-invoice .row .form-group {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+form.form-info-invoice .row .form-group:first-child {
+  padding-right: 15px;
+}
+
+form.form-info-invoice .row .form-group:last-child {
+  padding-left: 15px;
+}
+
+.input-control {
+  width: 100%;
+  padding: 11px 20px;
+  outline: 0;
+  resize: none;
+  font-family: 'Open Sans',sans-serif;
+  line-height: 28px;
+  background-color: #fff;
+  color: #666;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #efefef;
+  font-size: 14px;
+}
+
+.input-control::-webkit-input-placeholder {
+  color: #c7a17a;
+}
+
+.input-control:-ms-input-placeholder {
+  color: #c7a17a;
+}
+
+.input-control::-ms-input-placeholder {
+  color: #c7a17a;
+}
+
+.input-control::placeholder {
+  color: #c7a17a;
+}
+
+.input-control:focus {
+  border: 1px solid #312a26;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   margin: 0;
@@ -1103,6 +1162,79 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-size: 14px;
 }
 
+.cart--header {
+  position: absolute;
+  top: 200%;
+  right: -50%;
+  width: 350px;
+  background-color: #fff;
+  z-index: 10;
+  border-top: 2px solid transparent;
+  padding: 0 15px;
+}
+
+.cart--header .cart__item {
+  padding: 15px 0;
+  border-bottom: 2px solid #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.cart--header .cart__item:last-child {
+  border: none;
+}
+
+.cart--header .cart__item .item--thumbnail img {
+  width: 75px;
+  height: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cart--header .cart__item .item--text {
+  padding-left: 15px;
+}
+
+.cart--header .cart__item .item--text a {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #30271c;
+  font-family: Oswald,sans-serif;
+}
+
+.cart--header .cart__item .item--text span {
+  display: block;
+  font-size: 12px;
+  font-family: Merriweather,serif;
+  color: #666;
+  margin-bottom: 10px;
+  font-style: italic;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+
+.cart--header .cart__item .item--text p {
+  font-size: 18px;
+  font-family: Merriweather,serif;
+  font-weight: 400;
+  margin: 0;
+  color: #c7a17a;
+}
+
+.cart--header .cart__item .item--control {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 18px;
+}
+
+.cart--header .cart__control {
+  margin-top: 30px;
+}
+
 .header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: absolute;
@@ -1251,6 +1383,24 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 .header__nav li.toggle-sub-menu:hover .sub-menu {
   height: 70px;
+}
+
+.header__nav .toggle-box {
+  min-height: 0;
+  max-height: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  overflow: hidden;
+  border-top: 2px solid transparent;
+}
+
+.header__nav li.toggle-span:hover {
+  cursor: pointer;
+}
+
+.header__nav li.toggle-span:hover:hover .toggle-box {
+  max-height: 800px;
+  border-top: 2px solid #c7a17a;
 }
 
 .header__nav .header__cart {
@@ -4005,19 +4155,108 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .breadcrumb-box {
   background-color: #f5f5f5;
   padding: 64px 0;
+  margin-bottom: 50px;
+}
+
+.accordition-toggle {
+  margin-bottom: 40px;
+}
+
+.accordition-toggle .accordition-span {
+  padding: 8px 40px;
+  line-height: 50px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Merriweather,serif;
+  font-style: italic;
+  border: 1px solid #efefef;
+  margin-bottom: 25px;
+}
+
+.accordition-toggle .accordition-span label {
+  color: #c7a17a;
+  cursor: pointer;
+}
+
+.accordition-toggle .accordition-toggle--box {
+  min-height: 68px;
+  max-height: 68px;
+  overflow: hidden;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.accordition-toggle > input[type=checkbox] {
+  display: none;
+}
+
+.accordition-toggle > input[type=checkbox]:checked ~ .accordition-toggle--box {
+  max-height: 500px;
+}
+
+.accordition-toggle .form-group {
+  margin: 15px 0;
+}
+
+.confirm-info form.form-info-invoice {
+  margin-top: 20px;
 }
 
 .confirm-invoice {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .confirm-invoice h3 {
   margin-bottom: 30px;
 }
 
+.confirm-invoice .detail-invoice {
+  border: 1px solid #efefef;
+}
+
+.confirm-invoice .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid #efefef;
+}
+
 .confirm-invoice .left, .confirm-invoice .right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding: 15px 7px 15px 30px;
+}
+
+.confirm-invoice .left {
+  font-weight: 600;
+  color: #30271c;
+  border-right: 1px solid #efefef;
+}
+
+.confirm-invoice .right {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Merriweather,serif;
+}
+
+.confirm-invoice .detail-invoice__body .row:last-child {
+  border-bottom: 1px solid #efefef;
+}
+
+.confirm-invoice .detail-invoice__footer .row {
+  border: none;
+}
+
+.confirm-invoice .detail-invoice__footer .left {
+  font-size: 18px;
 }
 /*# sourceMappingURL=main.css.map */
